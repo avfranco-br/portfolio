@@ -1,0 +1,50 @@
+name: CAS SDD Validation
+
+on:
+  pull_request:
+    branches: [ main, master ]
+    paths:
+      - 'src/**'
+
+jobs:
+  validate-sdd:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Validate Specification Presence
+        run: |
+          echo "[CAS][INFO] Validating Specification-Driven Development (SDD) compliance..."
+          
+          # Check for exemptions in commit messages
+          EXEMPT=$(git log --format=%B -n 1 ${{ github.event.pull_request.head.sha }} | grep -E "\[skip-governance\]|\[bugfix\]" || true)
+          if [ -n "$EXEMPT" ]; then
+            echo "[CAS][SKIP] Exemption found in commit message: $EXEMPT"
+            exit 0
+          fi
+
+          # Get list of changed files
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.event.pull_request.head.sha }})
+          
+          HAS_SRC_CHANGES=false
+          HAS_SPEC_CHANGES=false
+          
+          for file in $CHANGED_FILES; do
+            if [[ $file == src/* ]]; then
+              HAS_SRC_CHANGES=true
+            fi
+            if [[ $file == specs/* ]] || [[ $file == .specify/* ]]; then
+              HAS_SPEC_CHANGES=true
+            fi
+          done
+
+          if [ "$HAS_SRC_CHANGES" = true ] && [ "$HAS_SPEC_CHANGES" = false ]; then
+            echo "[CAS][ERROR] Code changes detected in 'src/' without corresponding specification in 'specs/' or '.specify/'."
+            echo "[CAS][HINT] Please create a specification before implementing features. Use '[bugfix]' in the commit message to bypass for trivial fixes."
+            exit 1
+          fi
+
+          echo "[CAS][SUCCESS] SDD validation passed."

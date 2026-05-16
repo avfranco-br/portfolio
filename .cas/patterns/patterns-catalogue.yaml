@@ -1,0 +1,51 @@
+patterns:
+  - id: "architecture-workflow-loop"
+    description: "Embed a continuous architecture audit and refactor loop inside the delivery workflow to prevent structural drift during rapid experimentation."
+
+  - id: "build-time-governance"
+    description: "Enforce architectural constraints during generation to prevent invalid structures rather than validating after the fact."
+
+  - id: "contract-first-architecture"
+    description: "Establish explicit contracts between system layers before implementation to make relationships visible and reduce hidden coupling."
+
+  - id: "deterministic-core-selective-augmentation"
+    description: "Build system core with deterministic, non-LLM components and use LLM augmentation only for appropriate layers to ensure reliability."
+
+  - id: "dual-path-routing"
+    description: "Classify user intent into a small set of routes and dispatch to specialized handlers to optimize responses for different request types."
+
+  - id: "graceful-fallback"
+    description: "Wrap LLM calls with error handling that returns safe defaults so the system stays usable when generation fails."
+
+  - id: "heuristic-driven-arbitration"
+    description: "Use a control point to adjust LLM-produced outputs based on deterministic safety signals from other components."
+
+  - id: "learning-loop-product-development"
+    description: "Structure product development as a continuous learning cycle where experiments feed patterns, patterns inform architecture, and architecture guides future experiments."
+
+  - id: "llm-provider-abstraction-boundary"
+    description: "Introduce a provider-agnostic interface so agents can switch LLM backends without rewriting orchestration logic."
+
+  - id: "orchestrator-managed-pipeline"
+    description: "Use a central orchestrator to run a fixed, dependency-ordered sequence of agents so analysis steps remain consistent and traceable."
+
+  - id: "parallel-agent-execution"
+    description: "Concurrently executes independent agents or pipeline steps using async orchestration to reduce end-to-end latency without compromising state integrity."
+
+  - id: "personal-need-experimentation"
+    description: "Start experiments from concrete personal pain points to reduce ambiguity and increase commitment through genuine motivation."
+
+  - id: "prompt-as-code-separation"
+    description: "Store prompts outside agent code and load them at runtime to improve maintainability and enable language variants."
+
+  - id: "prompt-schema-contracts-as-architecture"
+    description: "Treat prompts, schemas, and structure locks as architectural contracts that constrain outputs and reduce drift."
+
+  - id: "stabilise-core-loop-before-multimodal"
+    description: "Defer multimodal features until the text-based agent loop and contracts are stable, to avoid compounding uncertainty."
+
+  - id: "structured-output-via-schema"
+    description: "Define a formal schema for agent outputs and validate LLM responses against it to keep results machine-readable and reliable."
+
+  - id: "typed-execution-context"
+    description: "Replaces implicit dictionary-based state passing with a structured, versioned, and strongly typed object to ensure contract safety across pipeline steps."

@@ -1,0 +1,32 @@
+# IDEs
+.vscode/
+.idea/
+.DS_Store
+
+# Environment
+.env
+.envrc
+
+# CAS Runtime artefacts
+
+# Python (future-proofing)
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+.pytest_cache/
+.ruff_cache/
+
+# Project Specific
+logs/
+output/
+temp/
+
+# CLI folder
+.gemini/
+.claude/
+.agents/
+.specify/extensions/
+.specify/integrations/
+.specify/scripts/
+.specify/workflows/

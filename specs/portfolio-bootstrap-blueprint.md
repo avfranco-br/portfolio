@@ -84,7 +84,7 @@ This configuration provides a calm, executive-readable aesthetic out of the box,
 site_name: Alexandre Franco | Enterprise Architect
 site_description: Enterprise Architecture, Systems Thinking, and Governance Operationalisation
 site_author: Alexandre Franco
-site_url: https://avfranco.github.io/avfranco-portfolio/
+site_url: https://avfranco-br.github.io/portfolio/
 
 theme:
   name: material
