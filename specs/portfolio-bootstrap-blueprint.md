@@ -59,7 +59,7 @@ uv venv
 source .venv/bin/activate
 
 # 3. Create requirements.txt
-echo "mkdocs-material\nmkdocs-roamlinks" > requirements.txt
+echo "mkdocs-material\nmkdocs-roamlinks-plugin" > requirements.txt
 
 # 4. Install dependencies
 uv pip install -r requirements.txt
