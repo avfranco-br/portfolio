@@ -1,0 +1,53 @@
+site_name: Alexandre Franco | Enterprise Architect
+site_description: Enterprise Architecture, Systems Thinking, and Governance Operationalisation
+site_author: Alexandre Franco
+site_url: https://avfranco.github.io/avfranco-portfolio/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - About: about.md
+  - Architecture Philosophy: philosophy.md
+  - Transformation Narratives:
+      - Continuous Architecture System (CAS): narratives/cas.md
+      - Governance-Oriented AI (RAI): narratives/rai.md
+      - EA4All / Architecture Visibility: narratives/ea4all.md
+  - Selected Work: selected-work.md
+  - Contact: contact.md
