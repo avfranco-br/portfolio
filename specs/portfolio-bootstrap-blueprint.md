@@ -89,8 +89,8 @@ site_url: https://avfranco.github.io/avfranco-portfolio/
 theme:
   name: material
   favicon: assets/images/favicon.png
-  logo: material/library
   icon:
+    logo: material/library
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
