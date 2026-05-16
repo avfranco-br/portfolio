@@ -41,6 +41,10 @@ markdown_extensions:
   - toc:
       permalink: true
 
+plugins:
+  - search
+  - roamlinks
+
 nav:
   - Home: index.md
   - About: about.md
