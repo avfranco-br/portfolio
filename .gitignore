@@ -13,7 +13,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# CAS Runtime artefacts
+# Transient artefacts
+tmp/
 
 # Python
 __pycache__/

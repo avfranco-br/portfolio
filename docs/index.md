@@ -1,27 +1,43 @@
 # Building Systems. Operationalising Governance. Enabling Transformation.
 
----
+**Aligning business capability, governance, and operational architecture within complex enterprise environments.**
 
-## Introduction
-<!-- Placeholder: Brief 2-3 sentence executive summary of my role, focusing on connecting business strategy to technical execution via systems thinking and governance. -->
+I am an Enterprise Architect with over 40 years of experience across enterprise systems, integration, and technology transformation. My work focuses on aligning strategic business objectives, operational governance, and executable delivery to support scalable enterprise transformation.
 
-## Core Capabilities
-<!-- Placeholder: Bulleted list or a clean grid outlining key strengths:
-- Enterprise Architecture & Systems Thinking
-- Governance Operationalisation
-- AI Systems & RAI Frameworks
-- Technical Strategy & Alignment
--->
+I specialise in evolving architecture from static documentation into governance-driven operational systems. By combining enterprise integration realism with modern AI orchestration and observability, I help organisations establish sustainable foundations for safe AI operationalisation.
 
-## Transformation Narratives
-<!-- Placeholder: Links to the core narratives.
-- [Continuous Architecture System (CAS)](narratives/cas.md)
-- [Governance-Oriented AI (RAI)](narratives/rai.md)
-- [EA4All / Architecture Visibility](narratives/ea4all.md)
--->
+My approach prioritises structural constraints, feedback loops, and repository-driven governance to reduce architectural drift and support long-term operational sustainability.
 
-## Architecture Philosophy
-<!-- Placeholder: A single paragraph summarising the philosophy, linking to the full Philosophy page. -->
+### Core Capability Themes
 
-## Get in Touch
-<!-- Placeholder: Link to Contact page or direct professional links (LinkedIn). -->
+*   **Enterprise Transformation:** Aligning enterprise simplification, roadmap evolution, and operating model change through capability-driven architecture.
+*   **Continuous Architecture:** Aligning architectural intent with implementation reality through repository-driven governance and Architecture-as-Code.
+*   **Governance-Oriented AI Operationalisation:** Designing operational AI workflows with deterministic guardrails, observability, and scalable governance controls.
+*   **Strategic Platform Flexibility:** Reducing vendor lock-in through provider-independent operational architecture.
+*   **Systems Thinking:** Prioritising structural constraints and feedback loops to support sustainable enterprise transformation.
+*   **Architecture Operationalisation:** Establishing repository-driven intelligence loops that continuously align delivery with architectural intent.
+
+### Featured Transformation Narratives
+
+**[The Continuous Architecture System (CAS)](narratives/cas.md)**
+Eliminating documentation drift through repository-driven capability extraction and Architecture-as-Code governance.
+
+**[Architecting Governance-Oriented AI (Runner Agentic Intelligence)](narratives/rai.md)**
+Designing deterministic guardrails and observability approaches for governance-oriented AI operationalisation within enterprise environments.
+
+**[EA4ALL: Architecture AI Workforce](narratives/ea4all.md)**
+Improving enterprise-wide architectural transparency, agility, collaboration through architecture-driven intelligence and operational alignment.
+
+### Architecture Philosophy
+
+*   Sustainable architecture depends on version-controlled governance and operational visibility.
+*   Architectural intent should continuously align with implementation reality.
+*   Effective governance enables delivery teams to move quickly within safe operational boundaries.
+*   Enterprise AI systems require stronger operational predictability and governance controls than stochastic systems naturally provide.
+*   Platform-flexible architecture protects organisational agility and long-term sustainability.
+
+### Professional Interests
+
+Currently focused on governance-oriented AI operationalisation, continuous architecture practices, and systems-first transformation approaches within enterprise environments.
+
+[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Selected Work](selected-work.md)
