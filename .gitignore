@@ -6,21 +6,32 @@
 # Environment
 .env
 .envrc
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
 
 # CAS Runtime artefacts
 
-# Python (future-proofing)
+# Python
 __pycache__/
 *.py[cod]
+*.py[codz]
 *$py.class
 .venv/
 .pytest_cache/
 .ruff_cache/
+.mypy_cache/
+.pytype/
+.pyre/
 
 # Project Specific
 logs/
 output/
 temp/
+/site
 
 # CLI folder
 .gemini/
@@ -30,3 +41,74 @@ temp/
 .specify/integrations/
 .specify/scripts/
 .specify/workflows/
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py.cover
+.hypothesis/
+cover/
+
+# Django / Flask / Scrapy / Jupyter
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+instance/
+.webassets-cache
+.scrapy
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
+
+# Task Runners / PDM / UV
+.pdm-python
+.pdm-build/
+.pixi
+__pypackages__/
+
+# Celery / Redis
+celerybeat-schedule
+celerybeat.pid
+*.rdb
+*.aof
+*.pid
+
+# Other tools
+.abstra/
+tempCodeRunnerFile.py
+.pypirc
+marimo/_static/
+marimo/_lsp/
+__marimo__/
+.streamlit/secrets.toml
