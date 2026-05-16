@@ -17,3 +17,8 @@ Use the `update_topic` tool (if available) to keep the user informed of your str
 - Adhere to the local project style found in existing source files.
 - Prioritize composition and delegation over complex inheritance.
 - Ensure all new logic is covered by unit or integration tests.
+
+<!-- SPECKIT START -->
+For additional context about technologies to be used, project structure,
+shell commands, and other important information, read the current plan
+<!-- SPECKIT END -->
