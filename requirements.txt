@@ -1,2 +1,3 @@
-mkdocs-material
+mkdocs-material[imaging]
 mkdocs-roamlinks-plugin
+mkdocs-minify-plugin
