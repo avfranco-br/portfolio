@@ -1,5 +1,5 @@
-site_name: Alexandre Franco | Enterprise Architect
-site_description: Enterprise Architecture, Systems Thinking, and Governance Operationalisation
+site_name: Ideas to Life | Architecture & Governance
+site_description: Operational Architecture, Governance Systems, and Sustainable Transformation
 site_author: Alexandre Franco
 site_url: https://avfranco-br.github.io/portfolio/
 
@@ -55,13 +55,16 @@ plugins:
 
 nav:
   - Home: index.md
-  - About: about.md
   - Architecture Philosophy: architecture-philosophy.md
-  - Transformation Narratives:
-      - Continuous Architecture System (CAS): narratives/cas.md
-      - Runner-Agentic Intelligence (RAI): narratives/runner-agentic-intelligence.md
-      - Enterprise Architecture for All (EA4ALL): narratives/ea4all.md
-      - Enterprise Transformation Leadership (BAT): narratives/bat-transformation.md
-      - Reshaping Architecture Operating Model (BBC Studios): narratives/bbc-studios-digital-evolution.md
+  - About: about.md
   - Selected Work: selected-work.md
+  - Enterprise Transformation:
+      - BAT: narratives/bat-transformation.md
+      - BBC Studios: narratives/bbc-studios-digital-evolution.md
+  - AI Native Systems:
+      - EA4ALL: narratives/ea4all.md
+      - Runner Agentic Intelligence: narratives/runner-agentic-intelligence.md
+  - Governance Systems:
+      - Continuous Architecture System (CAS): narratives/cas.md
+      - Governance Aware Coding Agent Collaboration: narratives/cas-coding-agent-collaboration.md
   - Contact: contact.md

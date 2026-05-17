@@ -24,37 +24,37 @@ The following initiatives represent the management of large-scale organisational
 *   **Architectural Contribution:** Developing capability-based business-technology roadmaps and introducing architecture-led enablement for emerging AI capabilities, ensuring technology investments remained grounded in organisational priorities.
 *   **Transformation Significance:** Evolved architecture from an isolated oversight function into an embedded operational capability, enabling the organisation to align strategy, delivery, and innovation more effectively across interconnected business domains.
 
-## AI-Native Architecture & Governance Systems
+## AI native Architecture & Governance Systems
 
-These initiatives explore the intersection of architectural intelligence, automated software construction, and deterministic governance within AI-native delivery environments.
+These initiatives explore the intersection of architectural intelligence, automated software construction, and operationally trustworthy governance within AI native delivery environments.
 
 ### CAS: Continuous Architecture Governance
 **Strategic Summary:** Eliminating documentation drift through repository-driven capability extraction and Architecture-as-Code governance.
 
-*   **Architectural Insight:** Architecture must operate as a living system where intent is continuously reconciled against the repository state through deterministic feedback loops.
+*   **Architectural Insight:** Architecture must operate as a living system where intent is continuously reconciled against the repository state through reproducible feedback loops.
 *   **Operational Significance:** Shifts governance "left" into the software construction process itself, establishing preventive operational guardrails that guide implementation from the moment code is created.
-*   **Governance Implication:** Establishes the foundation for governance-aware coding-agent collaboration, ensuring that automation amplifies productivity without accelerating architectural entropy.
+*   **Governance Implication:** Establishes the foundation for governance aware coding agent collaboration, ensuring that automation amplifies productivity without accelerating architectural entropy.
 
 ### EA4ALL: Democratising Architectural Intelligence
-**Strategic Summary:** Scaling architectural participation through continuously accessible, governance-aware operational intelligence.
+**Strategic Summary:** Scaling architectural participation through continuously accessible, governance aware operational intelligence.
 
 *   **Architectural Insight:** Architectural value is maximised when it moves from a centralised bottleneck to a democratised organisational capability accessible at the point of need.
 *   **Operational Significance:** Utilises specialised agentic ecosystems to manage distinct architectural domains, connecting directly to authoritative documentation and operational data.
-*   **Transformation Implication:** Transforms architecture into an active participant in the future of the enterprise, allowing governance and innovation to scale together through AI-enabled participation.
+*   **Transformation Implication:** Transforms architecture into an active participant in the future of the enterprise, allowing governance and innovation to scale together through AI native participation.
 
 ### Runner-Agentic Intelligence (RAI)
 **Strategic Summary:** Exploring governance aware orchestration and operational intelligence for AI native delivery systems.
 
-*   **Architectural Insight:** AI-native delivery requires governance-aware orchestration models rather than isolated prompt engineering to manage non-deterministic generation.
+*   **Architectural Insight:** AI native delivery requires governance aware orchestration models rather than isolated prompt engineering to manage non-deterministic generation.
 *   **Operational Significance:** Implements structured tracing and orchestration-driven workflows to transform "black box" agent reasoning into a transparent, debuggable process.
-*   **Governance Implication:** Proves that deterministic governance and AI acceleration are not mutually exclusive, ensuring that AI-native delivery remains strategically aligned and operationally sound.
+*   **Governance Implication:** Proves that operationally trustworthy governance and AI acceleration are not mutually exclusive, ensuring that AI native delivery remains strategically aligned and operationally sound.
 
 ## Common Architectural Themes
 
 Across these diverse initiatives, several recurring architectural patterns emerge that define a systems-first approach to enterprise transformation:
 
 *   **Governance through Enablement:** Shifting the role of the architect from a policing function to one that provides safe operational boundaries and empowering guardrails.
-*   **Architecture Operationalisation:** Moving beyond static documentation to embed architectural intent directly into delivery workflows and repository-driven intelligence loops.
+*   **Architecture Operationalisation:** Moving beyond static documentation to embed architectural intent directly into delivery workflows and operational intelligence loops.
 *   **Architecture Participation at Scale:** Enabling architectural intelligence, governance, and operational guidance to scale across delivery ecosystems without linearly scaling centralised oversight.
 *   **Platform Thinking:** Prioritising capability-driven evolution and structural constraints to reduce fragmentation and support long-term operational sustainability.
 *   **Governed AI Operational Foundations:** Balancing the non deterministic nature of AI driven construction with rigorous, auditable, and operationally trustworthy governance controls.

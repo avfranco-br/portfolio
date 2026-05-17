@@ -41,11 +41,11 @@ Practically, this led to improved architecture participation across business dom
 
 The transformation experience represents a critical evolution in the role of enterprise architecture within the modern organisation. It signals a move away from architecture as a passive recording function toward architecture as a driver of global business process integration. This experience demonstrates that even the most complex, highly regulated environments can achieve sustainable evolution when architecture is positioned as an operational leadership discipline.
 
-As organisations continue to face increasing technological and organisational complexity, the focus must shift toward building the architectural intelligence and governance foundations required for long-term resilience. This narrative forms a bridge between foundational systems integration and the modern era of automated, governance-aware architecture orchestration.
+As organisations continue to face increasing technological and organisational complexity, the focus must shift toward building the architectural intelligence and governance foundations required for long-term resilience. This narrative forms a bridge between foundational systems integration and the modern era of automated, governance aware architecture orchestration.
 
 ## Related Narratives
 
-The foundational work in enterprise-scale governance and platform modernisation established the operational realism required for modern architectural intelligence. The companion narratives [*Continuous Architecture System (CAS)*](./cas.md) and [*EA4ALL: Democratising Architectural Intelligence*](./ea4all.md) expand on how these principles have evolved into repository-driven governance and AI-enabled architecture participation.
+The foundational work in enterprise-scale governance and platform modernisation established the operational realism required for modern architectural intelligence. The companion narratives [*Continuous Architecture System (CAS)*](./cas.md) and [*EA4ALL: Democratising Architectural Intelligence*](./ea4all.md) expand on how these principles have evolved into operational governance integration and AI native architecture participation.
 
 ## 7. Closing Reflection
 

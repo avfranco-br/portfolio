@@ -11,21 +11,21 @@ Sustainable transformation requires architecture to actively participate inside 
 *   **Architecture is an Active Participant:** Architectural intent must continuously interact with operational reality, guiding implementation directly rather than documenting it after the fact.
 *   **Governance Must Enable, Not Constrain:** Scalable architecture provides safe boundaries and operational guardrails that empower delivery teams to move with autonomy and confidence.
 *   **Transformation Requires Alignment:** True organisational evolution occurs only when technology roadmaps, business capabilities, and operational delivery are harmonised.
-*   **Deterministic Governance Matters:** Reliable architecture relies on reproducible, version-controlled, and auditable sources of truth to maintain structural integrity.
-*   **AI Augments Operational Intelligence:** AI-native systems must be grounded in deterministic boundaries, providing scalable guidance without undermining operational safety.
+*   **Operationally Trustworthy Governance Matters:** Reliable architecture relies on reproducible, version-controlled, and auditable sources of truth to maintain structural integrity.
+*   **AI Augments Operational Intelligence:** AI native systems must be grounded in governed operational boundaries, providing scalable guidance without undermining operational safety.
 *   **Architecture Should Scale Organisationally:** Architecture must scale participation, not simply governance oversight. Architectural knowledge should be democratised, accessible, and continuously available to the delivery ecosystem at the point of need.
 
 ## 3. Architecture & Governance
 
 Traditional governance models often operate as bottlenecks, relying on manual checkpoints that struggle to keep pace with modern delivery velocity. To remain effective, governance must evolve from a reactive, periodic oversight function into a continuously active participant in the software lifecycle.
 
-By establishing reproducible governance boundaries and preventive operational controls, governance becomes a feature of the delivery workflow itself. This approach shifts architecture from policing implementations to continuously reconciling operational reality against strategic intent. The result is a scalable, governance-aware ecosystem where architectural alignment is maintained continuously, reducing delivery friction and preventing architectural drift.
+By establishing reproducible governance boundaries and preventive operational controls, governance becomes a feature of the delivery workflow itself. This approach shifts architecture from policing implementations to continuously reconciling operational reality against strategic intent. The result is a scalable, governance aware ecosystem where architectural alignment is maintained continuously, reducing delivery friction and preventing architectural drift.
 
-## 4. AI-Native Architecture
+## 4. AI Native Architecture
 
-The introduction of coding agents and AI-driven automation represents a fundamental shift in how software is constructed. However, without equivalent evolution in governance, autonomous systems can inadvertently accelerate architectural entropy. AI-native architecture requires embedding operationally trustworthy governance directly into automated workflows.
+The introduction of coding agents and AI native automation represents a fundamental shift in how software is constructed. However, without equivalent evolution in governance, autonomous systems can inadvertently accelerate architectural entropy. AI native architecture requires embedding operationally trustworthy governance directly into automated workflows.
 
-Governance-aware AI systems operate within defined operational boundaries, ensuring that automation amplifies productivity rather than uncontrolled complexity. By combining governed operational foundations with AI-driven operational intelligence, organisations can safely scale coding-agent collaboration, transforming architecture into a continuously accessible capability that guides delivery in real time.
+Governance aware AI systems operate within defined operational boundaries, ensuring that automation amplifies productivity rather than uncontrolled complexity. By combining governed operational foundations with AI native operational intelligence, organisations can safely scale coding agent collaboration, transforming architecture into a continuously accessible capability that guides delivery in real time.
 
 ## 5. Transformation & Operational Thinking
 

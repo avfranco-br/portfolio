@@ -1,6 +1,6 @@
 # EA4ALL: Democratising Architectural Intelligence
 
-Enterprise Architecture is evolving. The traditional model of centralised governance, once the cornerstone of organisational stability, is increasingly challenged by the velocity and complexity of modern delivery ecosystems. EA4ALL represents a strategic shift in how architectural value is created and consumed—moving from a static oversight function to a continuously available, governance-aware operational intelligence capability.
+Enterprise Architecture is evolving. The traditional model of centralised governance, once the cornerstone of organisational stability, is increasingly challenged by the velocity and complexity of modern delivery ecosystems. EA4ALL represents a strategic shift in how architectural value is created and consumed—moving from a static oversight function to a continuously available, governance aware operational intelligence capability.
 
 ## 1. The Problem
 
@@ -18,25 +18,25 @@ In modern delivery environments, organisational scale and delivery velocity exac
 
 The core insight behind EA4ALL is that for Enterprise Architecture to remain relevant, it must evolve from a centralised discipline into a democratised organisational capability. The objective is not to scale architecture teams linearly with organisational complexity, but to scale architectural participation itself through continuously accessible operational intelligence. Architectural intelligence should not be a destination that teams visit for approval, but a continuously available resource that supports decision-making across the entire delivery lifecycle.
 
-By treating architecture as operational intelligence, we shift the focus from "policing" to "enablement". This allows for scalable architecture participation, where governance-aware guidance is integrated into the operational flow. In an AI-native environment, this means architectural standards are no longer just documented—they are active, executable, and accessible through natural language and automated orchestration.
+By treating architecture as operational intelligence, we shift the focus from "policing" to "enablement". This allows for scalable architecture participation, where governance aware guidance is integrated into the operational flow. In an AI native environment, this means architectural standards are no longer just documented—they are active, executable, and accessible through natural language and automated orchestration.
 
 ## 4. The EA4ALL Approach
 
-EA4ALL operationalises scalable architectural intelligence through a deterministic, governance-aware agentic ecosystem. Rather than centralising architectural interaction into a single conversational interface, the approach operationalises a collaborative architecture intelligence ecosystem where specialised agents manage distinct architectural domains—from visual diagram analysis to portfolio demand management.
+EA4ALL operationalises scalable architectural intelligence through a reproducible, governance aware agentic ecosystem. Rather than centralising architectural interaction into a single conversational interface, the approach operationalises a collaborative architecture intelligence ecosystem where specialised agents manage distinct architectural domains—from visual diagram analysis to portfolio demand management.
 
-This governance-aware architectural intelligence capability leverages vision-native reasoning to analyse architectural artefacts, identifying risks and ensuring alignment with Well-Architected frameworks in real-time. By utilising emerging standards like the Model Context Protocol (MCP), the system connects directly to authoritative documentation and operational data, ensuring that guidance remains accurate and grounded in current reality. This orchestration is bound by deterministic governance boundaries, ensuring that while the intelligence is scalable, it remains reliable and observable.
+This governance aware architectural intelligence capability leverages vision native reasoning to analyse architectural artefacts, identifying risks and ensuring alignment with Well-Architected frameworks in real time. By utilising emerging standards like the Model Context Protocol (MCP), the system connects directly to authoritative documentation and operational data, ensuring that guidance remains accurate and grounded in current reality. This orchestration is bound by reproducible governance boundaries, ensuring that while the intelligence is scalable, it remains reliable and observable.
 
 ## 5. Operational Outcomes
 
-The implementation of this approach has a direct impact on the efficiency and alignment of delivery teams. By democratising access to architectural knowledge, organisations can significantly reduce governance bottlenecks and accelerate architecture-aware delivery. This reduces the operational friction typically associated with large-scale transformation.
+The implementation of this approach has a direct impact on the efficiency and alignment of delivery teams. By democratising access to architectural knowledge, organisations can significantly reduce governance bottlenecks and accelerate architecture aware delivery. This reduces the operational friction typically associated with large-scale transformation.
 
 Practically, this leads to improved implementation alignment, as teams have the tools to self-correct against organisational standards throughout the design process. Scaling architecture participation ensures that the value of Enterprise Architecture is felt not just in the boardroom, but at the coalface of delivery, enabling a more sustainable and resilient transformation journey.
 
 ## 6. Broader Implications
 
-EA4ALL signifies a broader maturity in how architectural intelligence is managed within the enterprise. It moves beyond the experimental use of AI towards the creation of governance-aware AI systems that are deeply integrated into the organisational fabric. This evolution marks a transition toward increasingly AI-enabled delivery ecosystems, where architectural maturity is measured by the accessibility, operational usability, and actionability of guidance.
+EA4ALL signifies a broader maturity in how architectural intelligence is managed within the enterprise. It moves beyond the experimental use of AI towards the creation of governance aware AI systems that are deeply integrated into the organisational fabric. This evolution marks a transition toward increasingly AI enabled delivery ecosystems, where architectural maturity is measured by the accessibility, operational usability, and actionability of guidance.
 
-As Enterprise Architecture evolves, the focus will increasingly shift towards architecture enablement—building the platforms and orchestration layers that allow architectural value to flow freely. EA4ALL provides the infrastructure for this evolution, positioning Enterprise Architecture as a foundational, active participant in the future of the AI-powered enterprise.
+As Enterprise Architecture evolves, the focus will increasingly shift towards architecture enablement—building the platforms and orchestration layers that allow architectural value to flow freely. EA4ALL provides the infrastructure for this evolution, positioning Enterprise Architecture as a foundational, active participant in the future of the AI native enterprise.
 
 ## 7. Closing Reflection
 

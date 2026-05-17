@@ -26,15 +26,15 @@ Operating within multicultural and global environments has reinforced the import
 
 ## Current Focus
 
-My current work focuses on governance-oriented AI operationalisation and the evolution of architecture into operational intelligence systems. I am specifically interested in moving beyond experimental AI towards deterministic enterprise governance, ensuring that while probabilistic reasoning systems provide operational flexibility, a rigorous layer of safety heuristics and architectural guardrails maintains predictability.
+My current work focuses on governance-oriented AI operationalisation and the evolution of architecture into operational intelligence systems. I am specifically interested in moving beyond experimental AI towards operationally trustworthy governance, ensuring that while probabilistic reasoning systems provide operational flexibility, a rigorous layer of safety heuristics and architectural guardrails maintains predictability.
 
 Key areas of ongoing exploration include:
 
 * **Continuous Architecture:** Automating the architectural lifecycle through Architecture-as-Code.
-* **Deterministic AI Safety:** Implementing guardrail agents to manage risk in high-stakes environments.
+* **Governance aware AI safety:** Implementing guardrail agents to manage risk in high-stakes environments.
 * **Strategic Vendor Decoupling:** Building provider-agnostic abstraction layers to maintain strategic optionality.
 * **Reasoning Observability:** Establishing standards for tracing and auditing the decision-making paths of autonomous agents.
 
 ## Closing Perspective
 
-At its core, my work is about the disciplined evolution of complex systems. Whether integrating global enterprise processes or orchestrating multi-agent reasoning loops, the objective remains the same: to create the deterministic foundations that make innovation safe for the enterprise. I remain focused on the long-term operational health of systems and am always open to collaborating with those who value architectural integrity and sustainable transformation.
+At its core, my work is about the disciplined evolution of complex systems. Whether integrating global enterprise processes or orchestrating multi agent reasoning loops, the objective remains the same: to create the reproducible foundations that make innovation safe for the enterprise. I remain focused on the long-term operational health of systems and am always open to collaborating with those who value architectural integrity and sustainable transformation.

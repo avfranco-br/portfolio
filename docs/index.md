@@ -4,7 +4,7 @@
 
 This platform explores the intersection of enterprise architecture, operational governance, and the evolution of scalable transformation systems. It is dedicated to shifting architecture from static documentation into active operational intelligence that aligns strategic intent with delivery reality.
 
-By combining enterprise integration realism with modern AI orchestration and observability, the focus here is on establishing sustainable foundations for safe AI operationalisation. This approach prioritises structural constraints, feedback loops, and governance-aware operational foundations to reduce architectural drift and support long-term operational sustainability.
+By combining enterprise integration realism with modern AI orchestration and observability, the focus here is on establishing sustainable foundations for safe AI operationalisation. This approach prioritises structural constraints, feedback loops, and governance aware operational foundations to reduce architectural drift and support long-term operational sustainability.
 
 Curated by an Enterprise Architect with four decades of experience across complex enterprise systems, this portfolio serves as an entry point into a broader ecosystem of architecture operationalisation and capability-driven transformation.
 
@@ -12,7 +12,7 @@ Curated by an Enterprise Architect with four decades of experience across comple
 
 *   **Enterprise Transformation:** Aligning enterprise simplification, roadmap evolution, and operating model change through capability-driven architecture.
 *   **Continuous Architecture:** Aligning architectural intent with implementation reality through operationally connected governance and Architecture-as-Code.
-*   **Governance-Oriented AI Operationalisation:** Designing operational AI workflows with deterministic guardrails, observability, and scalable governance controls.
+*   **Governance-Oriented AI Operationalisation:** Designing operational AI workflows with operationally trustworthy guardrails, observability, and scalable governance controls.
 *   **Strategic Platform Flexibility:** Reducing vendor lock-in through provider-independent operational architecture.
 *   **Systems Thinking:** Prioritising structural constraints and feedback loops to support sustainable enterprise transformation.
 *   **Architecture Operationalisation:** Establishing operational intelligence loops that continuously align delivery with architectural intent.

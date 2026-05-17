@@ -12,7 +12,7 @@ I am particularly interested in discussing:
 
 *   Continuous Architecture and Architecture-as-Code
 *   Governance-oriented AI operationalisation
-*   Scalable coding-agent collaboration and orchestration
+*   Scalable coding agent collaboration and orchestration
 *   Operationally trustworthy governance within probabilistic systems
 *   Capability-driven enterprise transformation
 *   Platform thinking and strategic vendor decoupling
