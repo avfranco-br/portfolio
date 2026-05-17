@@ -1,0 +1,16 @@
+canonical_terms:
+  "AI native":
+    reject:
+      - "AI-native"
+      - "AI powered"
+  "coding agent":
+    reject:
+      - "coding-agent"
+  "operational intelligence":
+    reject: []
+  "governance aware":
+    reject: []
+  "architecture operationalisation":
+    reject: []
+  "repository-driven":
+    reject: []

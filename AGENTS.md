@@ -22,5 +22,13 @@ This repository uses the **Continuous Architecture System (CAS)** to ensure arch
 - **cas-add-or-modify-feature**: Use for any new feature or change to existing behavior.
 - **cas-refactor-module**: Use for restructuring code without changing behavior.
 
+## Continuous Governance Validation
+
+The repository includes a lightweight automation layer to ensure structural and content integrity:
+
+1. **Build Integrity**: All changes are validated using `mkdocs build --strict` to prevent broken navigation or missing targets.
+2. **Terminology Consistency**: A terminology policy (`governance/terminology.yaml`) defines canonical terms. The `validate_governance.py` script checks for rejected variants to maintain narrative consistency.
+3. **CI Orchestration**: The `portfolio-governance` workflow runs automatically on every pull request and push to `main`.
+
 ---
 *This file is a governance contract. Do not modify without an approved architectural decision.*
