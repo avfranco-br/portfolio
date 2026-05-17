@@ -23,7 +23,7 @@ You are welcome to connect or review my work through the following channels:
 
 *   **LinkedIn:** [Alexandre Franco](https://www.linkedin.com/in/avfranco/)
 *   **GitHub:** [avfranco-br](https://github.com/avfranco-br)
-*   **Email:** [Contact via Email](mailto:placeholder@example.com)
+*   **Email:** [Contact via Email](mailto:hello@ideas-to-life.ai)
 
 ## Closing Reflection
 
