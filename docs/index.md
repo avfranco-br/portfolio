@@ -22,7 +22,7 @@ My approach prioritises structural constraints, feedback loops, and repository-d
 **[The Continuous Architecture System (CAS)](narratives/cas.md)**
 Eliminating documentation drift through repository-driven capability extraction and Architecture-as-Code governance.
 
-**[Architecting Governance-Oriented AI (Runner Agentic Intelligence)](narratives/rai.md)**
+**[Architecting Governance-Oriented AI (Runner Agentic Intelligence)](narratives/runner-agentic-intelligence.md)**
 Designing deterministic guardrails and observability approaches for governance-oriented AI operationalisation within enterprise environments.
 
 **[EA4ALL: Architecture AI Workforce](narratives/ea4all.md)**

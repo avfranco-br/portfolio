@@ -56,10 +56,12 @@ plugins:
 nav:
   - Home: index.md
   - About: about.md
-  - Architecture Philosophy: philosophy.md
+  - Architecture Philosophy: architecture-philosophy.md
   - Transformation Narratives:
       - Continuous Architecture System (CAS): narratives/cas.md
-      - Governance-Oriented AI (RAI): narratives/rai.md
-      - EA4All / Architecture Visibility: narratives/ea4all.md
+      - Runner-Agentic Intelligence (RAI): narratives/runner-agentic-intelligence.md
+      - Enterprise Architecture for All (EA4ALL): narratives/ea4all.md
+      - Enterprise Transformation Leadership (BAT): narratives/bat-transformation.md
+      - Reshaping Architecture Operating Model (BBC Studios): narratives/bbc-studios-digital-evolution.md
   - Selected Work: selected-work.md
   - Contact: contact.md
