@@ -18,8 +18,11 @@ def validate_terminology(policy_path, docs_dir):
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
                 
-                # Strip code blocks to avoid false positives in code
-                content = re.sub(r'```.*?```', '', content, flags=re.DOTALL)
+                # Strip fenced code blocks to avoid false positives in code.
+                # Markdown allows both backtick (```...```) and tilde (~~~...~~~) fences.
+                # We replace them with newlines to preserve line numbers.
+                content = re.sub(r'```.*?```', lambda m: '\n' * m.group(0).count('\n'), content, flags=re.DOTALL)
+                content = re.sub(r'~~~.*?~~~', lambda m: '\n' * m.group(0).count('\n'), content, flags=re.DOTALL)
                 content = re.sub(r'`.*?`', '', content)
                 
                 # Strip markdown link targets to avoid false positives in URLs

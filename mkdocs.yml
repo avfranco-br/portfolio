@@ -1,11 +1,11 @@
-site_name: Ideas to Life | Architecture & Governance
+site_name: Alexandre Franco | Enterprise Architect & AI Transformation Advisor
 site_description: Operational Architecture, Governance Systems, and Sustainable Transformation
 site_author: Alexandre Franco
 site_url: https://avfranco-br.github.io/portfolio/
 
 theme:
   name: material
-  favicon: assets/images/favicon.png
+  favicon: assets/images/alexandrefranco.png
   icon:
     logo: material/library
     repo: fontawesome/brands/github
@@ -67,4 +67,6 @@ nav:
   - Governance Systems:
       - Continuous Architecture System (CAS): narratives/cas.md
       - Governance Aware Coding Agent Collaboration: narratives/cas-coding-agent-collaboration.md
+  - Architecture Diagrams:
+      - Layered Architecture: diagrams/architecture.md
   - Contact: contact.md

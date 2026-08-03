@@ -4,7 +4,11 @@ on:
   pull_request:
     branches: [ main, master ]
     paths:
-      - 'src/**'
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - 'scripts/**'
+      - 'governance/**'
+      - '.cas/**'
 
 jobs:
   validate-sdd:
@@ -18,7 +22,7 @@ jobs:
       - name: Validate Specification Presence
         run: |
           echo "[CAS][INFO] Validating Specification-Driven Development (SDD) compliance..."
-          
+
           # Check for exemptions in commit messages
           EXEMPT=$(git log --format=%B -n 1 ${{ github.event.pull_request.head.sha }} | grep -E "\[skip-governance\]|\[bugfix\]" || true)
           if [ -n "$EXEMPT" ]; then
@@ -28,22 +32,35 @@ jobs:
 
           # Get list of changed files
           CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...${{ github.event.pull_request.head.sha }})
-          
-          HAS_SRC_CHANGES=false
+
+          HAS_STRUCTURAL_CHANGES=false
           HAS_SPEC_CHANGES=false
-          
+
+          # Auxiliary paths that do not require a spec
+          AUXILIARY_PATTERN='^(docs/assets/|docs/diagrams/)'
+
           for file in $CHANGED_FILES; do
-            if [[ $file == src/* ]]; then
-              HAS_SRC_CHANGES=true
+            # Skip auxiliary paths (binary assets, Mermaid sources, etc.)
+            if [[ $file =~ $AUXILIARY_PATTERN ]]; then
+              continue
             fi
+
+            # Structural paths require a spec
+            if [[ $file == docs/* ]] || [[ $file == mkdocs.yml ]] || \
+               [[ $file == scripts/* ]] || [[ $file == governance/* ]] || \
+               [[ $file == .cas/* ]]; then
+              HAS_STRUCTURAL_CHANGES=true
+            fi
+
             if [[ $file == specs/* ]] || [[ $file == .specify/* ]]; then
               HAS_SPEC_CHANGES=true
             fi
           done
 
-          if [ "$HAS_SRC_CHANGES" = true ] && [ "$HAS_SPEC_CHANGES" = false ]; then
-            echo "[CAS][ERROR] Code changes detected in 'src/' without corresponding specification in 'specs/' or '.specify/'."
-            echo "[CAS][HINT] Please create a specification before implementing features. Use '[bugfix]' in the commit message to bypass for trivial fixes."
+          if [ "$HAS_STRUCTURAL_CHANGES" = true ] && [ "$HAS_SPEC_CHANGES" = false ]; then
+            echo "[CAS][ERROR] Structural changes detected without a corresponding specification in 'specs/' or '.specify/'."
+            echo "[CAS][HINT] Create a specification under 'specs/<feature-name>/spec.md' before structural changes."
+            echo "[CAS][HINT] Use '[bugfix]' or '[skip-governance]' in the commit message to bypass for trivial fixes."
             exit 1
           fi
 
