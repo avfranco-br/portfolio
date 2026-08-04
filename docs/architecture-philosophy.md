@@ -1,6 +1,10 @@
-# Architecture Philosophy
-
-## 1. Introduction
+---
+title: Architecture Philosophy — Alexandre Franco
+description: Operating principles for architecture, governance, and AI native delivery in complex enterprises.
+tags:
+  - architecture
+  - governance
+---
 
 Architecture in the modern enterprise is fundamentally an operational capability, not merely an exercise in static documentation. It serves as the connective tissue that aligns strategic intent with engineering reality, ensuring that complex organisations can move quickly without sacrificing coherence or safety.
 

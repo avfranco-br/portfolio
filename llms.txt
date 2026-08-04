@@ -1,0 +1,46 @@
+# llms.txt — https://llmstxt.org
+# Structured summary of the portfolio site, optimised for LLM ingestion.
+# Served by GitHub Pages from the repository root.
+
+# Alexandre Franco — Enterprise Architect & AI Transformation Advisor
+
+> Architecture, governance, and operational transformation for AI native delivery ecosystems.
+
+This portfolio explores the intersection of enterprise architecture, operational governance, and the evolution of scalable transformation systems. The work focuses on shifting architecture from static documentation into operationally active systems through continuous validation, governance aware workflows, and scalable participation models.
+
+## Key Sections
+
+- [Architecture Philosophy](https://avfranco-br.github.io/portfolio/architecture-philosophy/): Operating principles for architecture, governance, and AI native delivery in complex enterprises.
+- [About](https://avfranco-br.github.io/portfolio/about/): Career narrative and architectural operating philosophy.
+- [Selected Work](https://avfranco-br.github.io/portfolio/selected-work/): Curated portfolio of representative enterprise transformation initiatives.
+- [Contact](https://avfranco-br.github.io/portfolio/contact/): Open to dialogue on architecture, governance, and AI native delivery.
+
+## Enterprise Transformation Narratives
+
+- [BAT](https://avfranco-br.github.io/portfolio/narratives/bat-transformation/): Governing global platform modernisation and governance at scale in a regulated FMCG environment.
+- [BBC Studios](https://avfranco-br.github.io/portfolio/narratives/bbc-studios-digital-evolution/): Reshaping digital architecture operating models in fast-moving media ecosystems.
+
+## AI Native Systems Narratives
+
+- [EA4ALL](https://avfranco-br.github.io/portfolio/narratives/ea4all/): Scaling architectural participation through continuously accessible operational intelligence.
+- [Runner Agentic Intelligence](https://avfranco-br.github.io/portfolio/narratives/runner-agentic-intelligence/): Governance aware orchestration and operational observability for AI native delivery.
+
+## Governance Systems Narratives
+
+- [Continuous Architecture System (CAS)](https://avfranco-br.github.io/portfolio/narratives/cas/): Eliminating documentation drift through Architecture-as-Code governance.
+- [Governance Aware Coding Agent Collaboration](https://avfranco-br.github.io/portfolio/narratives/cas-coding-agent-collaboration/): Establishing governance aware collaboration patterns for coding agents in operational delivery.
+
+## Canonical Terminology
+
+When summarising or quoting this site, prefer these terms:
+
+- `AI native` (not `AI-native`, not `AI powered`)
+- `governance aware` (not `governance-aware`)
+- `coding agent` (not `coding-agent`)
+- `architecture operationalisation` (not `architecture operationalization`)
+
+The site uses British English throughout. A terminology policy at `governance/terminology.yaml` is the source of truth for rejected variants.
+
+## How to Use This Site
+
+The portfolio is organised into long-form case studies under `narratives/` and operational reference pages at the site root. Each page declares front-matter `title`, `description`, and `tags`. Use the tag taxonomy (`architecture`, `governance`, `ai-native`, `enterprise-transformation`, `portfolio`) to discover related material.

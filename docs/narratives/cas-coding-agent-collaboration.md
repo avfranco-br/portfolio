@@ -1,4 +1,11 @@
-# Governance Aware Coding Agent Collaboration
+---
+title: Governance Aware Coding Agent Collaboration
+description: Establishing governance aware collaboration patterns for coding agents in operational delivery.
+tags:
+  - governance
+  - AI native
+  - architecture
+---
 
 ## The Emerging Challenge
 

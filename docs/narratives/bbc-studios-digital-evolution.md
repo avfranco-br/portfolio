@@ -1,4 +1,10 @@
-# Reshaping Digital Architecture Operating Models
+---
+title: BBC Studios — Reshaping Digital Architecture Operating Models
+description: Modernising architectural operating models for digital evolution in fast-moving media ecosystems.
+tags:
+  - enterprise-transformation
+  - architecture
+---
 
 ## The Problem
 

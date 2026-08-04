@@ -1,0 +1,25 @@
+# robots.txt — served by GitHub Pages from the repository root.
+# Allows all well-behaved crawlers. Points search engines to the sitemap.
+
+User-agent: *
+Allow: /
+
+# AI-specific crawlers are explicitly allowed. The portfolio is meant to be
+# discoverable by both humans and LLMs; see /llms.txt for the structured summary.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://avfranco-br.github.io/portfolio/sitemap.xml

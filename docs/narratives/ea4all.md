@@ -1,4 +1,10 @@
-# EA4ALL: Democratising Architectural Intelligence
+---
+title: EA4ALL — Democratising Architectural Intelligence
+description: Scaling architectural participation through continuously accessible, governance aware operational intelligence.
+tags:
+  - AI native
+  - architecture
+---
 
 Enterprise Architecture is evolving. The traditional model of centralised governance, once the cornerstone of organisational stability, is increasingly challenged by the velocity and complexity of modern delivery ecosystems. EA4ALL represents a strategic shift in how architectural value is created and consumed—moving from a static oversight function to a continuously available, governance aware operational intelligence capability.
 

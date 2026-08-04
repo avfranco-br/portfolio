@@ -1,6 +1,9 @@
-# Contact
-
-## Professional Dialogue
+---
+title: Contact — Alexandre Franco
+description: Open to thoughtful dialogue on architecture, governance, and AI native delivery.
+tags:
+  - portfolio
+---
 
 I welcome thoughtful conversations regarding enterprise architecture, governance enablement, and the operationalisation of AI native systems. If you are exploring how to align business capability with technical execution, or navigating the complexities of large-scale organisational transformation, I am always open to exchanging ideas and perspectives.
 

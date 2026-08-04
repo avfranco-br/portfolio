@@ -1,6 +1,10 @@
-# Selected Work
-
-## Introduction
+---
+title: Selected Work — Alexandre Franco
+description: Curated portfolio of representative enterprise transformation and architecture leadership initiatives.
+tags:
+  - portfolio
+  - enterprise-transformation
+---
 
 This selection curates representative transformation initiatives and architecture leadership experiences that collectively demonstrate the operationalisation of architecture within complex enterprise environments. It reflects a commitment to the principle that architecture must serve as an active engine for growth and operational control, rather than a collection of static artifacts.
 

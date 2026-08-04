@@ -1,4 +1,10 @@
-# Governance Aware AI Native Delivery
+---
+title: Runner Agentic Intelligence — Governance Aware AI Native Delivery
+description: Exploring governance aware orchestration and operational observability for AI native delivery systems.
+tags:
+  - AI native
+  - governance
+---
 
 How the Runner Agentic Intelligence initiative explored governance aware AI native software construction, coding agent orchestration, operational observability, and scalable architecture participation through real world experimentation with autonomous and semi autonomous delivery workflows.
 

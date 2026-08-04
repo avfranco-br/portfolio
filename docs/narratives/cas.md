@@ -1,4 +1,10 @@
-# The Continuous Architecture System (CAS)
+---
+title: The Continuous Architecture System (CAS)
+description: Eliminating documentation drift through repository-driven capability extraction and Architecture-as-Code governance.
+tags:
+  - governance
+  - architecture
+---
 
 ## The Problem
 

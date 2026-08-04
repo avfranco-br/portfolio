@@ -1,9 +1,13 @@
 ---
 title: Alexandre Franco — Enterprise Architect & AI Transformation Advisor
 description: Architecture, governance, and operational transformation for AI native delivery ecosystems.
+tags:
+  - architecture
+  - governance
+  - AI native
 ---
 
-# Architecture. Governance. Operational Transformation. AI Enablement
+# Architecture. Governance. AI. Transformation.
 
 **Aligning business capability, governance, and operational architecture within complex enterprise environments.**
 
@@ -46,4 +50,4 @@ Improving enterprise-wide architectural transparency, agility, and collaboration
 
 This portfolio reflects an ongoing exploration into how architecture, governance, operational intelligence, and AI native systems can evolve together to support sustainable organisational transformation.
 
-[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Selected Work](selected-work.md)
+[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Selected Work](selected-work.md) | [Book an Intro Call](https://calendly.com/mostelli/introduction-call)

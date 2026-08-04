@@ -2,6 +2,10 @@
 
 set -e
 
+echo "Generating favicon variants from source portrait..."
+python scripts/build_favicons.py
+
+echo ""
 echo "Running MkDocs structural validation..."
 mkdocs build --strict
 

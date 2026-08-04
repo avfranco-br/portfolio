@@ -1,4 +1,10 @@
-# Governing Enterprise Transformation at Global Scale
+---
+title: BAT — Governing Enterprise Transformation at Global Scale
+description: Leading global platform modernisation and governance at scale in a regulated FMCG environment.
+tags:
+  - enterprise-transformation
+  - governance
+---
 
 Large-scale global organisations operate within a landscape of inherent friction. The challenge of maintaining operational consistency across fragmented technology ecosystems, while simultaneously navigating the complexity of global governance and local agility, creates a significant barrier to sustainable evolution. In these environments, transformation initiatives often struggle with disconnected delivery models and a lack of alignment between strategic intent and regional execution.
 

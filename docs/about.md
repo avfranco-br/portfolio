@@ -1,6 +1,9 @@
 ---
 title: About — Alexandre Franco
 description: Career narrative and architectural operating philosophy.
+tags:
+  - architecture
+  - portfolio
 ---
 
 # About

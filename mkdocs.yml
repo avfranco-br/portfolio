@@ -7,6 +7,13 @@ site_url: https://avfranco-br.github.io/portfolio/
 repo_url: https://github.com/avfranco-br/portfolio
 edit_uri: edit/main/docs/
 
+# Directories to watch for live reloading during `mkdocs serve`
+watch:
+  - docs
+
+hooks:
+  - scripts/mkdocs_hooks.py
+
 # Validation policy — declared in code so it survives anyone forgetting the CLI flag.
 # Each sub-option is set to `warn` so the corresponding check emits a warning,
 # which `mkdocs build --strict` then promotes to a build failure.
@@ -24,9 +31,9 @@ validation:
 
 theme:
   name: material
-  favicon: assets/images/alexandrefranco.png
+  favicon: assets/images/favicon.png
+  logo: assets/images/favicon-source.png
   icon:
-    logo: material/library
     repo: fontawesome/brands/github
   features:
     - navigation.tabs
@@ -69,9 +76,16 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - minify:
-      minify_html: true
   - social
+  - tags
+
+# Cloudflare Web Analytics — cookie-less, privacy-friendly, no consent banner required.
+# Replace YOUR_BEACON_TOKEN_HERE in docs/js/cloudflare-insights.js with the real token
+# from the Cloudflare dashboard (Website → Analytics → Web Analytics → enable for the
+# zone → copy beacon token). Until replaced, the script returns 404 and analytics are
+# silently disabled.
+extra_javascript:
+  - js/cloudflare-insights.js
 
 nav:
   - Home: index.md
