@@ -11,7 +11,9 @@ tags:
   - AI native
 ---
 
-I'm Alexandre Franco. Over the past 20 years, I've led architecture, governance, and operational transformation across complex global enterprises. This platform explores the intersection of enterprise architecture, operational governance, and the evolution of scalable transformation systems. It is dedicated to shifting architecture from static documentation into active operational intelligence that aligns strategic intent with delivery reality.
+I'm Alexandre Franco. an Enterprise Architect with four decades of experience across complex enterprise environments, helping organisations navigate changes bridging strategy, architecture, governance, delivery and more recent AI operationalisation.
+
+This site is my career portfolio: selected engagements, architecture philosophy, and the thinking behind the work I lead. I publish ongoing experiments and patterns at [Ideas to Life](https://ideas-to-life.ai).
 
 <h2 id="selected-work">Selected Work</h2>
 
