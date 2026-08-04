@@ -1,3 +1,8 @@
+---
+title: About — Alexandre Franco
+description: Career narrative and architectural operating philosophy.
+---
+
 # About
 
 ## Introduction

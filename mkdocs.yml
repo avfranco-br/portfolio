@@ -1,7 +1,26 @@
 site_name: Alexandre Franco | Enterprise Architect & AI Transformation Advisor
-site_description: Operational Architecture, Governance Systems, and Sustainable Transformation
+site_description: Operational Architecture, Governance Systems, AI Enablement and Sustainable Transformation
 site_author: Alexandre Franco
 site_url: https://avfranco-br.github.io/portfolio/
+
+# Repository link — enables "Edit this page" links on every page
+repo_url: https://github.com/avfranco-br/portfolio
+edit_uri: edit/main/docs/
+
+# Validation policy — declared in code so it survives anyone forgetting the CLI flag.
+# Each sub-option is set to `warn` so the corresponding check emits a warning,
+# which `mkdocs build --strict` then promotes to a build failure.
+# Valid log levels: 'warn', 'info', 'ignore'. (No 'strict' at this layer.)
+validation:
+  links:
+    not_found: warn
+    absolute_links: warn
+    unrecognized_links: warn
+    anchors: info
+  nav:
+    omitted_files: info
+    not_found: warn
+    absolute_links: warn
 
 theme:
   name: material
@@ -18,6 +37,7 @@ theme:
     - search.suggest
     - search.highlight
     - toc.integrate
+    - content.action.edit
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
