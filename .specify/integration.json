@@ -1,4 +1,15 @@
 {
-  "integration": "gemini",
-  "version": "0.8.3"
+  "version": "0.15.2",
+  "integration_state_schema": 1,
+  "installed_integrations": [
+    "agy"
+  ],
+  "integration_settings": {
+    "agy": {
+      "script": "sh",
+      "invoke_separator": "-"
+    }
+  },
+  "integration": "agy",
+  "default_integration": "agy"
 }
