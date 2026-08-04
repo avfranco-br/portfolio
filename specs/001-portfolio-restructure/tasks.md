@@ -14,7 +14,7 @@
 
 **Purpose**: Configure MkDocs overrides directory setting in `mkdocs.yml`
 
-- [ ] T001 Configure `theme.custom_dir: overrides` in `mkdocs.yml`
+- [x] T001 Configure `theme.custom_dir: overrides` in `mkdocs.yml`
 
 ---
 
@@ -22,7 +22,7 @@
 
 **Purpose**: Core template override structure required before homepage customization
 
-- [ ] T002 [P] Create base layout override in `overrides/home.html` extending Material `main.html`
+- [x] T002 [P] Create base layout override in `overrides/home.html` extending Material `main.html`
 
 ---
 
@@ -34,9 +34,9 @@
 
 ### Implementation for User Story 1
 
-- [ ] T003 [P] [US1] Update frontmatter in `docs/index.md` with `template: home.html` and `hide: [navigation, toc]`
-- [ ] T004 [P] [US1] Implement full-width Hero HTML template block in `overrides/home.html` per `homepage-hero-contract.md`
-- [ ] T005 [US1] Add headshot placeholder container comment `<!-- TODO: replace with headshot, see Spec 003 R4 -->` in `overrides/home.html`
+- [x] T003 [P] [US1] Update frontmatter in `docs/index.md` with `template: home.html` and `hide: [navigation, toc]`
+- [x] T004 [P] [US1] Implement full-width Hero HTML template block in `overrides/home.html` per `homepage-hero-contract.md`
+- [x] T005 [US1] Add headshot placeholder container comment `<!-- TODO: replace with headshot, see Spec 003 R4 -->` in `overrides/home.html`
 
 **Checkpoint**: At this point, User Story 1 (MVP) is fully functional and testable independently.
 
@@ -50,8 +50,8 @@
 
 ### Implementation for User Story 2
 
-- [ ] T006 [P] [US2] Implement Card Grid component `<div class="grid cards" markdown>` in `docs/index.md` for BAT, BBC Studios, EA4ALL, and CAS
-- [ ] T007 [P] [US2] Add Selected Work Card Grid component to `docs/selected-work.md` per `homepage-hero-contract.md`
+- [x] T006 [P] [US2] Implement Card Grid component `<div class="grid cards" markdown>` in `docs/index.md` for BAT, BBC Studios, EA4ALL, and CAS
+- [x] T007 [P] [US2] Add Selected Work Card Grid component to `docs/selected-work.md` per `homepage-hero-contract.md`
 
 **Checkpoint**: User Stories 1 AND 2 are independently functional.
 
@@ -65,10 +65,10 @@
 
 ### Implementation for User Story 3
 
-- [ ] T008 [P] [US3] Organize prose in `docs/narratives/bat-transformation.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
-- [ ] T009 [P] [US3] Organize prose in `docs/narratives/bbc-studios-digital-evolution.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
-- [ ] T010 [P] [US3] Organize prose in `docs/narratives/ea4all.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
-- [ ] T011 [P] [US3] Organize prose in `docs/narratives/cas.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
+- [x] T008 [P] [US3] Organize prose in `docs/narratives/bat-transformation.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
+- [x] T009 [P] [US3] Organize prose in `docs/narratives/bbc-studios-digital-evolution.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
+- [x] T010 [P] [US3] Organize prose in `docs/narratives/ea4all.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
+- [x] T011 [P] [US3] Organize prose in `docs/narratives/cas.md` under `## Challenge`, `## Approach`, and `## Outcome` per `narrative-structure-contract.md`
 
 **Checkpoint**: All Tier 1 user stories are complete and testable independently.
 
@@ -93,9 +93,9 @@
 
 **Purpose**: Final verification and zero-drift governance check
 
-- [ ] T016 [P] Run `bash scripts/run_governance.sh` to verify `mkdocs build --strict` and terminology check pass
-- [ ] T017 [P] Run `pytest tests/` test suite to verify 0 regressions
-- [ ] T018 Execute `quickstart.md` validation scenarios and word count sanity check script
+- [x] T016 [P] Run `bash scripts/run_governance.sh` to verify `mkdocs build --strict` and terminology check pass
+- [x] T017 [P] Run `pytest tests/` test suite to verify 0 regressions
+- [x] T018 Execute `quickstart.md` validation scenarios and word count sanity check script
 
 ---
 

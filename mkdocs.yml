@@ -31,6 +31,7 @@ validation:
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/images/favicon.png
   logo: assets/images/favicon-source.png
   icon:

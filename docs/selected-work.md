@@ -14,41 +14,83 @@ By focusing on the alignment of strategic intent, governance enablement, and exe
 
 The following initiatives represent the management of large-scale organisational change and the evolution of architectural operating models across global enterprise and digital ecosystems.
 
-### BAT: Governing Global Transformation
-**Strategic Summary:** Leading the modernisation of global enterprise platforms and governance frameworks within a highly regulated, high-stakes FMCG environment.
+<div class="grid cards" markdown>
 
+-   :material-office-building: **BAT: Governing Global Transformation**
+
+    ---
+
+    Modernising global enterprise platforms and governance frameworks in a highly regulated FMCG environment.
+
+    [:octicons-arrow-right-24: Read full narrative](narratives/bat-transformation.md)
+
+-   :material-television-classic: **BBC Studios: Reshaping Digital Operating Models**
+
+    ---
+
+    Modernising operating models to support scalable digital evolution and cross-functional transformation inside media ecosystems.
+
+    [:octicons-arrow-right-24: Read full narrative](narratives/bbc-studios-digital-evolution.md)
+
+</div>
+
+### Detailed Summaries
+
+#### BAT: Governing Global Transformation
 *   **The Operational Challenge:** Navigating the friction of extreme fragmentation across a global workforce where regional operational needs frequently collided with global strategic standards, particularly within Scientific Research & Development.
 *   **Architectural Contribution:** Establishing comprehensive architectural governance and platform modernisation strategies, transitioning from deep technical integration to senior-level architectural leadership and global SAP transformation.
 *   **Transformation Significance:** Demonstrated that sustainable transformation is achieved by positioning architecture as an active "connective tissue" that aligns global standardisation with the operational autonomy required for regional execution.
 
-### BBC Studios: Reshaping Digital Operating Models
-**Strategic Summary:** Modernising architectural operating models to support scalable digital evolution and cross-functional transformation inside fast-moving media ecosystems.
-
+#### BBC Studios: Reshaping Digital Operating Models
 *   **The Operational Challenge:** Overcoming the systemic friction caused by architectural organisations becoming disconnected from the rapid pace of digital delivery, resulting in a drift between business roadmaps and platform evolution.
 *   **Architectural Contribution:** Developing capability-based business-technology roadmaps and introducing architecture-led enablement for emerging AI capabilities, ensuring technology investments remained grounded in organisational priorities.
 *   **Transformation Significance:** Evolved architecture from an isolated oversight function into an embedded operational capability, enabling the organisation to align strategy, delivery, and innovation more effectively across interconnected business domains.
 
-## AI native Architecture & Governance Systems
+## AI Native Architecture & Governance Systems
 
 These initiatives explore the intersection of architectural intelligence, automated software construction, and operationally trustworthy governance within AI native delivery environments.
 
-### CAS: Continuous Architecture Governance
-**Strategic Summary:** Eliminating documentation drift through repository-driven capability extraction and Architecture-as-Code governance.
+<div class="grid cards" markdown>
 
+-   :material-shield-sync: **CAS: Continuous Architecture Governance**
+
+    ---
+
+    Eliminating documentation drift through repository-driven capability extraction and Architecture-as-Code governance.
+
+    [:octicons-arrow-right-24: Read full narrative](narratives/cas.md)
+
+-   :material-brain: **EA4ALL: Democratising Architectural Intelligence**
+
+    ---
+
+    Scaling architectural participation through continuously accessible, governance aware operational intelligence.
+
+    [:octicons-arrow-right-24: Read full narrative](narratives/ea4all.md)
+
+-   :material-cogs: **Runner-Agentic Intelligence (RAI)**
+
+    ---
+
+    Exploring governance aware orchestration and operational intelligence for AI native delivery systems.
+
+    [:octicons-arrow-right-24: Read full narrative](narratives/runner-agentic-intelligence.md)
+
+</div>
+
+### Detailed Summaries
+
+#### CAS: Continuous Architecture Governance
 *   **Architectural Insight:** Architecture must operate as a living system where intent is continuously reconciled against the repository state through reproducible feedback loops.
 *   **Operational Significance:** Shifts governance "left" into the software construction process itself, establishing preventive operational guardrails that guide implementation from the moment code is created.
 *   **Governance Implication:** Establishes the foundation for governance aware coding agent collaboration, ensuring that automation amplifies productivity without accelerating architectural entropy.
 
-### EA4ALL: Democratising Architectural Intelligence
-**Strategic Summary:** Scaling architectural participation through continuously accessible, governance aware operational intelligence.
-
+#### EA4ALL: Democratising Architectural Intelligence
 *   **Architectural Insight:** Architectural value is maximised when it moves from a centralised bottleneck to a democratised organisational capability accessible at the point of need.
 *   **Operational Significance:** Utilises specialised agentic ecosystems to manage distinct architectural domains, connecting directly to authoritative documentation and operational data.
 *   **Transformation Implication:** Transforms architecture into an active participant in the future of the enterprise, allowing governance and innovation to scale together through AI native participation.
 
-### Runner-Agentic Intelligence (RAI)
-**Strategic Summary:** Exploring governance aware orchestration and operational intelligence for AI native delivery systems.
-
+#### Runner-Agentic Intelligence (RAI)
 *   **Architectural Insight:** AI native delivery requires governance aware orchestration models rather than isolated prompt engineering to manage non-deterministic generation.
 *   **Operational Significance:** Implements structured tracing and orchestration-driven workflows to transform "black box" agent reasoning into a transparent, debuggable process.
 *   **Governance Implication:** Proves that operationally trustworthy governance and AI acceleration are not mutually exclusive, ensuring that AI native delivery remains strategically aligned and operationally sound.
