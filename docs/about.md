@@ -1,18 +1,84 @@
 ---
 title: About — Alexandre Franco
-description: Career narrative and architectural operating philosophy.
+description: Career narrative, professional certifications, career history, and architectural operating philosophy.
 tags:
   - architecture
   - portfolio
 ---
 
-# About
+# About Alexandre Franco
+
+<div style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+  <a href="../assets/alexandre-franco-cv.pdf" target="_blank" class="md-button md-button--primary">Download Full CV (PDF)</a>
+</div>
+
+## Professional Certifications & Qualifications
+
+<div class="grid cards" markdown>
+
+-   :material-certificate: **TOGAF 9 Certified Architect**
+
+    ---
+
+    Enterprise Architecture Methodology & Governance Standard.
+
+-   :material-certificate: **SAFe Certified Architect**
+
+    ---
+
+    Scaled Agile Framework for Enterprise Delivery.
+
+-   :material-certificate: **LeanIX Certified Practitioner**
+
+    ---
+
+    Enterprise Architecture Management & Application Portfolio Management.
+
+</div>
 
 ## Introduction
 
 I am a systems-first Enterprise Architect and technology leader with a career defined by the operationalisation of architecture and the steering of large-scale organisational change. My focus is on creating sustainable digital foundations where business strategy, governance, and engineering execution operate as a coherent system.
 
 Throughout my journey, I have remained committed to the principle that architecture must be more than a collection of static artifacts; it must serve as an active engine for growth and operational control. By applying systems thinking to complex enterprise environments, I help organisations evolve safely, ensuring that technical transformation remains grounded in business capability and long-term resilience.
+
+## Career Timeline & History
+
+<div class="grid cards" markdown>
+
+-   :material-office-building: **Senior Director, Agentic AI Systems Architecture**
+
+    ---
+
+    **WPP Media** | Dec 2025 – Present
+
+    Architecting agentic AI platforms, multi-agent orchestration frameworks, and automated tool permission safety guardrails for global delivery networks.
+
+-   :material-television-classic: **Lead Enterprise Architect**
+
+    ---
+
+    **BBC Studios** | Nov 2021 – Nov 2025
+
+    Leading enterprise architecture, digital platform evolution, and capability-based technology roadmaps across global media operations.
+
+-   :material-briefcase: **Enterprise Architect & Global Solution Architect**
+
+    ---
+
+    **British American Tobacco (BAT)** | 2011 – 2021
+
+    Governing global SAP ERP modernisation, Scientific R&D architectural compliance, and enterprise platform integration across multi-country operations.
+
+-   :material-school: **MSc Computer Science**
+
+    ---
+
+    **Mogi das Cruzes University** | 1988 – 1991
+
+    Foundational computer science, systems analysis, and software engineering degree.
+
+</div>
 
 ## Career Evolution
 

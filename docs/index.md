@@ -1,21 +1,57 @@
 ---
+template: home.html
 title: Alexandre Franco — Enterprise Architect & AI Transformation Advisor
 description: Architecture, governance, and operational transformation for AI native delivery ecosystems.
+hide:
+  - navigation
+  - toc
 tags:
   - architecture
   - governance
   - AI native
 ---
 
-# Architecture. Governance. AI. Transformation.
+I'm Alexandre Franco. an Enterprise Architect with four decades of experience across complex enterprise environments, helping organisations navigate changes bridging strategy, architecture, governance, delivery and more recent AI operationalisation.
 
-**Aligning business capability, governance, and operational architecture within complex enterprise environments.**
+This site is my career portfolio: selected engagements, architecture philosophy, and the thinking behind the work I lead. I publish ongoing experiments and patterns at [Ideas to Life](https://ideas-to-life.ai).
 
-This platform explores the intersection of enterprise architecture, operational governance, and the evolution of scalable transformation systems. It is dedicated to shifting architecture from static documentation into active operational intelligence that aligns strategic intent with delivery reality.
+<h2 id="selected-work">Selected Work</h2>
 
-By combining enterprise integration realism with modern AI orchestration and observability, the focus here is on establishing sustainable foundations for safe AI operationalisation. This approach prioritises structural constraints, feedback loops, and governance aware operational foundations to reduce architectural drift and support long-term operational sustainability.
+<div class="grid cards" markdown>
 
-Curated by an Enterprise Architect with four decades of experience across complex enterprise systems, this portfolio serves as an entry point into a broader ecosystem of architecture operationalisation and capability-driven transformation.
+-   :material-office-building: **BAT Transformation**
+
+    ---
+
+    Enterprise-wide architecture modernization and strategic alignment across global operations.
+
+    [:octicons-arrow-right-24: Read engagement](narratives/bat-transformation.md)
+
+-   :material-television-classic: **BBC Studios Digital Evolution**
+
+    ---
+
+    Digital media infrastructure transformation and enterprise platform architecture.
+
+    [:octicons-arrow-right-24: Read engagement](narratives/bbc-studios-digital-evolution.md)
+
+-   :material-brain: **EA4ALL AI Native Enterprise Architecture**
+
+    ---
+
+    AI native architectural principles and collaborative intelligence for enterprise systems.
+
+    [:octicons-arrow-right-24: Read engagement](narratives/ea4all.md)
+
+-   :material-shield-sync: **Continuous Architecture System (CAS)**
+
+    ---
+
+    Deterministic governance, Architecture-as-Code, and specification-driven agent collaboration.
+
+    [:octicons-arrow-right-24: Read engagement](narratives/cas.md)
+
+</div>
 
 ### Core Capability Themes
 
@@ -26,17 +62,6 @@ Curated by an Enterprise Architect with four decades of experience across comple
 *   **Systems Thinking:** Prioritising structural constraints and feedback loops to support sustainable enterprise transformation.
 *   **Architecture Operationalisation:** Establishing operational intelligence loops that continuously align delivery with architectural intent.
 *   **Architecture Participation at Scale:** Enabling architectural intelligence and governance guidance to scale across delivery ecosystems without linearly scaling centralised oversight.
-
-### Architecture & Governance Narratives
-
-**[The Continuous Architecture System (CAS)](narratives/cas.md)**
-Eliminating documentation drift through operationally integrated capability extraction and Architecture-as-Code governance.
-
-**[Architecting Governance-Oriented AI (Runner Agentic Intelligence)](narratives/runner-agentic-intelligence.md)**
-Designing governance aware orchestration and operational observability for AI native delivery environments.
-
-**[EA4ALL: Architecture AI Workforce](narratives/ea4all.md)**
-Improving enterprise-wide architectural transparency, agility, and collaboration through architecture-driven intelligence and operational alignment.
 
 ### Architecture Philosophy
 
@@ -50,4 +75,4 @@ Improving enterprise-wide architectural transparency, agility, and collaboration
 
 This portfolio reflects an ongoing exploration into how architecture, governance, operational intelligence, and AI native systems can evolve together to support sustainable organisational transformation.
 
-[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Selected Work](selected-work.md) | [Book an Intro Call](https://calendly.com/mostelli/introduction-call)
+[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Book an Intro Call](https://calendar.app.google/1cKarCCmCoNExvov7)

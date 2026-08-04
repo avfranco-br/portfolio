@@ -1,0 +1,38 @@
+{% extends "main.html" %}
+
+{% block content %}
+<div class="md-typeset">
+  <section class="mdx-hero" style="padding: 2rem 0 1.5rem 0; max-width: 900px; margin: 0 auto;">
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 2rem;">
+      <div style="flex: 1 1 480px;">
+        <h1 style="font-size: 2.5rem; font-weight: 800; margin-bottom: 0.5rem; line-height: 1.15; border-bottom: none; padding-bottom: 0;">
+          Alexandre Franco
+        </h1>
+        <p style="font-size: 1.25rem; font-weight: 600; color: var(--md-accent-fallback-color, #3f51b5); margin-top: 0; margin-bottom: 1.25rem;">
+          Enterprise Architect &amp; AI Transformation Advisor
+        </p>
+        
+        <!-- Primary Actions Row -->
+        <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1rem;">
+          <!--a href="#selected-work" class="md-button md-button--primary">Selected Work</a-->
+          <a href="assets/alexandre-franco-cv.pdf" target="_blank" class="md-button">Download CV</a>
+          <a href="contact/" class="md-button">Contact</a>
+        </div>
+
+        <!-- External Ventures Row -->
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; font-size: 0.85rem; color: var(--md-default-fg-color--light);">
+          <span style="font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; margin-right: 0.25rem;">Ventures:</span>
+          <a href="https://mostelli.com" target="_blank" rel="noopener" style="padding: 0.25rem 0.65rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 4px; text-decoration: none; color: inherit;">Mostelli ↗</a>
+          <a href="https://ideas-to-life.ai" target="_blank" rel="noopener" style="padding: 0.25rem 0.65rem; border: 1px solid var(--md-default-fg-color--lighter); border-radius: 4px; text-decoration: none; color: inherit;">Ideas to Life ↗</a>
+        </div>
+      </div>
+      
+      <div style="flex: 0 0 160px; text-align: center;">
+        <img src="assets/images/headshot.png" alt="Alexandre Franco" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; box-shadow: 0 4px 12px rgba(0,0,0,0.15); border: 3px solid var(--md-default-bg-color);" />
+      </div>
+    </div>
+  </section>
+</div>
+
+{{ super() }}
+{% endblock %}

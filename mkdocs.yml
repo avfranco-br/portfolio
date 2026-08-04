@@ -10,6 +10,8 @@ edit_uri: edit/main/docs/
 # Directories to watch for live reloading during `mkdocs serve`
 watch:
   - docs
+  - overrides
+  - scripts
 
 hooks:
   - scripts/mkdocs_hooks.py
@@ -31,6 +33,7 @@ validation:
 
 theme:
   name: material
+  custom_dir: overrides
   favicon: assets/images/favicon.png
   logo: assets/images/favicon-source.png
   icon:
@@ -62,6 +65,8 @@ theme:
         name: Switch to light mode
 
 markdown_extensions:
+  - attr_list
+  - md_in_html
   - admonition
   - pymdownx.details
   - pymdownx.superfences
@@ -72,6 +77,9 @@ markdown_extensions:
           format: !!python/name:pymdownx.superfences.fence_code_format
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 plugins:
   - search
@@ -89,18 +97,19 @@ extra_javascript:
 
 nav:
   - Home: index.md
-  - Architecture Philosophy: architecture-philosophy.md
   - About: about.md
   - Selected Work: selected-work.md
-  - Enterprise Transformation:
-      - BAT: narratives/bat-transformation.md
-      - BBC Studios: narratives/bbc-studios-digital-evolution.md
-  - AI Native Systems:
-      - EA4ALL: narratives/ea4all.md
-      - Runner Agentic Intelligence: narratives/runner-agentic-intelligence.md
-  - Governance Systems:
-      - Continuous Architecture System (CAS): narratives/cas.md
-      - Governance Aware Coding Agent Collaboration: narratives/cas-coding-agent-collaboration.md
-  - Architecture Diagrams:
-      - Layered Architecture: diagrams/architecture.md
+  - Architecture & Governance:
+      - Overview & Philosophy: architecture-philosophy.md
+      - Enterprise Transformation:
+          - BAT: narratives/bat-transformation.md
+          - BBC Studios: narratives/bbc-studios-digital-evolution.md
+      - AI Native Systems:
+          - EA4ALL: narratives/ea4all.md
+          - Runner Agentic Intelligence: narratives/runner-agentic-intelligence.md
+      - Governance Systems:
+          - Continuous Architecture System (CAS): narratives/cas.md
+          - Governance Aware Coding Agent Collaboration: narratives/cas-coding-agent-collaboration.md
+      - Architecture Diagrams:
+          - Layered Architecture: diagrams/architecture.md
   - Contact: contact.md
