@@ -73,4 +73,4 @@ I'm Alexandre Franco. Over the past 20 years, I've led architecture, governance,
 
 This portfolio reflects an ongoing exploration into how architecture, governance, operational intelligence, and AI native systems can evolve together to support sustainable organisational transformation.
 
-[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Selected Work](selected-work.md) | [Book an Intro Call](https://calendly.com/mostelli/introduction-call)
+[LinkedIn](https://www.linkedin.com/in/avfranco/) | [Book an Intro Call](https://calendar.app.google/1cKarCCmCoNExvov7)
