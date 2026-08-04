@@ -44,7 +44,7 @@ theme:
     - search.suggest
     - search.highlight
     - toc.integrate
-    - content.action.edit
+    #- content.action.edit
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
