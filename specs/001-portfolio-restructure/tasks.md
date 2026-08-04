@@ -82,10 +82,10 @@
 
 ### Implementation for User Story 4
 
-- [ ] T012 [P] [US4] Copy headshot image from OKF bundle to `docs/assets/images/headshot.jpg` and wire into `overrides/home.html`
-- [ ] T013 [P] [US4] Add certification badges row in `docs/index.md` / `docs/about.md` from OKF bundle
-- [ ] T014 [P] [US4] Copy CV PDF to `docs/assets/alexandre-franco-cv.pdf` and link from hero CTA buttons
-- [ ] T015 [US4] Render career timeline component in `docs/about.md` from OKF bundle milestones
+- [x] T012 [P] [US4] Copy headshot image from OKF bundle to `docs/assets/images/headshot.jpg` and wire into `overrides/home.html`
+- [x] T013 [P] [US4] Add certification badges row in `docs/index.md` / `docs/about.md` from OKF bundle
+- [x] T014 [P] [US4] Copy CV PDF to `docs/assets/alexandre-franco-cv.pdf` and link from hero CTA buttons
+- [x] T015 [US4] Render career timeline component in `docs/about.md` from OKF bundle milestones
 
 ---
 
