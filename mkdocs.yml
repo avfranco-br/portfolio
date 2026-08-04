@@ -10,6 +10,8 @@ edit_uri: edit/main/docs/
 # Directories to watch for live reloading during `mkdocs serve`
 watch:
   - docs
+  - overrides
+  - scripts
 
 hooks:
   - scripts/mkdocs_hooks.py
