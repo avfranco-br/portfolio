@@ -10,7 +10,7 @@ tags:
 author: "Alexandre Franco"
 slug: "four-layer-agentic-pipeline-architecture"
 target: tech-blog
-status: approved
+status: review
 content_type: process-breakdown
 claim_calibration:
   status: approved
