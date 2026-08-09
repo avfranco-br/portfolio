@@ -86,6 +86,9 @@ plugins:
   - roamlinks
   - social
   - tags
+  - blog:
+      blog_dir: tech-blog
+      post_url_format: "{slug}"
 
 # Cloudflare Web Analytics — cookie-less, privacy-friendly, no consent banner required.
 # Replace YOUR_BEACON_TOKEN_HERE in docs/js/cloudflare-insights.js with the real token
@@ -112,4 +115,6 @@ nav:
           - Governance Aware Coding Agent Collaboration: narratives/cas-coding-agent-collaboration.md
       - Architecture Diagrams:
           - Layered Architecture: diagrams/architecture.md
+  - Tech Blog:
+      - tech-blog/index.md
   - Contact: contact.md

@@ -12,7 +12,7 @@ from __future__ import annotations
 from pathlib import Path
 
 # Imported after conftest has patched sys.path.
-from validate_governance import validate_terminology
+from validate_governance import validate_terminology, validate_frontmatter_status
 
 
 # ---------------------------------------------------------------------------
@@ -291,3 +291,43 @@ def test_real_repo_passes_validation():
         f"Real repo has terminology drift: {findings}. "
         f"Run `python scripts/validate_governance.py` for details."
     )
+
+
+# ---------------------------------------------------------------------------
+# Frontmatter Status Validation Tests
+# ---------------------------------------------------------------------------
+
+
+def test_frontmatter_status_valid(tmp_path: Path):
+    """Articles with valid status metadata produce zero status findings."""
+    tech_blog = tmp_path / "tech-blog"
+    tech_blog.mkdir()
+    (tech_blog / "article.md").write_text(
+        "---\ntitle: Test\nstatus: approved\n---\n# Content\n", encoding="utf-8"
+    )
+    findings = validate_frontmatter_status(str(tech_blog))
+    assert findings == []
+
+
+def test_frontmatter_status_missing(tmp_path: Path):
+    """Articles missing the status field in frontmatter trigger a warning."""
+    tech_blog = tmp_path / "tech-blog"
+    tech_blog.mkdir()
+    (tech_blog / "article.md").write_text(
+        "---\ntitle: Test\n---\n# Content\n", encoding="utf-8"
+    )
+    findings = validate_frontmatter_status(str(tech_blog))
+    assert len(findings) == 1
+    assert "Missing required 'status' attribute" in findings[0]["issue"]
+
+
+def test_frontmatter_status_invalid_value(tmp_path: Path):
+    """Articles with invalid status values trigger a status warning."""
+    tech_blog = tmp_path / "tech-blog"
+    tech_blog.mkdir()
+    (tech_blog / "article.md").write_text(
+        "---\ntitle: Test\nstatus: invalid_status\n---\n# Content\n", encoding="utf-8"
+    )
+    findings = validate_frontmatter_status(str(tech_blog))
+    assert len(findings) == 1
+    assert "Invalid status 'invalid_status'" in findings[0]["issue"]
