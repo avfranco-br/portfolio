@@ -25,9 +25,9 @@ claim_calibration:
 
 ## The Problem: Career Context Without Positioning Inflation
 
-I wanted to build a system that could take my existing professional evidence and turn it into a role-specific interview playbook without quietly upgrading my experience along the way.
+I wanted to build a system that could take my professional experience and turn it into a role-specific interview playbook but ask an LLM to do that and it will quietly round up.
 
-AI tools are great at drafting role-tailored content — proposals, playbooks, CVs. But there's a catch: ask an LLM to map your broad experience against a specific job's requirements, and it will quietly round up. "Adjacent experience" becomes "direct experience." "Familiar with" becomes "expert in." The model isn't lying, it's just optimistic by default.
+AI tools are great at drafting role-tailored content — proposals, playbooks, CVs. "Adjacent experience" becomes "direct experience." "Familiar with" becomes "expert in." The model isn't lying, it's just optimistic by default.
 
 For me, this isn't just a CV problem. It's the same challenge I run into building any AI application that draws on a trusted knowledge base: how do you let a model adapt facts to a new context without letting it drift from what's actually true?
 
