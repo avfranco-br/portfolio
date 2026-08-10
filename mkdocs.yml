@@ -117,4 +117,6 @@ nav:
           - Layered Architecture: diagrams/architecture.md
   - Tech Blog:
       - tech-blog/index.md
+  - How I work:
+      - how-i-work.md
   - Contact: contact.md
