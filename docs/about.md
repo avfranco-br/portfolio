@@ -58,9 +58,9 @@ Throughout my journey, I have remained committed to the principle that architect
 
     ---
 
-    **WPP Media** | Dec 2025 – Present
+    **WPP Media** | Dec 2025 – Jul 2026
 
-    Architecting agentic AI platforms, multi-agent orchestration frameworks, and automated tool permission safety guardrails for global delivery networks.
+    Leading the architecture, and evolution of Agentic AI across WPP Media’s Prototype & Innovation, shaping the cloud-native, data and agentic architecture foundations to support intelligent agent workflows, agent-to-agent interactions, aligned with business objectives and long-term technology strategy.
 
 -   :material-television-classic: **Lead Enterprise Architect**
 
