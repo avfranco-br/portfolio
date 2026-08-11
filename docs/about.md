@@ -34,6 +34,14 @@ tags:
 
     Enterprise Architecture Management & Application Portfolio Management.
 
+-  :material-certificate: **Maven AI Certified**
+
+    ---
+
+    Building Agentic AI Applications with a Problem-First Approach
+    
+    Beyond Evals: Designing Improvement Flywheels for AI Products
+
 </div>
 
 ## Introduction
