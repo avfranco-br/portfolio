@@ -12,6 +12,9 @@ tags:
 
 # AI Augmented Architecture Workflows & Governance
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview & Philosophy
 
 As enterprise environments become increasingly complex and fast-moving, traditional architecture practices risk becoming reactive bottlenecks. Enterprise Architecture teams often struggle with knowledge silos, manual documentation overhead, and drift between strategic intent and delivery reality.
@@ -129,3 +132,8 @@ As organizations adopt AI coding agents (such as Antigravity, Gemini, or Claude)
 | **Theoretical Frameworks** | Evidence-based pattern mining from code repositories | Reusable, proven designs |
 | **Ivory-Tower Isolation** | Democratized EA knowledge access via conversational AI | Cross-functional alignment |
 | **Ungoverned AI Coding** | Governance aware coding agent collaboration | Safe, scalable AI delivery |
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

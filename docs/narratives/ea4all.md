@@ -6,6 +6,9 @@ tags:
   - architecture
 ---
 
+> [!NOTE]
+> **Classification Level**: `CONFIDENTIAL - CASE STUDY` — Enterprise Transformation Portfolio.
+
 Enterprise Architecture is evolving. The traditional model of centralised governance, once the cornerstone of organisational stability, is increasingly challenged by the velocity and complexity of modern delivery ecosystems. EA4ALL represents a strategic shift in how architectural value is created and consumed—moving from a static oversight function to a continuously available, governance aware operational intelligence capability.
 
 ## Challenge
@@ -46,3 +49,8 @@ As Enterprise Architecture evolves, the focus will increasingly shift towards ar
 
 ### Closing Reflection
 Ultimately, EA4ALL is about making Enterprise Architecture continuously accessible to everyone who needs it. By transforming architecture into an active operational capability, the platform enables governance and innovation to scale together rather than compete. This is not about replacing architects, but about amplifying architectural participation itself—ensuring that architectural excellence becomes a sustainable, scalable, and operationally embedded reality across the modern enterprise delivery ecosystem.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

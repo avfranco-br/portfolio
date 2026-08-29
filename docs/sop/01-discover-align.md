@@ -12,6 +12,9 @@ tags:
 
 # Stage 01: Discover & Align
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview
 
 The **Discover & Align** stage establishes the strategic foundation for any Enterprise Architecture customer engagement. Every new engagement begins by understanding the customer's business strategy, framing the core problem to be solved, defining the Desired State (Intent), and assessing the Current State baseline.
@@ -90,3 +93,8 @@ Depending on the engagement scope, Stage 01 produces tailored deliverables:
 
 > [!IMPORTANT]
 > **Stage Gate Check:** Do not proceed to Stage 02 (Target Architecture & Strategy) until business strategy, Current State baseline findings, and Desired State capability gaps have been reviewed and validated by customer executive and technical leadership.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

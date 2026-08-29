@@ -6,6 +6,9 @@ tags:
   - governance
 ---
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC` — Alexandre Franco Enterprise Architecture Portfolio.
+
 Architecture in the modern enterprise is fundamentally an operational capability, not merely an exercise in static documentation. It serves as the connective tissue that aligns strategic intent with engineering reality, ensuring that complex organisations can move quickly without sacrificing coherence or safety.
 
 Sustainable transformation requires architecture to actively participate inside delivery ecosystems rather than standing apart as an isolated oversight function. By embedding governance directly into the software construction process, architecture becomes an enabler of sustainable growth, bridging the gap between business capability evolution and technical execution.
@@ -42,3 +45,8 @@ Organisational enablement depends heavily on the operational foundations and fee
 Architecture ultimately succeeds when it becomes an embedded, continuously participating function of the enterprise. By shifting from static oversight to dynamic operational intelligence, we enable organisations to navigate complexity with both speed and structural integrity.
 
 Sustainable transformation relies on building resilient foundations where governance and innovation reinforce each other. When architecture becomes democratised and operationally embedded, it evolves from static governance oversight into a continuously enabling organisational capability.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

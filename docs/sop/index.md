@@ -11,6 +11,9 @@ tags:
 
 # Enterprise Architecture Customer Engagement SOP
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview & Executive Summary
 
 The **Enterprise Architecture Customer Engagement Standard Operating Procedure (SOP)** is a problem-first, systems thinking operating model governing how Alexandre Franco engages with client organizations, projects, and transformation initiatives. Built upon four decades of experience across global enterprises (consulting, banking, FMCG, media, and advertising), this SOP provides a structured framework for translating C-suite business strategy into resilient operational outcomes.
@@ -124,3 +127,8 @@ From this single canonical Master SOP, three target projections are generated:
 - **Technology Agnosticism:** Evaluate traditional software, enterprise COTS/SaaS, and AI systems objectively based on business value and ROI.
 - **Strategic Vendor Decoupling:** Establish provider-agnostic abstractions to prevent lock-in and preserve strategic optionality.
 - **Governance Through Enablement:** Empower client teams with clear guardrails, reusable patterns, and auditable decision frameworks rather than acting as a rigid bottleneck.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

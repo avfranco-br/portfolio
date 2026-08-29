@@ -1,5 +1,9 @@
 # How I Work
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC` — Alexandre Franco Enterprise Architecture Portfolio.
+
+
 <!--
   Drop this file in as docs/how-i-work.md and add a nav entry in mkdocs.yml.
   No custom colors or fonts are set here — everything below reads from
@@ -96,3 +100,8 @@ A structural method for turning uncertainty into evidence-backed outcomes — no
 **Deliver.** Build the smallest useful version and prove that it works.
 
 **Handover.** You and your team own it, fully documented, end to end.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

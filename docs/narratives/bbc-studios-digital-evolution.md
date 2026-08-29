@@ -6,6 +6,9 @@ tags:
   - architecture
 ---
 
+> [!NOTE]
+> **Classification Level**: `CONFIDENTIAL - CLIENT CASE STUDY` — Enterprise Transformation Portfolio.
+
 ## Challenge
 
 ### The Problem
@@ -67,3 +70,8 @@ This shift positions architecture leadership not as a centralised control functi
 Sustainable digital transformation is ultimately driven by the ability of architecture to evolve alongside the organisations and ecosystems it supports. When architecture becomes an embedded operational capability rather than an isolated governance function, organisations gain the ability to align strategy, delivery, platform evolution, and innovation far more effectively.
 
 Reshaping architecture operating models is therefore not simply an organisational optimisation exercise. It is a foundational requirement for enabling scalable, capability-driven, and continuously adaptable digital transformation in increasingly complex enterprise ecosystems.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

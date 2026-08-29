@@ -10,6 +10,9 @@ tags:
 
 # Agentic System Architect Co-Pilot Prompt
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Proprietary Framework & Architecture Operating Model.
+
 ## Purpose & Usage
 
 This document defines the **canonical system prompt and schema instructions** for AI coding agents (such as Antigravity, Gemini, or Claude) serving as an **Agentic System Architect Co-pilot**.
@@ -119,3 +122,8 @@ graph TD
 - **First 60 Days:** [Core Capability Delivery]
 - **First 90 Days:** [Scaling & Operational Handover]
 - **Quality Gates:** [Compliance reviews, ARB sign-off, or CI pipeline linters]
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+
