@@ -1,5 +1,5 @@
 ---
-title: Enterprise Architecture Customer Engagement SOP
+title: Enterprise Architecture SOP
 description: An engagement-adaptive Enterprise Architecture operating model connecting Strategy, Target Architecture, Governance, Delivery Steering, Value Realization, and AI Augmented Workflows.
 tags:
   - architecture
@@ -9,7 +9,7 @@ tags:
   - sop
 ---
 
-# Enterprise Architecture Customer Engagement SOP
+# Enterprise Architecture SOP
 
 > [!IMPORTANT]
 > **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.

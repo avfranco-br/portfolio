@@ -1,4 +1,4 @@
-# Feature Specification: Enterprise Architecture Customer Engagement SOP
+# Feature Specification: Enterprise Architecture SOP
 
 **Feature Branch**: `feature/architect-sop-evolution`
 
@@ -28,7 +28,7 @@ As an Enterprise Architect / AI Advisor or prospective client, I want to read a 
 
 ### User Story 2 - Agentic Co-Pilot Projection (Priority: P2)
 
-As an AI coding agent or system architect LLM co-pilot, I want an explicit system prompt and schema document that encodes the Customer Engagement SOP rules, enabling automated deconstruction of business use cases, engagement archetype selection, C4 diagram generation, and technology options evaluation.
+As an AI coding agent or system architect LLM co-pilot, I want an explicit system prompt and schema document that encodes the SOP rules, enabling automated deconstruction of business use cases, engagement archetype selection, C4 diagram generation, and technology options evaluation.
 
 **Why this priority**: Enables AI agents (like Antigravity / Gemini) to act as autonomous architectural co-pilots adhering strictly to Alex's engagement SOP.
 

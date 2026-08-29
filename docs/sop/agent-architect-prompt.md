@@ -1,6 +1,6 @@
 ---
 title: Agentic System Architect Co-Pilot Prompt
-description: Structured system prompt and schema guide for AI coding agents executing Customer Engagement SOP analysis.
+description: Structured system prompt and schema guide for AI coding agents executing SOP analysis.
 tags:
   - agent-prompt
   - ai-co-pilot
