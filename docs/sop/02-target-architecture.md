@@ -53,7 +53,7 @@ graph TD
 ## Key Activities & Methodology
 
 ### 1. Technology & Vendor Options Evaluation
-Evaluate candidate architectural patterns against business value, operational risk, vendor lock-in, and total cost of ownership:
+Evaluate candidate architectural patterns and vendor solutions using the **Solutions & Target Architecture Assessment Scorecard**, quantitatively scoring trade-offs across business value, operational risk, vendor lock-in, technical fit, and total cost of ownership (TCO):
 
 | Architectural Pattern | Primary Strengths | Ideal Customer Use Case |
 | :--- | :--- | :--- |
@@ -61,6 +61,9 @@ Evaluate candidate architectural patterns against business value, operational ri
 | **Event-Driven / Asynchronous Messaging** | Loose coupling, high throughput, real-time reactivity. | Distributed data pipelines, order processing, media ingestion. |
 | **Enterprise COTS / SaaS Integration** | Fast time-to-market, vendor-managed maintenance, compliance out of the box. | Standard ERP, CRM, HR, or financial management capabilities. |
 | **AI & Agentic Systems** | Handles unstructured data, probabilistic reasoning, dynamic workflow adaptation. | Unstructured knowledge extraction, complex decision support, natural language workflows. |
+
+> [!NOTE]
+> **Agentic Architecture Design Principles:** When AI or agentic systems are selected, designs must conform strictly to agentic design principles (Single Responsibility Principle, Autonomous Guardrails, Observability First, Human-in-the-Loop checkpoints, Context Injection, and Idempotency).
 
 > [!TIP]
 > **Simplicity First:** Always recommend the simplest technical option that satisfies business requirements. Do not introduce AI or complex distributed patterns if a deterministic database query or standard SaaS integration solves the problem effectively.
