@@ -1,11 +1,10 @@
 ---
 title: "Stage 03: Govern & Formalise"
-description: Architecture Decision Records (ADRs as Code), AI safety guardrails, and priority boundary definition.
+description: Architecture Decision Records (ADRs as Code), priority boundary definition, and governance guardrails.
 tags:
   - architecture
   - governance
   - adr
-  - ai-safety
   - sop
 ---
 
@@ -13,36 +12,32 @@ tags:
 
 ## Overview
 
-The **Govern & Formalise** stage converts architectural designs into enforceable rules, contracts, and auditable records. Governance is not an afterthought or an external audit panel; it is an active mechanism encoded directly into the codebase.
+The **Govern & Formalise** stage converts architectural designs into enforceable rules, contracts, and auditable records. Governance is an active mechanism encoded directly into the development and operational lifecycle.
 
-This stage establishes decision traceability and safety heuristics: **"How do we ensure safety, regulatory compliance, and auditable decisions as we build?"**
+This stage establishes decision traceability and compliance controls: **"How do we ensure safety, regulatory compliance, and auditable decisions as we build?"**
 
 ```mermaid
 graph TD
     subgraph "Design Blueprint"
-        B1["C4 Containers & Agent Patterns"]
+        B1["C4 Containers & Interface Contracts"]
     end
 
-    subgraph "Governance Mechanisms"
+    subgraph "Governance Controls"
         G1["Architecture Decision Records (ADRs as Code)"]
         G2["P0-P3 NFR Priority Matrix"]
-        G3["AI Safety & Guardrail Rules"]
+        G3["Governance & Safety Guardrails"]
     end
 
     subgraph "Enforcement Artefacts"
         E1["specs/ & ADR Directory"]
-        E2["Deterministic Guardrail Policies"]
-        E3["Automated Terminology & Policy Linters"]
+        E2["Deterministic Validation Policies"]
+        E3["Automated Policy Linters"]
     end
 
-    B1 --> G1
-    B1 --> G2
-    B1 --> G3
-
+    B1 --> G1 & G2 & G3
     G1 --> E1
     G2 --> E1
-    G3 --> E2
-    G3 --> E3
+    G3 --> E2 & E3
 
     style G1 fill:#F5A623,color:#fff
     style G3 fill:#E74C3C,color:#fff
@@ -56,19 +51,19 @@ graph TD
 Every architectural choice, technology selection, or structural trade-off must be documented in a light, auditable Markdown ADR saved directly in the repository (e.g. `docs/adr/` or `specs/`):
 
 ```markdown
-# ADR-005: Decouple Vector Database via Repository Abstraction
+# ADR-005: Decouple Database Layer via Repository Interface Pattern
 
 ## Status
 Approved
 
 ## Context
-Our agentic research workflow requires fast vector search across technical documentation. Proprietary vector database lock-in presents a strategic risk.
+Our core transaction service requires fast read queries. Coupling domain logic directly to proprietary database SDKs presents a lock-in risk.
 
 ## Decision
-We will implement an explicit `VectorStore` interface abstraction. The initial implementation will use `pgvector`, with zero direct imports of vendor SDKs in core application code.
+We will implement an explicit `Repository` interface abstraction. The initial implementation will use PostgreSQL, with zero direct imports of vendor-specific drivers in core business logic.
 
 ## Consequences
-- Positive: Ability to migrate to Qdrant or Pinecone without touching agent business logic.
+- Positive: Ability to migrate or add caching (e.g. Redis) without touching domain logic.
 - Negative: Requires writing interface wrapper code.
 ```
 
@@ -80,19 +75,20 @@ Assign explicit priority classifications to all Non-Functional Requirements (NFR
 - **P2 (Medium Priority):** Secondary performance optimization, extended analytics logging, and automated developer tooling.
 - **P3 (Low Priority / Nice to Have):** Cosmetic UI enhancements, experimental features, and non-blocking optimizations.
 
-### 3. AI Safety & Guardrail Heuristics
-When deploying probabilistic models (LLMs, multi agent systems) in enterprise environments, safety must be guaranteed through a **Dual-Layer Guardrail Architecture**:
+### 3. Governance & Safety Guardrail Heuristics
+Establish deterministic safety and compliance controls across system boundaries:
 
 ```mermaid
 graph LR
-    Input["User / Agent Prompt"] --> DeterministicInput["Deterministic Policy Guard (Regex / Schema Check)"]
-    DeterministicInput --> LLM["Probabilistic Reasoning (LLM / Agent)"]
-    LLM --> DeterministicOutput["Deterministic Safety Validator (JSON Schema / Safety Heuristics)"]
-    DeterministicOutput --> Output["Verified Safe Action / Response"]
+    Input["System Request / User Input"] --> InputGuard["Input Validation & Policy Filter (Schema / Identity / Auth)"]
+    InputGuard --> CoreLogic["Core Execution (Traditional Code / Microservice / AI Component)"]
+    CoreLogic --> OutputGuard["Output Validation & Safety Filter (PII Masking / Schema Check)"]
+    OutputGuard --> Response["Verified Output"]
 ```
 
-1. **Input Guardrails:** Sanitize prompt inputs, prevent prompt injection, validate token limits, and enforce identity authorization.
-2. **Output Guardrails:** Validate structured output schemas (JSON/Pydantic), filter sensitive data (PII masking), and verify hallucination scores before executing side-effects.
+1. **Input Guardrails:** Sanitize API payloads, validate request schemas, enforce identity authorization, and prevent malformed inputs.
+2. **Output Guardrails:** Validate response schemas, filter sensitive data (PII masking / encryption), and verify output policy compliance before triggering external side-effects.
+3. **AI Safety Controls (Where AI is Used):** If probabilistic models are deployed, enforce dual-layer guardrails pairing probabilistic outputs with deterministic schema validation and hallucination checks.
 
 ---
 
@@ -100,13 +96,13 @@ graph LR
 
 ### Primary Inputs
 - C4 Architecture Blueprint and Interface Contracts (from Stage 02).
-- Organizational security, privacy, and compliance policies.
+- Organizational security, privacy, and regulatory compliance standards.
 - Diagnostic risk priorities.
 
 ### Primary Outputs
 - **Repository ADR Catalog:** Version-controlled ADRs documenting rationale and consequences.
 - **NFR Priority Matrix (P0–P3):** Explicit non-functional acceptance criteria.
-- **Guardrail Specification:** Policy rules for input/output sanitization and AI safety filters.
+- **Guardrail & Governance Policy Specification:** Rules for input/output validation, PII handling, and safety filters.
 
 ---
 

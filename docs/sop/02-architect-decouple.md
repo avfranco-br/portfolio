@@ -1,10 +1,10 @@
 ---
 title: "Stage 02: Architect & Decouple"
-description: Provider-agnostic design, C4 architecture modeling, and agentic AI pattern selection.
+description: Technology-agnostic architectural design, C4 modeling, provider abstractions, and pattern selection.
 tags:
   - architecture
   - c4-model
-  - agentic-ai
+  - technology-agnostic
   - sop
 ---
 
@@ -12,85 +12,84 @@ tags:
 
 ## Overview
 
-The **Architect & Decouple** stage transforms business requirements and diagnostic insights into a resilient, decoupled system design. This stage defines system boundaries, establishes provider-agnostic abstractions, and selects appropriate Agentic AI architectural patterns.
+The **Architect & Decouple** stage transforms the gap analysis and Desired State intent into a decoupled, fit-for-purpose system design. This stage is **technology-agnostic**: the architect evaluates a spectrum of architectural options—from classic relational databases and microservices to event-driven architectures, COTS/SaaS integrations, and AI/Agentic systems—selecting the simplest pattern that solves the problem.
 
-The core goal is to enable rapid technical innovation while ensuring the enterprise is never locked into a single cloud vendor or AI model provider: **"How do we structure boundaries so the enterprise remains resilient and vendor decoupled?"**
+The core goal is to establish clean boundaries and vendor-decoupled abstractions: **"How do we structure boundaries so the enterprise remains resilient, decoupled, and fit-for-purpose?"**
 
 ```mermaid
 graph TD
-    subgraph "Diagnostic Inputs"
-        D1["10-Domain Diagnostic Matrix"]
-        D2["Capability Boundaries"]
+    subgraph "Gap Analysis Inputs"
+        D1["Current vs Desired State Delta"]
+        D2["10-Domain Diagnostic Matrix"]
     end
 
-    subgraph "Architectural Design"
+    subgraph "Technology-Agnostic Option Evaluation"
+        O1["Traditional Software (Monolith / Microservices)"]
+        O2["Event-Driven / Serverless Systems"]
+        O3["Enterprise COTS / SaaS Integration"]
+        O4["AI & Agentic Systems (Where Justified)"]
+    end
+
+    subgraph "Architectural Blueprint"
         C1["C4 Context & Container Models"]
         C2["Provider-Agnostic Abstraction Layers"]
-        C3["Agentic AI Pattern Selection"]
+        C3["Interface Contracts (OpenAPI / AsyncAPI)"]
     end
 
-    subgraph "Design Artefacts"
-        O1["System Architecture Blueprint"]
-        O2["Interface Contracts (OpenAPI/Protobuf)"]
-        O3["Agentic Orchestration Map"]
-    end
+    D1 --> O1 & O2 & O3 & O4
+    O1 & O2 & O3 & O4 --> C1
+    C1 --> C2 --> C3
 
-    D1 --> C1
-    D2 --> C2
-    C1 --> C3
-    C2 --> O1
-    C3 --> O2
-    C3 --> O3
-
-    style C2 fill:#50C878,color:#fff
-    style C3 fill:#4A90E2,color:#fff
+    style O1 fill:#4A90E2,color:#fff
+    style O4 fill:#50C878,color:#fff
 ```
 
 ---
 
 ## Key Activities & Methodology
 
-### 1. C4 Architecture Modeling
-Utilize the C4 model abstraction hierarchy to communicate design clarity across all organizational levels:
-- **Level 1: System Context Diagram:** High-level view showing how users, external systems, and enterprise boundaries interact.
-- **Level 2: Container Diagram:** Highlighting applications, datastores, AI agent runtimes, and API gateways.
-- **Level 3: Component Diagram:** Internal structure of core modules and microservices.
-- **Level 4: Code Diagram:** Class and sequence diagrams for complex logic flows.
+### 1. Technology-Agnostic Pattern Selection
+Evaluate candidate architectural patterns against business value, operational complexity, and total cost of ownership:
 
-### 2. Strategic Vendor Decoupling
-To protect the enterprise against vendor lock-in and pricing spikes, all core capabilities must be mediated by provider-agnostic abstraction layers:
-- **LLM Abstraction Layer:** Interfacing with models (OpenAI, Anthropic, Gemini, local open-weight LLMs) through standardized interfaces (e.g. LiteLLM, LangChain abstractions, custom wrapper interfaces).
-- **Storage & Vector Abstraction:** Decoupling vector databases (pgvector, Qdrant, Pinecone) behind repository interfaces.
-- **Cloud Infrastructure Abstraction:** Containerizing workloads (Docker, Kubernetes/GKE/Cloud Run) to permit multi-cloud flexibility.
-
-### 3. Agentic AI Pattern Selection
-Match functional requirements to proven AI agent architectural patterns derived from the *AI Architecture Enablement* repository:
-
-| Pattern | Description | Ideal Use Case |
+| Architectural Pattern | Primary Strengths | Best Fit Scenarios |
 | :--- | :--- | :--- |
-| **Simple Prompt Agent** | Single-turn zero/few-shot LLM invocation with strict schema enforcement. | Simple entity extraction, text classification. |
-| **Stepped / Sequential Agent** | Multi-step chain of thought pipeline where each step's output feeds the next. | Document generation, structured report synthesis. |
-| **Multi Agent Team** | Specialized agents operating collaboratively (e.g. Researcher, Architect, Critic). | Complex system analysis, code generation & review. |
-| **RAG-Augmented Agent** | Agent equipped with vector search and document retrieval tools. | Enterprise knowledge retrieval, policy QA. |
-| **Guardrail Orchestrator** | Dual-layer architecture pairing probabilistic LLM output with deterministic safety guardrails. | High-stakes automated financial/regulatory actions. |
+| **Traditional Microservices / API-First** | High determinism, clear domain ownership, proven scalability. | Standard transactional workflows, CRUD services, core business logic. |
+| **Event-Driven / Asynchronous Messaging** | Low coupling, high throughput, real-time reactivity. | Distributed data pipelines, order processing, media ingestion. |
+| **Enterprise COTS / SaaS Integration** | Fast time-to-market, vendor-managed maintenance, compliance out of the box. | Standard ERP, CRM, HR, or finance capabilities. |
+| **AI & Agentic Systems** | Handles unstructured data, probabilistic reasoning, dynamic workflow adaptation. | Unstructured knowledge extraction, complex decision support, natural language workflows. |
+
+> [!TIP]
+> **Simplicity First:** Always choose the simplest architectural pattern that satisfies the requirements. Do not introduce AI or complex distributed patterns if a deterministic database query or standard API solves the problem effectively.
+
+### 2. C4 Architecture Modeling
+Communicate system boundaries clearly using the C4 model abstraction hierarchy:
+- **Level 1: System Context Diagram:** High-level view showing users, internal systems, external vendor platforms, and organizational boundaries.
+- **Level 2: Container Diagram:** Depicting applications, API gateways, microservices, message brokers, datastores, and third-party integrations.
+- **Level 3: Component Diagram:** Inner architecture of individual microservices or modules.
+
+### 3. Strategic Vendor Decoupling
+Protect the enterprise against vendor lock-in, pricing spikes, and technology obsolescence by building provider-agnostic abstraction layers:
+- **Database & Storage Abstraction:** Wrap datastores behind repository interfaces (e.g. SQL, NoSQL, Vector stores).
+- **Messaging & Event Abstraction:** Decouple event producers and consumers using standard event schemas (e.g. CloudEvents, Protobuf).
+- **AI & External Provider Abstraction:** If AI or external SaaS providers are used, wrap external API calls behind vendor-neutral wrapper interfaces.
 
 ---
 
 ## Inputs & Outputs
 
 ### Primary Inputs
-- Validated 10-Domain Diagnostic Triage Matrix (from Stage 01).
+- Gap Analysis and 10-Domain Diagnostic Matrix (from Stage 01).
 - Non-functional requirement priority list (P0–P3).
-- Existing enterprise technical standards & integration contracts.
+- Existing enterprise tech standards & infrastructure constraints.
 
 ### Primary Outputs
+- **Technology Pattern Rationale:** Justification for chosen pattern (Traditional, COTS, Event-Driven, or AI).
 - **C4 Architecture Blueprint:** Context and Container diagrams (Mermaid / Structurizr).
-- **Interface Contracts:** OpenAPI / AsyncAPI definitions for component boundaries.
-- **Agentic Architectural Specification:** Mapping of use cases to agent patterns, memory schemas, and tool groups.
+- **Interface Contracts:** OpenAPI, AsyncAPI, or Protobuf specifications for all container boundaries.
 
 ---
 
 ## Governance & Quality Gate
 
 > [!IMPORTANT]
-> **Stage Gate Check:** Ensure all external cloud and AI model integrations rely on explicit interface contracts and abstractions. Direct coupling of application logic to vendor-specific APIs is prohibited without an approved Architecture Decision Record (ADR).
+> **Stage Gate Check:** Ensure all external cloud, SaaS, or AI model integrations rely on explicit interface contracts and abstraction layers. Direct coupling of application logic to proprietary vendor SDKs is prohibited without an approved Architecture Decision Record (ADR).

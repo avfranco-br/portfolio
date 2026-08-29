@@ -1,10 +1,10 @@
 ---
 title: "Stage 04: Operationalise & Orchestrate"
-description: Continuous Architecture System (CAS), surgical slice implementation, and automated repository quality gates.
+description: Tool-agnostic delivery orchestration, specification-driven execution, surgical slices, and automated pipeline quality gates.
 tags:
   - architecture
-  - cas
   - delivery
+  - orchestration
   - sdd
   - sop
 ---
@@ -13,27 +13,27 @@ tags:
 
 ## Overview
 
-The **Operationalise & Orchestrate** stage bridges design and governance with hands-on delivery. By employing the **Continuous Architecture System (CAS)** and **Specification-Driven Development (SDD)**, software engineering and agentic workflows are executed in thin, verifiable slices.
+The **Operationalise & Orchestrate** stage bridges design and governance with hands-on engineering delivery. This stage is **tool-agnostic**: whether delivery teams use standard CI/CD pipelines, GitOps toolchains, agile delivery systems, or repository-driven governance frameworks (such as the Continuous Architecture System - CAS), the core process remains identical.
 
-This stage eliminates guesswork and arbitrary refactoring: **"How do we build thin vertical slices and prove correctness in the codebase?"**
+This stage eliminates arbitrary code changes and unverified deployments: **"How do we build thin vertical slices and prove correctness in the delivery pipeline?"**
 
 ```mermaid
 graph TD
-    subgraph "Approved Governance"
+    subgraph "Approved Design & Governance"
         S1["Feature Specification (specs/)"]
-        S2["ADRs & Guardrail Policies"]
+        S2["ADRs & Contract Policies"]
     end
 
-    subgraph "Surgical Implementation (CAS)"
+    subgraph "Surgical Delivery Slices"
         C1["Thin Vertical Slice 1"]
         C2["Thin Vertical Slice 2"]
         C3["Thin Vertical Slice 3"]
     end
 
-    subgraph "Continuous Verification"
+    subgraph "Tool-Agnostic Quality Gates"
         V1["Automated Unit & Integration Tests"]
-        V2["Terminology & Policy Validation"]
-        V3["Build & Deployment Quality Gates"]
+        V2["Policy & Terminology Linters"]
+        V3["Build & Deployment Pipeline Gates"]
     end
 
     S1 --> C1
@@ -50,33 +50,33 @@ graph TD
 
 ## Key Activities & Methodology
 
-### 1. Specification-Driven Development (SDD)
-Before any code or narrative modification is made, a formal specification must be authored under `specs/` (or via Speckit tools). The specification defines:
+### 1. Specification-Driven Delivery (SDD)
+Before any code or narrative modification is made, a formal specification must be authored (e.g. under `specs/` or via team specification tools). The specification defines:
 - Prioritized User Stories (P1, P2, P3).
 - Given-When-Then Acceptance Scenarios.
 - Functional Requirements (FR-001, FR-002...).
 - Measurable Success Criteria.
 
-### 2. Surgical Slice Implementation
-Deliver code in minimal, self-contained vertical slices. Avoid monolithic "big bang" pull requests:
+### 2. Surgical Slice Execution
+Deliver code in minimal, self-contained vertical slices. Avoid monolithic "big bang" deployments:
 - **Scope Discipline:** Touch only what is required by the specification.
-- **No Unsolicited Refactoring:** Do not modify orthogonal components or remove code/comments without explicit approval.
-- **Contract-First Code:** Implement public interfaces and schemas before writing internal logic.
+- **No Unsolicited Refactoring:** Do not modify orthogonal components or remove existing code/comments without explicit approval.
+- **Contract-First Implementation:** Implement public interfaces, API schemas, and data models before writing internal component logic.
 
-### 3. Continuous Repository Quality Gates
-Automate compliance verification directly in the CI/CD pipeline (`.github/workflows/`):
+### 3. Tool-Agnostic Pipeline Quality Gates
+Enforce automated quality gates directly in the team's delivery pipeline (GitHub Actions, GitLab CI, Jenkins, Azure DevOps, or custom toolchains):
 
 ```mermaid
 graph LR
-    Push["Git Commit / PR"] --> Build["Build Validation (mkdocs build --strict)"]
-    Build --> Governance["Terminology Check (scripts/validate_governance.py)"]
-    Governance --> SDDCheck["SDD Verification (cas-validate-sdd.yml)"]
-    SDDCheck --> Deploy["Deploy to Environment"]
+    Commit["Git Commit / PR"] --> BuildGate["Build Integrity Gate (Compilation / Schema Check)"]
+    BuildGate --> PolicyGate["Governance & Policy Gate (Linters / Contract Checks)"]
+    PolicyGate --> SpecGate["Specification Verification (Test Suite)"]
+    SpecGate --> Deploy["Deployment to Environment"]
 ```
 
-1. **Build Integrity Gate:** Validate zero broken links, missing references, or navigation errors (`mkdocs build --strict`).
-2. **Terminology Governance Gate:** Run automated checks (`scripts/validate_governance.py`) against `governance/terminology.yaml` to prevent narrative drift and enforce canonical terms.
-3. **SDD Compliance Gate:** Verify that structural changes are accompanied by an approved spec in `specs/`.
+1. **Build Integrity Gate:** Validate zero compilation errors, broken links, or schema mismatches.
+2. **Governance & Policy Gate:** Run automated linters (e.g. `scripts/validate_governance.py` or policy checkers) to verify architectural standards, security rules, and canonical terminology.
+3. **Specification Verification Gate:** Execute unit, integration, and contract test suites to prove that functional requirements are met.
 
 ---
 
@@ -84,17 +84,17 @@ graph LR
 
 ### Primary Inputs
 - Approved Feature Specification (`specs/*.md`) and ADRs.
-- Repository source code and delivery workflow configuration.
-- Local validation scripts (`scripts/run_governance.sh`).
+- Repository source code and team delivery pipeline configurations.
+- Local and CI validation scripts.
 
 ### Primary Outputs
-- **Tested Code & Narrative Slices:** Production-ready additions passing all unit and integration tests.
-- **Passing Quality Gate Reports:** Automated CI/CD execution logs demonstrating zero errors.
-- **Updated Architectural State:** Living documentation synchronized with codebase reality.
+- **Production-Ready Code Slices:** Tested code and documentation passing all pipeline checks.
+- **Passing Quality Gate Reports:** Automated CI/CD logs demonstrating zero build or policy errors.
+- **Updated Architectural State:** Living documentation and system state synchronized with codebase reality.
 
 ---
 
 ## Governance & Quality Gate
 
 > [!IMPORTANT]
-> **Stage Gate Check:** Never declare success without empirical verification. A feature is incomplete until local verification (`bash scripts/run_governance.sh` and pytest) passes cleanly.
+> **Stage Gate Check:** Never declare success without empirical verification. A delivery slice is incomplete until automated pipeline quality gates (builds, tests, linters) pass cleanly.
