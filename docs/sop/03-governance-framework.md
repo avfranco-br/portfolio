@@ -74,7 +74,7 @@ We will establish an asynchronous Event Bus utilizing CloudEvents schemas. Media
 Depending on the engagement archetype, ADRs may be delivered as executive documentation (Archetype B/C) or as version-controlled Markdown in the codebase (`docs/adr/` under Archetype D).
 
 ### 2. Risk & NFR Priority Matrix (P0–P3)
-Establish explicit priority classifications for Non-Functional Requirements (NFRs) to guide client trade-offs during delivery:
+Establish explicit priority classifications for Non-Functional Requirements (NFRs) using the NFR and Risk modules of the **Solutions & Target Architecture Assessment Scorecard** to guide client trade-offs during delivery:
 
 - **P0 (Critical / Blocker):** Non-negotiable security, data privacy, legal compliance, or core reliability requirements. Must be verified prior to deployment.
 - **P1 (High Priority):** Key performance SLA targets (e.g. sub-200ms latency), primary error handling, and core observability logging.

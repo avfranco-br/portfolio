@@ -50,7 +50,7 @@ Formulate the target architectural vision that fulfills the business strategy:
 - **Target Outcomes & Constraints:** Specify desired operational performance, target cost envelopes, and non-negotiable regulatory or security boundaries.
 
 ### 4. Domain Diagnostic & Gap Analysis
-Perform a structured gap analysis between the Current State baseline and Desired State intent across 10 critical enterprise domains, evaluating over 130 structural questions:
+Perform a structured gap analysis between the Current State baseline and Desired State intent using the **10-Domain Architecture Requirements Framework** (evaluating over 130 structural questions mapped across 7 core Enterprise Architecture principles):
 
 ```mermaid
 mindmap

@@ -81,6 +81,21 @@ graph TD
 
 ---
 
+## Enterprise Architecture Tools & Assessment Accelerators
+
+To execute engagement stages deterministically without reinventing diagnostic models, the SOP incorporates three core execution toolsets and assessment accelerators:
+
+1. **10-Domain Architecture Requirements Framework:**
+   A workshop-driven diagnostic framework grounded in 7 Enterprise Architecture principles (*Maximize Business Benefit*, *Scalability First*, *Cost Optimization*, *Security by Design*, *Operational Excellence*, *Data Governance*, *Technology Agility*). Evaluating over 130 structural questions, it is used in **Stage 01 (Discover & Align)** to rapidly map Current State baselines and Desired State intent.
+
+2. **Solutions & Target Architecture Assessment Scorecard:**
+   A quantitative evaluation matrix scoring candidate technology options, SaaS platforms, vendor solutions, and target architecture blueprints against weighted functional, technical, architectural, security, NFR, and TCO criteria. Used in **Stage 02 & 03** for objective vendor and options evaluation.
+
+3. **Agentic Architecture Design Principles:**
+   An architectural policy framework (adapted from AWS, GCP, and Azure Well-Architected Frameworks) governing AI native and agentic deployments. Enforces core principles including Agent Single Responsibility, Autonomous Guardrails, Observability First, Human-in-the-Loop (HITL) checkpoints, Context Injection (RAG), and Idempotency. Used in **Stage 02 & AI Workflows**.
+
+---
+
 ## AI Augmented Architecture Workflows & Governance
 
 To transform architectural productivity and operational trust, the SOP incorporates four AI-augmented capability pillars detailed in [**AI Augmented Architecture Workflows**](ai-augmented-architecture.md):
