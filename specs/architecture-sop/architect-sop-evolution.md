@@ -6,21 +6,21 @@ How Might We frame Alex's Architect SOP as an Engagement-Adaptive Enterprise Arc
 ## Recommended Direction: Customer Engagement Lifecycle & Archetype Matrix
 
 ### Core Lifecycle: The 5 Strategic Customer Engagement Stages
-1. **01. Discover & Align (Strategy, Context & Baseline Assessment):** Understanding customer strategy, business drivers, problem statement, desired state intent, assessing current state baseline (capabilities, technical debt), and executing 10-domain diagnostic gap analysis.
+1. **01. Discover & Align (Strategy, Context & Baseline Assessment):** Understanding customer strategy, business drivers, problem statement, desired state intent, assessing current state baseline (capabilities, technical debt), and executing Domain diagnostic gap analysis.
 2. **02. Target Architecture & Strategy (Options, Blueprint & Trade-offs):** Formulating target architecture options (COTS, Cloud, Microservices, AI/Agentic), evaluating technology/vendor trade-offs, designing C4 models, and creating the Target Architecture Blueprint.
 3. **03. Governance & Decision Framework (Controls, Guardrails & Standards):** Establishing governance fit for customer context—whether Executive ADRs, Architecture Review Board (ARB) processes, NFR priorities (P0–P3), compliance rules, or (when applicable) repository-based ADRs.
-4. **04. Delivery Enablement & Execution Steering (Roadmap & Delivery Guidance):** Translating target architecture into an actionable execution roadmap (30/60/90 days), defining delivery principles, empowering delivery teams, and setting up quality gates appropriate for the customer's delivery model (Agile, SAFe, GitOps, SDD).
+4. **04. Delivery Enablement & Execution Steering (Roadmap & Delivery Guidance):** Translating target architecture into an actionable execution roadmap ( days), defining delivery principles, empowering delivery teams, and setting up quality gates appropriate for the customer's delivery model (Agile, SAFe, GitOps, SDD).
 5. **05. Value Realisation & Organizational Handover (Impact & Enablement):** Assessing operational readiness, verifying value realization against Stage 01 business goals, establishing continuous improvement feedback loops, and executing structured organizational handover.
 
 ### Engagement Archetype Matrix (Adaptive SOP Depth)
 The Master SOP defines 4 Engagement Archetypes to match customer mandates:
-- **Archetype A: Strategic EA Assessment (2–4 Weeks):** High-level Strategy, Current State Audit, Gap Analysis, and 30/60/90 Transformation Roadmap.
-- **Archetype B: Target Architecture Blueprint (4–8 Weeks):** Desired State Vision, Technology Options, C4 Models, Vendor Trade-offs, and Architecture Specifications.
-- **Archetype C: Enterprise Governance & Operating Model (6–12 Weeks):** Governance Framework, ARB Setup, Guardrails, Risk & NFR Priority Matrix.
+- **Archetype A: Strategic EA Assessment:** High-level Strategy, Current State Audit, Gap Analysis, and  Transformation Roadmap.
+- **Archetype B: Target Architecture Blueprint:** Desired State Vision, Technology Options, C4 Models, Vendor Trade-offs, and Architecture Specifications.
+- **Archetype C: Enterprise Governance & Operating Model:** Governance Framework, ARB Setup, Guardrails, Risk & NFR Priority Matrix.
 - **Archetype D: Delivery Steering & Implementation (Ongoing / Sprints):** Hands-on Architecture, Architecture-as-Code, SDD, CI/CD Quality Gates, and Repository Governance.
 
 ### Dynamic Projection Engine (Multi-Audience Output)
-- **Executive Projection:** 1-Page Business Value Bridge & 30/60/90 Strategic Transformation Roadmap.
+- **Executive Projection:** 1-Page Business Value Bridge &  Strategic Transformation Roadmap.
 - **Agentic Co-Pilot Projection:** System Architect Prompts (`agent-architect-prompt.md`) and JSON schemas enabling AI coding agents to execute automated architectural analysis and C4 generation.
 - **Delivery & Governance Projection:** Governance charters, ARB checklists, NFR assessment matrices, and CI/CD quality gate workflows.
 

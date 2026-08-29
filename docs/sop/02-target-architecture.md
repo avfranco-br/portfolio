@@ -21,7 +21,7 @@ This stage answers the core question: **"How do we structure target boundaries a
 graph TD
     subgraph "Stage 01 Inputs"
         D1["Current vs Desired State Delta"]
-        D2["10-Domain Diagnostic Matrix"]
+        D2["Domain Diagnostic Matrix"]
     end
 
     subgraph "Technology Options Evaluation"

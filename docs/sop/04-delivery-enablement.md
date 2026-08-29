@@ -25,8 +25,8 @@ graph TD
     end
 
     subgraph "Delivery Enablement"
-        D1["30/60/90 Day Transformation Roadmap"]
-        D2["Phase 1 / 2 / 3 Migration Strategy"]
+        D1["Day Transformation Roadmap"]
+        D2["Phase-driven Migration Strategy"]
         D3["Delivery Principles & Pattern Guidance"]
     end
 
@@ -48,20 +48,26 @@ graph TD
 
 ## Key Activities & Methodology
 
-### 1. 30/60/90 Day Transformation Roadmap
+### 1.  Day Transformation Roadmap
+
 Structure the execution trajectory into clear, manageable horizons:
+
 - **First 30 Days (Foundation & Quick Wins):** Establish governance rules, validate initial architectural spikes/POCs, finalize interface contracts, and align delivery teams.
 - **First 60 Days (Core Capability Delivery):** Execute Phase 1 core services, establish CI/CD quality gates, and conduct mid-point architecture reviews.
 - **First 90 Days (Scaling & Hardening):** Deliver end-to-end integration, execute non-functional load and security testing, and transition to operational runbooks.
 
 ### 2. Delivery Principles & Pattern Guidance
+
 Provide concrete guidance to internal engineering teams or System Integrators (SIs):
+
 - **Contract-First Delivery:** Mandate that API schemas, database contracts, and integration interfaces are agreed upon before component implementation begins.
 - **Scope Discipline:** Focus delivery on minimal viable architecture slices that prove business value early.
 - **Vendor Abstraction Enforcement:** Ensure delivery teams utilize the provider-agnostic abstraction layers defined in Stage 02.
 
 ### 3. Adaptive Quality Gates
+
 Establish quality gates matched to the customer's delivery model:
+
 - **For Executive & Strategic Engagements (Archetypes A, B, C):** Milestone architecture compliance reviews, contract verification checkpoints, and ARB sign-offs.
 - **For Hands-on Delivery Steering (Archetype D):** Automated pipeline quality gates (build integrity, policy linters `scripts/validate_governance.py`, unit/integration tests, Specification-Driven Delivery `specs/`).
 
@@ -69,7 +75,7 @@ Establish quality gates matched to the customer's delivery model:
 
 ## Deliverables by Engagement Archetype
 
-- **Archetype A, B & C:** 30/60/90 Transformation Roadmap, Migration Strategy (Phase 1/2/3), Delivery Principles Guide, and Compliance Checklists.
+- **Archetype A, B & C:**  Transformation Roadmap, Migration Strategy (Phase 1/2/3), Delivery Principles Guide, and Compliance Checklists.
 - **Archetype D (Hands-On Delivery Steering):** Specification-Driven Execution Framework, Repository Quality Gate Scripts, and Automated CI/CD Governance Workflows.
 
 ---
@@ -77,4 +83,4 @@ Establish quality gates matched to the customer's delivery model:
 ## Governance & Quality Gate
 
 > [!IMPORTANT]
-> **Stage Gate Check:** Ensure delivery roadmaps account for team capability and operational constraints. Never hand off a target blueprint without an accompanying 30/60/90 roadmap and clear quality gate criteria.
+> **Stage Gate Check:** Ensure delivery roadmaps account for team capability and operational constraints. Never hand off a target blueprint without an accompanying  roadmap and clear quality gate criteria.

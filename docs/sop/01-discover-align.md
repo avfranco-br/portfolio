@@ -1,6 +1,6 @@
 ---
 title: "Stage 01: Discover & Align"
-description: Strategy framing, Current State baseline assessment, Desired State intent, and 10-domain diagnostic gap analysis.
+description: Strategy framing, Current State baseline assessment, Desired State intent, and Domain diagnostic gap analysis.
 tags:
   - architecture
   - strategy
@@ -22,7 +22,7 @@ This stage ensures complete alignment across executive, business, and technology
 graph LR
     A["Customer Strategy & Problem Definition"] --> B["Current State Baseline Assessment"]
     B --> C["Desired State Intent & Capabilities"]
-    C --> D["10-Domain Diagnostic & Gap Analysis"]
+    C --> D["Domain Diagnostic & Gap Analysis"]
     D --> E["Validated Target Scope & Value Hypothesis"]
 ```
 
@@ -46,12 +46,12 @@ Formulate the target architectural vision that fulfills the business strategy:
 - **Target Capability Mapping:** Define the business capabilities required in the desired tomorrow (e.g. *Global Media Asset Distribution*, *Scientific R&D Compliance*, *Automated Customer Workflows*).
 - **Target Outcomes & Constraints:** Specify desired operational performance, target cost envelopes, and non-negotiable regulatory or security boundaries.
 
-### 4. 10-Domain Diagnostic & Gap Analysis
+### 4. Domain Diagnostic & Gap Analysis
 Perform a structured gap analysis between the Current State baseline and Desired State intent across 10 critical enterprise domains, evaluating over 130 structural questions:
 
 ```mermaid
 mindmap
-  root((10-Domain Diagnostic & Gap Analysis))
+  root((Domain Diagnostic & Gap Analysis))
     User Personas & Access
     Data Sources & Integration
     Reporting & Analytics
@@ -81,7 +81,7 @@ mindmap
 
 Depending on the engagement scope, Stage 01 produces tailored deliverables:
 
-- **Archetype A (Strategic EA Assessment):** Executive Context Map, Current State Audit Summary, 10-Domain Gap Triage, and 30/60/90 Transformation Roadmap.
+- **Archetype A (Strategic EA Assessment):** Executive Context Map, Current State Audit Summary, Domain Gap Triage, and  Transformation Roadmap.
 - **Archetype B, C & D (Full Engagement):** Comprehensive Baseline & Intent Blueprint, Detailed Gap Matrix, and Scope Boundary Definition.
 
 ---

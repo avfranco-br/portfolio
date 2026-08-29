@@ -21,7 +21,7 @@ As an Enterprise Architect / AI Advisor or prospective client, I want to read a 
 **Acceptance Scenarios**:
 
 1. **Given** a user visiting the site, **When** they click "Architecture SOP" in navigation, **Then** they see `docs/sop/index.md` introducing the 5 customer engagement stages and the 4 Engagement Archetypes.
-2. **Given** a reader on stage `01-discover-align.md`, **When** reading the content, **Then** it details Strategy, Problem definition, Current State baseline assessment, Desired State (Intent) vision, and 10-Domain diagnostic gap analysis.
+2. **Given** a reader on stage `01-discover-align.md`, **When** reading the content, **Then** it details Strategy, Problem definition, Current State baseline assessment, Desired State (Intent) vision, and Domain diagnostic gap analysis.
 3. **Given** a reader on stage `04-delivery-enablement.md`, **When** reading the content, **Then** it presents delivery enablement and execution steering fit for the customer's delivery model, positioning repo/code artifacts as optional depth tools for Archetype D engagements.
 
 ---
@@ -56,7 +56,7 @@ As a contributor or automated CI pipeline, I want the SOP pages to be integrated
 
 ### Edge Cases
 
-- What happens if an engagement is purely strategic (Archetype A)? The SOP guides the creation of high-level Strategy Maps and 30/60/90 Roadmaps without generating SDLC/code artifacts.
+- What happens if an engagement is purely strategic (Archetype A)? The SOP guides the creation of high-level Strategy Maps and  Roadmaps without generating SDLC/code artifacts.
 - How does the SOP handle hands-on delivery (Archetype D)? Code-level governance (ADR-as-Code, SDD, CI linters) is seamlessly enabled as an optional depth tier.
 
 ## Requirements *(mandatory)*
@@ -64,10 +64,10 @@ As a contributor or automated CI pipeline, I want the SOP pages to be integrated
 ### Functional Requirements
 
 - **FR-001**: System MUST provide `docs/sop/index.md` summarizing the 5 customer engagement stages and 4 Engagement Archetypes.
-- **FR-002**: System MUST provide `docs/sop/01-discover-align.md` detailing Strategy, Problem, Current State assessment, Desired State (Intent), and 10-domain diagnostic gap analysis.
+- **FR-002**: System MUST provide `docs/sop/01-discover-align.md` detailing Strategy, Problem, Current State assessment, Desired State (Intent), and Domain diagnostic gap analysis.
 - **FR-003**: System MUST provide `docs/sop/02-target-architecture.md` detailing target architecture options, C4 models, vendor trade-offs, and technology pattern selection.
 - **FR-004**: System MUST provide `docs/sop/03-governance-framework.md` detailing ADRs, NFR P0–P3 priorities, ARB setup, and compliance/guardrail rules.
-- **FR-005**: System MUST provide `docs/sop/04-delivery-enablement.md` detailing execution steering, 30/60/90 roadmaps, delivery principles, and adaptive quality gates.
+- **FR-005**: System MUST provide `docs/sop/04-delivery-enablement.md` detailing execution steering,  roadmaps, delivery principles, and adaptive quality gates.
 - **FR-006**: System MUST provide `docs/sop/05-value-realisation-handover.md` detailing operational readiness review, value realization assessment, and organizational handover.
 - **FR-007**: System MUST provide `docs/sop/agent-architect-prompt.md` encoding the system architect co-pilot persona and step-by-step engagement CoT rules.
 - **FR-008**: System MUST update `mkdocs.yml` to include the "Architecture SOP" section in site navigation.

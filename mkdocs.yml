@@ -118,7 +118,7 @@ nav:
   - Tech Blog:
       - tech-blog/index.md
   - How I work:
-      - How I work: how-i-work.md
+      - Methodology: how-i-work.md
       - Architecture SOP:
         - Overview: sop/index.md
         - 01. Discover & Align: sop/01-discover-align.md
