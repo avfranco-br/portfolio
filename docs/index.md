@@ -11,6 +11,9 @@ tags:
   - AI native
 ---
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC` — Alexandre Franco Enterprise Architecture Portfolio.
+
 I'm Alexandre Franco, an Enterprise Architect with four decades of experience across complex enterprise environments, helping organisations navigate changes bridging strategy, architecture, governance, delivery and more recent AI operationalisation.
 
 This site is my career portfolio: selected engagements, architecture philosophy, and the thinking behind the work I lead. I publish ongoing experiments and patterns at [Ideas to Life](https://ideas-to-life.ai).
@@ -76,3 +79,7 @@ This site is my career portfolio: selected engagements, architecture philosophy,
 This portfolio reflects an ongoing exploration into how architecture, governance, operational intelligence, and AI native systems can evolve together to support sustainable organisational transformation.
 
 [LinkedIn](https://www.linkedin.com/in/avfranco/) | [Book an Intro Call](https://calendar.app.google/1cKarCCmCoNExvov7)
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*

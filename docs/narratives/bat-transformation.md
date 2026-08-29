@@ -6,6 +6,9 @@ tags:
   - governance
 ---
 
+> [!NOTE]
+> **Classification Level**: `CONFIDENTIAL - CLIENT CASE STUDY` — Enterprise Transformation Portfolio.
+
 Large-scale global organisations operate within a landscape of inherent friction. The challenge of maintaining operational consistency across fragmented technology ecosystems, while simultaneously navigating the complexity of global governance and local agility, creates a significant barrier to sustainable evolution. In these environments, transformation initiatives often struggle with disconnected delivery models and a lack of alignment between strategic intent and regional execution.
 
 ## Challenge
@@ -54,3 +57,8 @@ The foundational work in enterprise-scale governance and platform modernisation 
 
 ### Closing Reflection
 Sustainable enterprise transformation is an ongoing journey of operational enablement and architectural leadership. By treating architecture as an active organisational capability, global organisations can overcome the friction of scale and complexity to achieve lasting evolution. Ultimately, sustainable transformation depends not on enforcing control through governance alone, but on building operational foundations capable of allowing governance, scalability, and innovation to evolve together continuously across the enterprise landscape.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

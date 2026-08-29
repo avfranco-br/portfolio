@@ -16,6 +16,10 @@ content_type: technical-problem-solution
 
 # Preventing AI Over-Claiming with Automated Claim-Linting
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC - THOUGHT LEADERSHIP` — Technical Architecture Series.
+
+
 Generative AI tools excel at synthesizing complex documents, but they introduce a critical risk to high-stakes preparation: non-deterministic output inflation. When adapting personal experience or technical domain knowledge into role-specific preparation artifacts, large language models (LLMs) naturally drift toward capability over-claiming and hallucinated achievements. 
 
 Soft system prompts asking an LLM to "be truthful" or "avoid exaggerating" consistently fail under edge cases. Preventing AI-synthesized career projections from over-claiming requires an immutable canonical evidence graph governed by automated claim-linting and mandatory source attributions. Grounding generative pipelines in deterministic software inspection ensures that every output claim remains strictly bounded by verified, auditable source evidence.
@@ -127,3 +131,8 @@ Several practical lessons emerged during implementation:
 Generative AI pipelines become operationally trustworthy when governance moves from soft prompt guidance to active code enforcement. By pairing an immutable canonical evidence graph (`okf/`) with an automated Python claim-linting harness (`tests/test_lint.py`), teams can eliminate capability inflation and output hallucination at the point of generation.
 
 How are you enforcing data provenance and hard grounding boundaries in your non-deterministic LLM pipelines? Share your approach or join the conversation on pipeline governance patterns.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

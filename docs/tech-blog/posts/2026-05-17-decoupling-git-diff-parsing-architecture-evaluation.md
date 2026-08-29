@@ -23,6 +23,10 @@ claim_calibration:
 
 # Decoupling Git Diff Parsing for Verifiable Architecture Evaluation
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC - THOUGHT LEADERSHIP` — Technical Architecture Series.
+
+
 As software engineering organizations integrate autonomous AI agents into code delivery pipelines, evaluating architectural change becomes a primary operational challenge. Automated agents frequently alter system boundaries, introduce dependencies, or update configuration files across multiple commits. To maintain system integrity, automated governance platforms must continuously evaluate code deltas against defined architectural rules.
 
 However, attempting to evaluate repository changes by feeding unparsed diffs directly into large language models (LLMs) creates systemic vulnerabilities. LLMs are probabilistic engines. When tasked with reading raw unified diffs or scanning full file trees, they risk hallucinating file additions, misinterpreting file rename events, or running into strict context window limits.
@@ -165,3 +169,8 @@ Implementing the three-layer pipeline produced valuable observations regarding t
 Continuous architecture evaluation in AI native workflows requires clear boundaries between factual repository state and semantic interpretation. By decoupling git diff parsing into a dedicated extraction and classification layer, engineering teams build governance tools that ground AI reasoning in deterministic facts.
 
 When designing automated steering and governance workflows for software delivery, keep extraction deterministic and reserve LLM capacity for high-level semantic analysis.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

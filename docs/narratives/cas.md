@@ -6,6 +6,9 @@ tags:
   - architecture
 ---
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Continuous Architecture System (CAS) Core Specification.
+
 ## Challenge
 
 ### The Problem
@@ -47,3 +50,8 @@ The operational implications of governance aware software construction become ev
 
 ### Closing Reflection
 Architecture should never be an isolated review exercise; it must become an active operational capability that participates directly in software delivery. By shifting governance left into the software construction process itself while continuously reconciling repository evolution against architectural intent, CAS closes the gap between strategic direction and engineering reality. The Continuous Architecture System demonstrates that true operational sustainability emerges when architecture evolves from static documentation into a living, measurable, governance aware operational system capable of both preventing and correcting architectural entropy continuously.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

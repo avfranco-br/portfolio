@@ -6,6 +6,9 @@ tags:
   - enterprise-transformation
 ---
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC` — Alexandre Franco Enterprise Architecture Portfolio.
+
 This selection curates representative transformation initiatives and architecture leadership experiences that collectively demonstrate the operationalisation of architecture within complex enterprise environments. It reflects a commitment to the principle that architecture must serve as an active engine for growth and operational control, rather than a collection of static artifacts.
 
 By focusing on the alignment of strategic intent, governance enablement, and executable delivery, these initiatives illustrate a journey toward sustainable organisational evolution. The objective is to show how architectural leadership bridges the gap between business capability and engineering execution, creating the governed operational foundations required for safe and scalable transformation.
@@ -110,3 +113,8 @@ Across these diverse initiatives, several recurring architectural patterns emerg
 Sustainable transformation relies on building resilient foundations where governance and innovation reinforce each other. When architecture becomes democratised and operationally embedded, it evolves from a static oversight function into a continuously enabling organisational capability.
 
 The work presented here reflects a disciplined focus on the evolution of complex systems. Whether modernising global enterprise operating models or orchestrating governance aware AI delivery systems, the objective remains consistent: building operational foundations that allow innovation, governance, and organisational evolution to scale together safely.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

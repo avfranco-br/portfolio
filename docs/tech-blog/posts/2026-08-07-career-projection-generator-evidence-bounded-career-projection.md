@@ -23,6 +23,10 @@ claim_calibration:
 
 # Career Projection Generator: Building an Evidence-Bounded AI Automated Workflow
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC - THOUGHT LEADERSHIP` — Technical Architecture Series.
+
+
 ## The Problem: Career Context Without Positioning Inflation
 
 I wanted to build a system that could take my professional experience and turn it into a role-specific interview playbook but ask an LLM to do that and it will quietly round up.
@@ -229,3 +233,8 @@ When building domain-specific LLM workflows where accuracy and claim integrity a
 I built this for my own interview prep, but the underlying problem keeping AI-generated output honest when it's adapting real evidence to a new context shows up in a lot of the domain-specific systems I help teams design.
 
 If you need help to solve a similar problem in your own AI workflow, let's talk and see if I can help you. Book a <a href="https://calendar.app.google/5DuPqjCpJgy5u4QN8" target="_blank" rel="noopener noreferrer">Introduction (30 minutes) call</a>.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

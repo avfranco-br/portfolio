@@ -6,6 +6,9 @@ tags:
   - governance
 ---
 
+> [!NOTE]
+> **Classification Level**: `CONFIDENTIAL - CASE STUDY` — Enterprise Transformation Portfolio.
+
 How the Runner Agentic Intelligence initiative explored governance aware AI native software construction, coding agent orchestration, operational observability, and scalable architecture participation through real world experimentation with autonomous and semi autonomous delivery workflows.
 
 ## The Problem
@@ -55,3 +58,8 @@ This experiment proves that operationally trustworthy governance and AI accelera
 ## Closing Reflection
 
 Runner-Agentic Intelligence reflects a commitment to sustainable, responsible automation. It moves the focus from 'what' can be automated to 'how' it can be governed safely. By prioritising operational intelligence and architecture participation, we can build AI native delivery systems that are not just faster, but more resilient and strategically sound. Sustainable AI native delivery depends on establishing transparent orchestration systems where architectural intent, governance boundaries, and operational intelligence evolve together continuously.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

@@ -11,6 +11,9 @@ tags:
 
 # Stage 03: Governance & Decision Framework
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview
 
 The **Governance & Decision Framework** stage converts target architectural designs into enforceable rules, contracts, and auditable governance structures tailored to the customer's organization. Governance is a model of **enablement**, establishing clear guardrails and decision processes that allow delivery teams to operate with autonomy while remaining aligned with enterprise standards.
@@ -96,3 +99,8 @@ Establish governance structures that fit the client's culture and delivery scale
 
 > [!IMPORTANT]
 > **Stage Gate Check:** Ensure all governance rules are designed for enablement rather than blocking. Clear escalation paths and P0–P3 boundaries must be agreed upon by both enterprise architects and delivery leadership.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

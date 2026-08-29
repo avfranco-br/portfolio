@@ -23,6 +23,10 @@ claim_calibration:
 
 # Decoupling Knowledge from Projection: A Four-Layer Architecture for Grounded Multi-Agent Workflows
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC - THOUGHT LEADERSHIP` — Technical Architecture Series.
+
+
 ## Introduction: The Risk of Over-Claiming in Generative Workflows
 
 As enterprise engineering teams scale multi-agent LLM applications beyond single-prompt chains, they frequently run into context bleed and over-claiming. When a complex system transforms canonical enterprise knowledge (such as past system designs or verified domain experience) into target-specific outputs (such as technical proposals or specialized playbooks), generative synthesis stages often inflate alignment.
@@ -187,3 +191,8 @@ Key takeaways for system architects:
 - **Enforce programmatic claim linting and automated tests** to validate evidence boundaries prior to deployment.
 
 How is your team structuring multi-agent context boundaries to avoid evidence inflation? I invite enterprise AI system architects and lead LLM engineers to connect and share architectural patterns for governance-oriented orchestration.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

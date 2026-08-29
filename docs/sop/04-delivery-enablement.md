@@ -11,6 +11,9 @@ tags:
 
 # Stage 04: Delivery Enablement & Execution Steering
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview
 
 The **Delivery Enablement & Execution Steering** stage translates target architecture blueprints and governance rules into an actionable execution path for client delivery teams. This stage is **delivery-model agnostic**: whether the customer operates with SAFe, Agile Scrum, System Integrator (SI) vendor contracts, or GitOps/Repository-Driven teams, the architect provides clear guidance and quality gate criteria fit for that environment.
@@ -84,3 +87,8 @@ Establish quality gates matched to the customer's delivery model:
 
 > [!IMPORTANT]
 > **Stage Gate Check:** Ensure delivery roadmaps account for team capability and operational constraints. Never hand off a target blueprint without an accompanying  roadmap and clear quality gate criteria.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

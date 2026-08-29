@@ -11,6 +11,9 @@ tags:
 
 # Stage 02: Target Architecture & Strategy
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview
 
 The **Target Architecture & Strategy** stage transforms the Stage 01 gap analysis into a decoupled, fit-for-purpose target architecture design. This stage is **technology-agnostic**: the architect evaluates a full spectrum of technical options—ranging from traditional microservices and monoliths to event-driven architectures, COTS/SaaS integrations, and AI/Agentic systems—selecting the simplest pattern that reliably fulfills the customer's desired state intent.
@@ -86,3 +89,8 @@ Protect the customer against vendor lock-in, price hikes, and technology obsoles
 
 > [!IMPORTANT]
 > **Stage Gate Check:** Ensure all target cloud, SaaS, or AI model integrations rely on explicit interface contracts and abstraction layers. Direct coupling of application logic to proprietary vendor SDKs is prohibited without an approved Architecture Decision Record (ADR).
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

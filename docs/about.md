@@ -8,6 +8,10 @@ tags:
 
 # About Alexandre Franco
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC` — Alexandre Franco Enterprise Architecture Portfolio.
+
+
 <div style="display: flex; gap: 0.75rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
   <a href="../assets/alexandre-franco-cv.pdf" target="_blank" class="md-button md-button--primary">Download Full CV (PDF)</a>
 </div>
@@ -122,3 +126,8 @@ Key areas of ongoing exploration include:
 ## Closing Perspective
 
 At its core, my work is about the disciplined evolution of complex systems. Whether integrating global enterprise processes or orchestrating multi agent reasoning loops, the objective remains the same: to create the reproducible foundations that make innovation safe for the enterprise. I remain focused on the long-term operational health of systems and am always open to collaborating with those who value architectural integrity and sustainable transformation.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

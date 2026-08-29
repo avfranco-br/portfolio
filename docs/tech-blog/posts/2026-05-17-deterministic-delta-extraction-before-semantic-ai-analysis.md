@@ -14,6 +14,10 @@ status: review
 
 # Deterministic Delta Extraction Before Semantic AI Analysis
 
+> [!NOTE]
+> **Classification Level**: `PUBLIC - THOUGHT LEADERSHIP` — Technical Architecture Series.
+
+
 Evaluating architectural deltas in AI native systems requires a strict pipeline separation: deterministic file-level extraction and structural classification must precede downstream semantic LLM analysis to eliminate hallucinated deltas, control token costs, and provide auditable operational evidence.
 
 <!-- more -->
@@ -172,3 +176,8 @@ The central lesson is straightforward: LLMs excel at qualitative, semantic analy
 Grounding AI capabilities within enterprise delivery pipelines demands clear operational boundaries. By extracting and classifying git deltas deterministically before invoking semantic LLM evaluation, teams eliminate hallucinated diffs, control token overhead, and maintain an auditable audit trail for automated governance.
 
 How is your engineering organization grounding AI coding agents and steering tools within verifiable git evidence? Connect with me to share your approach.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
+

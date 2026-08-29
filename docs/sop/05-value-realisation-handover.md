@@ -11,6 +11,9 @@ tags:
 
 # Stage 05: Value Realisation & Organizational Handover
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Operating Model.
+
 ## Overview
 
 The **Value Realisation & Organizational Handover** stage completes the customer engagement by verifying business impact, assessing operational readiness, and transferring full capability ownership to the client organization.
@@ -71,3 +74,8 @@ Handover is a structured enablement process that transfers complete ownership to
 
 > [!IMPORTANT]
 > **Stage Gate Check:** Handover is complete only when customer leadership confirms value realization against Stage 01 goals, and internal client teams demonstrate full capability to operate and govern the architecture independently.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+

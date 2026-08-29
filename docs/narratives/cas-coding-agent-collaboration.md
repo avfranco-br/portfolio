@@ -7,6 +7,9 @@ tags:
   - architecture
 ---
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Continuous Architecture System (CAS) Collaboration Framework.
+
 ## The Emerging Challenge
 
 Coding agents are rapidly transforming how software is created. By automating implementation tasks, accelerating delivery cycles, and reducing operational friction, these systems significantly increase engineering throughput. However, most organisations are integrating coding agents into delivery environments without equivalent evolution in governance mechanisms.
@@ -152,3 +155,8 @@ Coding agents will fundamentally reshape software engineering. The critical chal
 CAS proposes that the future of architecture governance lies not in restricting automation, but in embedding auditable governance intelligence directly into software construction workflows themselves.
 
 When architecture becomes an active operational participant rather than a passive review function, automation and governance no longer compete. They reinforce each other continuously.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
+
