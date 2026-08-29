@@ -46,9 +46,11 @@ tags:
 
 ## Introduction
 
-I am a systems-first Enterprise Architect and technology leader with a career defined by the operationalisation of architecture and the steering of large-scale organisational change. My focus is on creating sustainable digital foundations where business strategy, governance, and engineering execution operate as a coherent system.
+I’m a technologist with over four decades of experience driven by the intent to help making individuals and organisations journey better, safer and happier applying technology. As an Enterprise Architect and AI Transformation advisor I help organisations of any size increase their efficiency, have a better return on their investments, focus on what’s more important to growth their revenue and customer satisfaction. How, over my career I have developed and continuously improving my own SOP (Standard Operating Procedure) based upon different frameworks, fail & success experiences, diversity of use-cases, tools and feedback. As a problem-first system thinker I put the why and what in front of the how, seeking to understand current context, what the desired tomorrow look like, then assess options to build a bridge to get there. I translate complexity into a practical way of thinking, deciding and acting.
 
-Throughout my journey, I have remained committed to the principle that architecture must be more than a collection of static artifacts; it must serve as an active engine for growth and operational control. By applying systems thinking to complex enterprise environments, I help organisations evolve safely, ensuring that technical transformation remains grounded in business capability and long-term resilience.
+With a career defined by the operationalisation of architecture and the steering of large-scale organisational change, my focus is on creating sustainable digital foundations where business strategy, architecture, governance, and engineering execution operate as a coherent system.
+
+Throughout my journey, I have remained committed to the principle that architecture must be more than a collection of static artifacts. It must serve as an active engine for growth and operational control by applying systems thinking to complex enterprise environments, I help organisations evolve safely, ensuring that technical transformation remains grounded in business capability and long-term resilience.
 
 ## Career Timeline & History
 

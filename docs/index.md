@@ -11,7 +11,7 @@ tags:
   - AI native
 ---
 
-I'm Alexandre Franco. an Enterprise Architect with four decades of experience across complex enterprise environments, helping organisations navigate changes bridging strategy, architecture, governance, delivery and more recent AI operationalisation.
+I'm Alexandre Franco, an Enterprise Architect with four decades of experience across complex enterprise environments, helping organisations navigate changes bridging strategy, architecture, governance, delivery and more recent AI operationalisation.
 
 This site is my career portfolio: selected engagements, architecture philosophy, and the thinking behind the work I lead. I publish ongoing experiments and patterns at [Ideas to Life](https://ideas-to-life.ai).
 
