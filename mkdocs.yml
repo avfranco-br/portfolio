@@ -118,13 +118,13 @@ nav:
   - Tech Blog:
       - tech-blog/index.md
   - How I work:
-      - how-i-work.md
-  - Architecture SOP:
-      - Overview: sop/index.md
-      - 01. Frame & Align: sop/01-frame-align.md
-      - 02. Architect & Decouple: sop/02-architect-decouple.md
-      - 03. Govern & Formalise: sop/03-govern-formalise.md
-      - 04. Operationalise & Orchestrate: sop/04-operationalise-orchestrate.md
-      - 05. Evolve & Observe: sop/05-evolve-observe.md
-      - Agent Co-Pilot Prompt: sop/agent-architect-prompt.md
+      - How I work: how-i-work.md
+      - Architecture SOP:
+        - Overview: sop/index.md
+        - 01. Discover & Align: sop/01-discover-align.md
+        - 02. Target Architecture & Strategy: sop/02-target-architecture.md
+        - 03. Governance & Decision Framework: sop/03-governance-framework.md
+        - 04. Delivery Enablement: sop/04-delivery-enablement.md
+        - 05. Value Realisation & Handover: sop/05-value-realisation-handover.md
+        - Agent Co-Pilot Prompt: sop/agent-architect-prompt.md
   - Contact: contact.md

@@ -1,36 +1,42 @@
-# Architect SOP Evolution: Technology-Agnostic Transformation System
+# Architect SOP Evolution: Enterprise Architecture Customer Engagement System
 
 ## Problem Statement
-How Might We evolve Alex's Architect Standard Operating Procedure (SOP) into a technology-agnostic Enterprise Architecture methodology that connects Business Strategy, Current & Desired State Analysis, Governance, and Delivery Execution—providing a single source of truth from which multi-audience artifacts (Executive Briefs, Agent Co-pilot Prompts, and Engineering Governance) can be projected?
+How Might We frame Alex's Architect SOP as an Engagement-Adaptive Enterprise Architecture Operating Model—one that governs how an Enterprise Architect engages with customers from strategic alignment through to value realization, scaling deliverable depth across 4 engagement archetypes without forcing software development (SDLC) artifacts onto non-engineering engagements?
 
-## Recommended Direction: Evolved 5-Stage Lifecycle & Projection Engine
+## Recommended Direction: Customer Engagement Lifecycle & Archetype Matrix
 
-### Core Lifecycle: The 5 Strategic Stages
-1. **01. Frame & Align (Strategy, Baseline & Intent):** Understanding strategic goals, framing the problem, assessing the Current State, defining the Desired State (Intent), and executing gap analysis across 10 diagnostic domains.
-2. **02. Architect & Decouple (Target Design & Abstractions):** Designing technology-agnostic system boundaries, establishing provider-agnostic abstractions, selecting target architectural patterns (traditional, event-driven, SaaS/COTS, or AI/Agentic where appropriate), and modeling C4 views.
-3. **03. Govern & Formalise (Contracts, ADRs & Controls):** Authoring ADRs as Code, enforcing contract-first API/schema specifications, establishing P0–P3 NFR boundaries, and defining safety/compliance heuristics.
-4. **04. Operationalise & Orchestrate (Delivery Execution & Quality Gates):** Driving tool-agnostic delivery orchestration via specification-driven execution, surgical slice implementation, and automated pipeline quality gates.
-5. **05. Evolve & Observe (Observability, Continuous Improvement & Handover):** Implementing operational & reasoning observability, continuous improvement feedback loops, auditable health metrics, and empowering team ownership.
+### Core Lifecycle: The 5 Strategic Customer Engagement Stages
+1. **01. Discover & Align (Strategy, Context & Baseline Assessment):** Understanding customer strategy, business drivers, problem statement, desired state intent, assessing current state baseline (capabilities, technical debt), and executing 10-domain diagnostic gap analysis.
+2. **02. Target Architecture & Strategy (Options, Blueprint & Trade-offs):** Formulating target architecture options (COTS, Cloud, Microservices, AI/Agentic), evaluating technology/vendor trade-offs, designing C4 models, and creating the Target Architecture Blueprint.
+3. **03. Governance & Decision Framework (Controls, Guardrails & Standards):** Establishing governance fit for customer context—whether Executive ADRs, Architecture Review Board (ARB) processes, NFR priorities (P0–P3), compliance rules, or (when applicable) repository-based ADRs.
+4. **04. Delivery Enablement & Execution Steering (Roadmap & Delivery Guidance):** Translating target architecture into an actionable execution roadmap (30/60/90 days), defining delivery principles, empowering delivery teams, and setting up quality gates appropriate for the customer's delivery model (Agile, SAFe, GitOps, SDD).
+5. **05. Value Realisation & Organizational Handover (Impact & Enablement):** Assessing operational readiness, verifying value realization against Stage 01 business goals, establishing continuous improvement feedback loops, and executing structured organizational handover.
+
+### Engagement Archetype Matrix (Adaptive SOP Depth)
+The Master SOP defines 4 Engagement Archetypes to match customer mandates:
+- **Archetype A: Strategic EA Assessment (2–4 Weeks):** High-level Strategy, Current State Audit, Gap Analysis, and 30/60/90 Transformation Roadmap.
+- **Archetype B: Target Architecture Blueprint (4–8 Weeks):** Desired State Vision, Technology Options, C4 Models, Vendor Trade-offs, and Architecture Specifications.
+- **Archetype C: Enterprise Governance & Operating Model (6–12 Weeks):** Governance Framework, ARB Setup, Guardrails, Risk & NFR Priority Matrix.
+- **Archetype D: Delivery Steering & Implementation (Ongoing / Sprints):** Hands-on Architecture, Architecture-as-Code, SDD, CI/CD Quality Gates, and Repository Governance.
 
 ### Dynamic Projection Engine (Multi-Audience Output)
-From the Master SOP, three target projections are derived:
-- **Executive Projection:** 1-Page Business Value Bridge & 30/60/90 Transformation Roadmap.
-- **Agentic Co-Pilot Projection:** System Architect Prompts, C4 template generators, and structured requirements mapping schemas.
-- **Delivery & Governance Projection:** Automated policy linters, NFR assessment checklists, and CI/CD quality gate workflows.
+- **Executive Projection:** 1-Page Business Value Bridge & 30/60/90 Strategic Transformation Roadmap.
+- **Agentic Co-Pilot Projection:** System Architect Prompts (`agent-architect-prompt.md`) and JSON schemas enabling AI coding agents to execute automated architectural analysis and C4 generation.
+- **Delivery & Governance Projection:** Governance charters, ARB checklists, NFR assessment matrices, and CI/CD quality gate workflows.
 
 ## Key Assumptions to Validate
-- [ ] The framework remains strictly technology-agnostic, recommending AI or traditional systems based on problem fit.
-- [ ] Stage 01 cleanly bridges Current State baseline to Desired State vision without delaying early alignment.
-- [ ] Delivery orchestration patterns apply universally regardless of whether teams use CAS, GitOps, or standard CI/CD pipelines.
+- [ ] The 5 engagement stages cleanly accommodate both high-level advisory and deep delivery engagements.
+- [ ] Deliverables scale dynamically based on the selected Engagement Archetype (A, B, C, or D).
+- [ ] Implementation artifacts (ADR-as-Code, SDD, Telemetry) are presented as optional depth tools for Archetype D.
 
 ## MVP Scope (Phase 1 Build)
 - **Idea Blueprint:** `docs/ideas/architect-sop-evolution.md`
-- **Master SOP Documentation:** `docs/sop/index.md` (Overview & technology-agnostic 5-stage lifecycle).
-- **Stage Guides:** `docs/sop/01-frame-align.md` through `docs/sop/05-evolve-observe.md`.
+- **Master SOP Documentation:** `docs/sop/index.md` (Overview & Engagement Lifecycle).
+- **Stage Guides:** `docs/sop/01-discover-align.md` through `docs/sop/05-value-realisation-handover.md`.
 - **Co-Pilot Schema:** `docs/sop/agent-architect-prompt.md` (System prompt for architectural co-pilots).
 - **Site Integration:** Update `mkdocs.yml` navigation structure under "Architecture SOP".
 
 ## Not Doing (and Why)
+- **Forcing SDLC Artifacts on All Engagements:** Code repos, linters, and telemetry pipelines apply only to Archetype D (Delivery Steering).
 - **Mandatory Technology Lock-In (AI-First Bias or Cloud Lock-In):** Technology selection is driven by problem fit, cost, and feasibility.
-- **Tool-Specific Delivery Mandates:** Delivery orchestration is tool-agnostic (CAS, GitHub Actions, Jenkins, or Jira are supported delivery mechanisms).
-- **Static Ivory-Tower EA Documents (PDF manuals):** Replaced entirely with repository-driven Markdown, code, and agent-accessible schemas.
+- **Static Ivory-Tower EA Documents (PDF manuals):** Replaced entirely with living Markdown, modular templates, and agent-accessible schemas.
