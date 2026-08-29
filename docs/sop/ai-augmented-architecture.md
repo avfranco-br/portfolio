@@ -18,7 +18,7 @@ As enterprise environments become increasingly complex and fast-moving, traditio
 
 By augmenting the Enterprise Architecture lifecycle with **Generative AI, Agentic Workforces, and Repository-Driven Governance**, architecture transforms from static documentation into an active, continuous intelligence engine.
 
-This document details four operational pillars derived from real-world experiments (`EA4ALL.AI`, `Continuous Architecture System - CAS`, and `Idea-to-Pattern`) that transform architectural ways of working.
+This document details four operational pillars derived from my real-world experiments (`EA4ALL.AI`, `Continuous Architecture System - CAS`, and `Idea-to-Pattern`) that transform architectural ways of working.
 
 ```mermaid
 graph TD
@@ -82,7 +82,8 @@ graph LR
     BuildPipe --> AuditLog["Git-Aware Delta Log"]
 ```
 
-### The Dual-Loop Governance Mechanism:
+### The Dual-Loop Governance Mechanism
+
 1. **The Prevent Loop (Pre-Commit & PR Gates):**
    - Intercepts structural or narrative changes during code commits or pull requests.
    - Executes deterministic linters (`scripts/validate_governance.py`) to enforce canonical terminology, frontmatter metadata, and navigation integrity.
@@ -111,7 +112,8 @@ Instead of relying on theoretical textbook frameworks, AI is used to mine **evid
 
 As organizations adopt AI coding agents (such as Antigravity, Gemini, or Claude) for software generation, architects must govern agentic workflows to prevent unstructured code sprawl.
 
-### Operating Principles for Coding Agent Collaboration:
+### Operating Principles for Coding Agent Collaboration
+
 - **Pair-Architect Persona:** Coding agents are equipped with explicit system prompts ([`agent-architect-prompt.md`](agent-architect-prompt.md)) instructing them to act as governance aware pair-architects.
 - **Deterministic Guardrail Boundaries:** Agents operate within strict safety envelopes—prohibiting direct imports of vendor-locked SDKs, enforcing contract-first API design, and requiring ADR approval for structural changes.
 - **Reasoning Observability:** All agentic decision paths, tool calls, and prompt trajectories are logged to maintain an auditable decision trail.
@@ -123,7 +125,7 @@ As organizations adopt AI coding agents (such as Antigravity, Gemini, or Claude)
 | Traditional EA Practice | AI Augmented EA Practice | Value Delivered |
 | :--- | :--- | :--- |
 | **Manual Documentation** | Automated natural language synthesis & C4 generation | 10x faster artifact creation |
-| **Reactive Gatekeeping** | CAS Prevent-and-Correct automated pipeline checks | Zero architectural drift |
+| **Reactive Gatekeeping** | CAS Prevent-and-Correct SDLC + CI/CD automated pipeline checks | Reduced architectural drift |
 | **Theoretical Frameworks** | Evidence-based pattern mining from code repositories | Reusable, proven designs |
 | **Ivory-Tower Isolation** | Democratized EA knowledge access via conversational AI | Cross-functional alignment |
 | **Ungoverned AI Coding** | Governance aware coding agent collaboration | Safe, scalable AI delivery |
