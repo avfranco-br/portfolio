@@ -1,3 +1,6 @@
+> [!NOTE]
+> **Classification Level**: `PUBLIC` — Alexandre Franco Enterprise Architecture Portfolio.
+
 # Portfolio Platform — Layered Architecture
 
 This diagram captures the **three-layer model** of the portfolio platform: a content site, a governance layer, and the CI/CD pipeline that enforces both. It is the canonical visual reference for `ARCHITECTURE.md` §2.
@@ -79,3 +82,7 @@ flowchart TB
 | C3 | `.github/workflows/deploy.yml` |
 
 See `ARCHITECTURE.md` §2 for the narrative explanation of each layer.
+
+---
+
+*© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*

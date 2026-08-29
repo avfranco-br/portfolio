@@ -19,8 +19,8 @@ echo "Running MkDocs structural validation..."
 $MKDOCS_CMD build --strict
 
 echo ""
-echo "Running terminology governance validation..."
-$PYTHON_CMD scripts/validate_governance.py
+echo "Running terminology and IP governance validation..."
+$PYTHON_CMD scripts/validate_governance.py "$@"
 
 echo ""
 echo "Portfolio governance validation completed successfully."
