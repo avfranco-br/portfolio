@@ -49,4 +49,3 @@ Sustainable transformation relies on building resilient foundations where govern
 ---
 
 *© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved.*
-
