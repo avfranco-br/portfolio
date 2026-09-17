@@ -1,5 +1,4 @@
 ---
-title: "Stage 03: Governance & Decision Framework"
 description: Architectural governance, decision rights, guardrails, standards, risk management, and mechanisms for controlled architectural change.
 tags:
   - architecture
@@ -473,37 +472,37 @@ Define how material architectural decisions are documented.
 
 An ADR or equivalent decision record may include:
 
-# ADR-XXX: [Decision Title]
+## 9. ADR-XXX: [Decision Title]
 
-## Status
+### Status
 
 Proposed / Accepted / Superseded / Rejected
 
-## Context
+### Context
 
 What problem or decision requires resolution?
 
-## Decision
+### Decision
 
 What has been decided?
 
-## Options Considered
+### Options Considered
 
 What meaningful alternatives were evaluated?
 
-## Rationale
+### Rationale
 
 Why was this option selected?
 
-## Consequences
+### Consequences
 
 What are the expected benefits, costs, risks and dependencies?
 
-## Assumptions
+### Assumptions
 
 What assumptions materially influence the decision?
 
-## Related Decisions
+### Related Decisions
 
 Which other decisions or architectural artefacts are affected?
 
@@ -511,7 +510,7 @@ The format may be adapted to the organisation.
 
 Not every architectural decision requires a formal ADR. Documentation requirements should be proportionate to decision significance.
 
-Output
+### Output
 
 * Decision-recording standard.
 * ADR template where appropriate.
@@ -519,7 +518,7 @@ Output
 
 ⸻
 
-## 9. Establish Risk and NFR Governance
+## 10. Establish Risk and NFR Governance
 
 Identify the Non-Functional Requirements and risks that require explicit governance.
 
@@ -557,7 +556,7 @@ Output
 
 ⸻
 
-## 10. Establish Exception and Escalation Management
+## 12. Establish Exception and Escalation Management
 
 No governance framework can anticipate every situation.
 
@@ -778,14 +777,14 @@ The core governance practice is instantiated according to the engagement’s:
 
 Examples include:
 
-| Engagement Pattern                     | Typical Governance Contribution                                                        |
-| -------------------------------------- | -------------------------------------------------------------------------------------- |
-| Focused Architecture / Decision Review | Clarify decision authority, assumptions, decision record and required escalation       |
-| Architecture Health Check              | Assess effectiveness of existing governance and identify material weaknesses           |
-| Target Architecture Blueprint          | Identify governance implications, standards, ownership and material architectural decisions |
-| Architecture Assessment & Roadmap      | Establish governance requirements needed to support the target state and transition    |
-| Enterprise Governance & Operating Model | Design decision rights, forums, guardrails, standards and operating mechanisms         |
-| Delivery Steering                      | Apply governance mechanisms during implementation and manage architectural change      |
+| Engagement Pattern                     | Typical Governance Contribution                                                              |
+| -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Focused Architecture / Decision Review | Clarify decision authority, assumptions, decision record and required escalation             |
+| Architecture Health Check              | Assess effectiveness of existing governance and identify material weaknesses                 |
+| Target Architecture Blueprint          | Identify governance implications, standards, ownership and material architectural decisions  |
+| Architecture Assessment & Roadmap      | Establish governance requirements needed to support the target state and transition          |
+| Enterprise Governance & Operating Model| Design decision rights, forums, guardrails, standards and operating mechanisms               |
+| Delivery Steering                      | Apply governance mechanisms during implementation and manage architectural change            |
 
 The engagement may therefore use only selected elements of this stage.
 

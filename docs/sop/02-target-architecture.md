@@ -1,5 +1,4 @@
 ---
-title: "Stage 02: Target Architecture & Strategy"
 description: "A context-driven, iterative architectural method for establishing architectural direction, evaluating meaningful options and trade-offs, developing target architecture where required, and identifying material transition implications."
 version: "1.1"
 tags:
@@ -76,9 +75,9 @@ The architecture process therefore remains adaptive without becoming uncontrolle
 
 ⸻
 
-Core Principles
+## 1.Core Principles
 
-1. Outcome Before Technology
+Outcome Before Technology
 
 Architectural decisions begin with the business outcome, problem, decision, capability need, or constraint established through the engagement’s current understanding of the context.
 
@@ -99,7 +98,7 @@ Technology is evaluated as a means of satisfying those needs, not as the startin
 
 ⸻
 
-2. Context Before Architecture
+## 2. Context Before Architecture
 
 Architectural context is progressively established rather than assumed to be complete at the beginning of Stage 02.
 
@@ -125,7 +124,7 @@ Architecture should not manufacture certainty that the evidence does not support
 
 ⸻
 
-3. Simplicity First
+## 3. Simplicity First
 
 Prefer the simplest architectural approach that satisfies the relevant requirements and constraints.
 
@@ -145,7 +144,7 @@ It means avoiding architectural complexity that does not create corresponding va
 
 ⸻
 
-4. Technology-Agnostic Evaluation
+## 4. Technology-Agnostic Evaluation
 
 The architect should remain open to materially relevant architectural approaches, including:
 
@@ -164,7 +163,7 @@ These are examples of possible solution patterns, not mandatory categories that 
 
 ⸻
 
-5. Options Before Commitment
+## 5. Options Before Commitment
 
 Where meaningful architectural alternatives remain open, the architect should identify and evaluate them before establishing a recommendation.
 
@@ -189,7 +188,7 @@ Not every engagement requires a formal multi-option analysis.
 
 ⸻
 
-6. Contextual Trade-offs
+## 6. Contextual Trade-offs
 
 There is rarely a universally correct architecture.
 
@@ -211,7 +210,7 @@ Trade-offs should be assessed according to the context and consequences relevant
 
 ⸻
 
-7. Appropriate Decoupling
+## 7. Appropriate Decoupling
 
 Architectural boundaries should be introduced where they create material architectural or strategic value.
 
@@ -241,7 +240,7 @@ Additional layers introduce their own complexity and should therefore be justifi
 
 ⸻
 
-8. Architecture Must Reflect Operational Reality
+## 8. Architecture Must Reflect Operational Reality
 
 The target architecture must be viable within the organisation that will operate and evolve it.
 
@@ -264,7 +263,7 @@ A technically elegant architecture that the organisation cannot operate is not a
 
 ⸻
 
-9. AI Is an Architectural Choice, Not a Default
+## 9. AI Is an Architectural Choice, Not a Default
 
 AI and agentic systems should be considered where the problem characteristics justify them.
 
@@ -283,7 +282,7 @@ Where deterministic software, data queries, rules, automation, or existing platf
 
 ⸻
 
-10. Evolution, Reuse and Strategic Fit
+## 10. Evolution, Reuse and Strategic Fit
 
 Target architecture should consider how existing capabilities, platforms and strategic assets can be:
 
@@ -312,7 +311,7 @@ The architectural judgement should therefore consider the strategic fit of both 
 
 ⸻
 
-11. Progressive Architectural Direction
+## 11. Progressive Architectural Direction
 
 Architectural direction should emerge progressively as:
 
@@ -382,7 +381,7 @@ It recognises that architectural reasoning and evidence development interact.
 
 ⸻
 
-12. Traceability
+## 12. Traceability
 
 Material architectural conclusions should remain traceable to their underlying context and evidence.
 
@@ -427,7 +426,7 @@ This allows architecture to be:
 
 ⸻
 
-13. Collaborative Human Architectural Judgement
+## 13. Collaborative Human Architectural Judgement
 
 Architectural judgement remains accountable to the architect, but architecture should be developed, challenged and validated with the relevant:
 
@@ -457,7 +456,7 @@ The architect remains accountable for:
 
 ⸻
 
-Core Workflow
+## 14. Core Workflow
 
 Architecture is developed through the following reasoning loop:
 
@@ -491,10 +490,9 @@ An engagement may enter, revisit, combine, or omit activities according to:
 
 ⸻
 
-FRAME
+### 14.1 FRAME
 
-1. Frame the Architectural Problem
-
+**Frame the Architectural Problem**
 Confirm the architectural problem being addressed and the purpose of the architectural work.
 
 Establish, where relevant:
@@ -540,8 +538,7 @@ Output:
 
 ⸻
 
-2. Identify Architectural Concerns and Constraints
-
+**Identify Architectural Concerns and Constraints**
 Translate the established context into the architectural concerns that need to be resolved.
 
 Examples include:
@@ -589,8 +586,7 @@ Output:
 
 ⸻
 
-3. Establish Architectural Principles and Boundaries
-
+**Establish Architectural Principles and Boundaries**
 Establish the principles and boundaries that will guide architectural choices.
 
 These may include:
@@ -626,8 +622,7 @@ Output:
 
 ⸻
 
-4. Establish Initial Architectural Direction
-
+**Establish Initial Architectural Direction**
 Before selecting specific technologies, establish an initial architectural shape or direction.
 
 Consider:
@@ -674,10 +669,9 @@ Output:
 
 ⸻
 
-EXPLORE
+### 14.2 EXPLORE
 
-5. Identify Meaningful Architectural Options
-
+**Identify Meaningful Architectural Options**
 Identify realistic alternatives capable of satisfying the established drivers and constraints.
 
 Options may involve:
@@ -709,8 +703,7 @@ Output:
 
 ⸻
 
-6. Evaluate Options and Trade-offs
-
+**Evaluate Options and Trade-offs**
 Evaluate meaningful options against the concerns established earlier.
 
 Assessment criteria may include:
@@ -747,8 +740,7 @@ Output:
 
 ⸻
 
-7. Investigate Architectural Implications
-
+**Investigate Architectural Implications**
 Investigate the consequences of the emerging architectural direction.
 
 This may include:
@@ -789,8 +781,7 @@ Output:
 
 ⸻
 
-8. Refine Architectural Direction
-
+**Refine Architectural Direction**
 Refine the emerging architectural direction based on:
 
 * evidence;
@@ -822,10 +813,9 @@ Output:
 
 ⸻
 
-ELABORATE
+### 14.3 ELABORATE
 
-9. Evaluate Technology and Vendor Choices
-
+**Evaluate Technology and Vendor Choices**
 Where specific technology or vendor choices are required, evaluate them after establishing the architectural need.
 
 Consider:
@@ -867,8 +857,7 @@ Output:
 
 ⸻
 
-10. Apply AI and Agentic Architecture Analysis Where Relevant
-
+**Apply AI and Agentic Architecture Analysis Where Relevant**
 Where AI or agentic capability is part of the problem or candidate architecture, evaluate it as an architectural system rather than simply as a model selection.
 
 Consider:
@@ -914,8 +903,7 @@ Output:
 
 ⸻
 
-11. Model the Architecture
-
+**Model the Architecture**
 Create architecture models that communicate the selected direction at the appropriate level of abstraction.
 
 The C4 model may be used where useful to communicate:
@@ -948,8 +936,7 @@ Output:
 
 ⸻
 
-12. Define Strategic Boundaries and Abstractions Where Justified
-
+**Define Strategic Boundaries and Abstractions Where Justified**
 Where material dependency or substitution risk exists, establish appropriate architectural boundaries.
 
 Potential mechanisms include:
@@ -991,8 +978,7 @@ Output:
 
 ⸻
 
-13. Formulate the Target Architecture and Architectural Judgement
-
+**Formulate the Target Architecture and Architectural Judgement**
 Consolidate the analysis into a coherent architectural direction.
 
 The target architecture should make explicit:
@@ -1040,10 +1026,9 @@ Output:
 
 ⸻
 
-VALIDATE
+### 14.4 VALIDATE
 
-14. Validate the Architecture
-
+**Validate the Architecture**
 Challenge the architecture against the original drivers, requirements, constraints and evidence.
 
 Validate:
@@ -1075,8 +1060,9 @@ Output:
 
 ⸻
 
-15. Refine and Re-enter the Architectural Loop Where Required
+### 14.5 REFINE
 
+**Refine and Re-enter the Architectural Loop Where Required**
 Validation may identify a need to revisit earlier architectural reasoning.
 
 Examples include:
@@ -1110,7 +1096,7 @@ Return only to the point necessary to resolve the identified issue.
 
 ⸻
 
-16. Identify Transition and Implementation Implications Where Required
+## 15 Identify Transition and Implementation Implications Where Required
 
 Where the engagement requires more than target-state definition, identify the implications of moving toward the target architecture.
 
@@ -1141,7 +1127,7 @@ Output:
 
 ⸻
 
-17. Capture Material Architectural Decisions
+## 16. Capture Material Architectural Decisions
 
 Material architectural decisions should be recorded in an appropriate decision record.
 
@@ -1172,7 +1158,7 @@ Output:
 
 ⸻
 
-Architecture Loop Exit Condition
+## 17. Architecture Loop Exit Condition
 
 The architectural reasoning loop may conclude when:
 
@@ -1194,7 +1180,7 @@ Completion does not imply that all architectural uncertainty has been eliminated
 
 ⸻
 
-Governance & Quality Gates
+## 18. Governance & Quality Gates
 
 The following gates operate as control conditions within the architectural reasoning loop.
 
@@ -1204,7 +1190,7 @@ A gate may be invoked whenever the relevant condition becomes material.
 
 ⸻
 
-Gate 1 — Context Sufficiency
+### Gate 1 — Context Sufficiency
 
 Before substantive target architecture work proceeds, confirm that the architectural context is sufficiently established for the intended analysis.
 
@@ -1221,7 +1207,7 @@ The question is whether the missing information could materially change the arch
 
 ⸻
 
-Gate 2 — Architectural Scope
+### Gate 2 — Architectural Scope
 
 Confirm that the architecture being produced is consistent with the agreed scope and boundary.
 
@@ -1252,7 +1238,7 @@ The architect should not silently expand Stage 02 into a broader assessment.
 
 ⸻
 
-Gate 3 — Options and Trade-offs
+### Gate 3 — Options and Trade-offs
 
 Where meaningful alternatives exist, ensure that the recommendation is supported by explicit consideration of those alternatives and their material trade-offs.
 
@@ -1268,7 +1254,7 @@ Where the direction is already sufficiently established, validate its architectu
 
 ⸻
 
-Gate 4 — Architectural Coherence
+### Gate 4 — Architectural Coherence
 
 Confirm that the proposed architecture is coherent across relevant dimensions:
 
@@ -1291,7 +1277,7 @@ Architectural coherence should be assessed at the level necessary to establish t
 
 ⸻
 
-Gate 5 — Dependency and Vendor Risk
+### Gate 5 — Dependency and Vendor Risk
 
 Ensure that material dependencies are understood.
 
@@ -1308,7 +1294,7 @@ Abstraction should be introduced where its expected value justifies its cost and
 
 ⸻
 
-Gate 6 — AI / Agentic Architecture
+### Gate 6 — AI / Agentic Architecture
 
 Where AI or agentic systems are proposed, confirm that the architecture addresses relevant:
 
@@ -1339,7 +1325,7 @@ AI adoption must be justified by the problem characteristics and requirements.
 
 ⸻
 
-Gate 7 — Evidence, Traceability and Confidence
+### Gate 7 — Evidence, Traceability and Confidence
 
 Material recommendations should be traceable through:
 
@@ -1369,7 +1355,7 @@ Confidence should not be presented as numerical precision unless a defensible ba
 
 ⸻
 
-Gate 8 — Human Architectural Accountability
+### Gate 8 — Human Architectural Accountability
 
 AI or automation may be used to accelerate architectural analysis and production of artefacts.
 
@@ -1387,7 +1373,7 @@ The architect remains accountable for:
 
 ⸻
 
-Architectural Outcomes
+## 19. Architectural Outcomes
 
 Stage 02 may establish some or all of the following substantive architectural outcomes, depending on scope:
 
@@ -1410,7 +1396,7 @@ These are outcomes of architectural reasoning, not mandatory documents.
 
 ⸻
 
-Supporting Architecture Artefacts
+## 20. Supporting Architecture Artefacts
 
 Where useful, the architectural work may produce supporting artefacts such as:
 
@@ -1442,7 +1428,7 @@ The production of an artefact is not itself evidence that the architectural prob
 
 ⸻
 
-Target Architecture Blueprint
+## 21. Target Architecture Blueprint
 
 Where the engagement requires a formal Target Architecture Blueprint, the blueprint should be assembled from the architectural analysis and outcomes produced during Stage 02.
 
@@ -1485,7 +1471,7 @@ The contents should reflect:
 
 ⸻
 
-Relationship to Stage 01 — Discover & Align
+## 22. Relationship to Stage 01 — Discover & Align
 
 Stage 01 establishes sufficient context for architectural reasoning.
 
@@ -1567,7 +1553,7 @@ If the additional work materially changes the engagement scope or requires broad
 
 ⸻
 
-Relationship to Architecture Assessment & Roadmap
+## 23. Relationship to Architecture Assessment & Roadmap
 
 Architecture Assessment & Roadmap is a separate Engagement Method.
 
@@ -1603,7 +1589,7 @@ Stage 02 may provide target architecture inputs to an Assessment & Roadmap engag
 
 ⸻
 
-Relationship to Stage 03 — Governance & Decision Framework
+## 24. Relationship to Stage 03 — Governance & Decision Framework
 
 Stage 02 may establish:
 
@@ -1632,7 +1618,7 @@ Stage 02 identifies what governance the architecture requires; Stage 03 establis
 
 ⸻
 
-Relationship to Stage 04 — Delivery Enablement & Execution Steering
+## 25. Relationship to Stage 04 — Delivery Enablement & Execution Steering
 
 Stage 02 may establish:
 
@@ -1657,7 +1643,7 @@ Where a Solution Architect is embedded in a delivery team, that role normally ow
 
 ⸻
 
-Relationship to Stage 05 — Value Realisation & Organisational Handover
+## 26. Relationship to Stage 05 — Value Realisation & Organisational Handover
 
 Stage 02 may identify:
 
@@ -1681,7 +1667,7 @@ Stage 02 defines what the architecture is intended to enable; Stage 05 determine
 
 ⸻
 
-Engagement-Specific Tailoring
+## 27. Engagement-Specific Tailoring
 
 The professional architecture practice defined by this SOP is applied according to:
 
@@ -1728,7 +1714,7 @@ Commercial constraints, fixed deliverable packages, pricing, review limits, or o
 
 ⸻
 
-Reusable Architectural Assets
+## 28. Reusable Architectural Assets
 
 Where appropriate, maintain and reuse controlled architectural assets, including:
 
@@ -1751,7 +1737,7 @@ Reusable assets should accelerate architectural work without replacing contextua
 
 ⸻
 
-Governance, Validation and Architectural Accountability
+## 29. Governance, Validation and Architectural Accountability
 
 Architecture should be developed collaboratively with relevant stakeholders.
 
@@ -1803,7 +1789,7 @@ The architect does not automatically own every business, investment, organisatio
 
 ⸻
 
-AI-Assisted Architecture
+## 30. AI-Assisted Architecture
 
 AI can significantly accelerate Stage 02 where sufficient source material exists.
 
@@ -1880,7 +1866,7 @@ AI is an augmentation mechanism, not a substitute for architectural judgement.
 
 ⸻
 
-Evidence and Traceability
+## 31. Evidence and Traceability
 
 Material architectural conclusions should maintain a traceability chain.
 
@@ -1927,7 +1913,7 @@ Not every minor architectural statement requires a formal evidence chain.
 
 ⸻
 
-Architecture Confidence
+## 32. Architecture Confidence
 
 Confidence should reflect the strength of the architectural basis.
 
@@ -1956,7 +1942,7 @@ The purpose of confidence is to communicate the strength of the architectural co
 
 ⸻
 
-Outputs
+## 33. Outputs
 
 Depending on the engagement, Stage 02 may produce:
 
@@ -2010,7 +1996,7 @@ Outputs are scope-driven, not automatically required for every engagement.
 
 ⸻
 
-Architecture Method Boundary
+## 34. Architecture Method Boundary
 
 Stage 02 should remain focused on architectural direction and target architecture.
 
@@ -2041,7 +2027,7 @@ The appropriate method should be selected according to the question that needs t
 
 ⸻
 
-Relationship to the Core EA SOP
+## 35. Relationship to the Core EA SOP
 
 Stage 02 is one capability within the Core Enterprise Architecture SOP.
 
@@ -2067,7 +2053,7 @@ The commercial package must not redefine the professional methodology.
 
 ⸻
 
-External Methodological Alignment
+## 36. External Methodological Alignment
 
 The operating model is consistent with established architecture-process practice without being derived from or identified with any external framework.
 
@@ -2077,7 +2063,7 @@ This SOP therefore treats iterative architectural reasoning as a professional op
 
 ⸻
 
-Summary
+## 37. Summary
 
 Stage 02 exists to turn established context into architectural direction and, where required, a coherent target architecture.
 

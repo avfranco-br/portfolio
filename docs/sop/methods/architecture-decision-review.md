@@ -1,5 +1,4 @@
 ---
-title: "Architecture Decision Review"
 description: "A bounded architectural method for evaluating a defined technology or architecture decision and producing a decision-ready recommendation."
 tags:
   - architecture

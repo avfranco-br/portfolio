@@ -1,9 +1,7 @@
-![MOSTELLI](../brand/mostelli.jpeg)
-**Enterprise Architecture & AI Transformation**
-
----
-
 # Illustrative Architecture Decision Review
+
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Alexandre Franco Enterprise Architecture Portfolio.
 
 ## Fictional scenario — representative sample
 >

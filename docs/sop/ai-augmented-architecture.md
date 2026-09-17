@@ -1,5 +1,4 @@
 ---
-title: AI Augmented Architecture Workflows & Governance
 description: Transforming enterprise architecture ways of working using generative AI, agentic workforces, CAS prevent-and-correct processes, and evidence-based pattern mining.
 tags:
   - architecture
@@ -136,4 +135,3 @@ As organizations adopt AI coding agents (such as Antigravity, Gemini, or Claude)
 ---
 
 *© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
-

@@ -1,5 +1,4 @@
 ---
-title: "Stage 04: Delivery Enablement & Execution Steering"
 description: "Translating architectural direction into an executable path, enabling delivery teams, managing architectural integrity, and steering implementation through proportionate assurance."
 version: "1.1"
 tags:
@@ -915,7 +914,7 @@ A roadmap may include:
 
 | Element        | Purpose                                           |
 | -------------- | ------------------------------------------------- |
-| Outcome        | What value or capability the increment enables   |
+| Outcome        | What value or capability the increment enables    |
 | Capability     | What business or operational capability changes   |
 | Scope          | What is included                                  |
 | Dependencies   | What must exist first                             |
@@ -1135,14 +1134,14 @@ The core delivery-enablement practice is instantiated according to:
 
 Examples include:
 
-| Engagement Pattern                     | Typical Stage 04 Contribution                                                                           |
-| -------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| Focused Architecture / Decision Review | Usually limited to implementation implications, constraints and next-step guidance                     |
-| Architecture Health Check              | Prioritised remediation actions and implementation considerations where required                        |
-| Target Architecture Blueprint          | Transition implications and implementation guidance where within scope                                 |
-| Architecture Assessment & Roadmap      | Detailed transition strategy, roadmap and sequencing                                                   |
-| Enterprise Transformation              | Transformation roadmap, dependency management, architecture assurance and organisational enablement   |
-| Delivery Steering                      | Ongoing architecture assurance, decision support, risk management and adaptation during implementation |
+| Engagement Pattern                     | Typical Stage 04 Contribution                                                                            |
+| -------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| Focused Architecture / Decision Review | Usually limited to implementation implications, constraints and next-step guidance                       |
+| Architecture Health Check              | Prioritised remediation actions and implementation considerations where required                         |
+| Target Architecture Blueprint          | Transition implications and implementation guidance where within scope                                   |
+| Architecture Assessment & Roadmap      | Detailed transition strategy, roadmap and sequencing                                                     |
+| Enterprise Transformation              | Transformation roadmap, dependency management, architecture assurance and organisational enablement      |
+| Delivery Steering                      | Ongoing architecture assurance, decision support, risk management and adaptation during implementation   |
 
 A detailed roadmap is therefore not automatically required merely because Stage 04 is referenced.
 

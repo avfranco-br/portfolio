@@ -1,5 +1,4 @@
 ---
-title: "Stage 05: Value Realisation & Organizational Handover"
 description: Measuring outcomes, validating operational readiness, enabling organisational ownership, and establishing the conditions for sustained architectural evolution.
 tags:
   - architecture
@@ -737,13 +736,13 @@ Output
 
 Where value assessment is within scope, evaluate value across an appropriate hierarchy.
 
-| Level           | Question                                                    | Evidence Example                                                                            |
-| --------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| Output          | What was delivered?                                         | Implemented architecture, service, process or control                                                                 |
-| Capability      | What can the organisation now do?                           | New or improved business / operational capability                                                                         |
-| Outcome         | What changed as a result?                                      | Performance, adoption, risk, service or process change                                                          |
-| Value           | What measurable benefit resulted?                              | Cost, efficiency, revenue, risk or experience measure              |
-| Strategic Impact | Did the change contribute to the broader strategic objective? | Contribution to strategic outcome or priority                    |
+| Level             | Question                                                        | Evidence Example                                          |
+| ----------------- | --------------------------------------------------------------- | --------------------------------------------------------- |
+| Output            | What was delivered?                                             | Implemented architecture, service, process or control     |
+| Capability        | What can the organisation now do?                               | New or improved business / operational capability         |
+| Outcome           | What changed as a result?                                       | Performance, adoption, risk, service or process change    |
+| Value             | What measurable benefit resulted?                               | Cost, efficiency, revenue, risk or experience measure     |
+| Strategic Impact  | Did the change contribute to the broader strategic objective?   | Contribution to strategic outcome or priority             |
 
 Not every engagement will reach the Value or Strategic Impact level during the engagement period.
 
@@ -776,13 +775,13 @@ flowchart LR
 
 The architect should distinguish between:
 
-| State           | Meaning                                                        |
-| --------------- | -------------------------------------------------------------- |
-| Enabled         | Architecture and implementation provide the required mechanism |
-| Available       | The capability can be used operationally                       |
-| Adopted         | Relevant users, teams or processes actually use it             |
-| Effective       | Evidence indicates that it performs as intended               |
-| Outcome Realised | The intended business or operational change is evidenced      |
+| State             | Meaning                                                        |
+| ----------------- | -------------------------------------------------------------- |
+| Enabled           | Architecture and implementation provide the required mechanism |
+| Available         | The capability can be used operationally                       |
+| Adopted           | Relevant users, teams or processes actually use it             |
+| Effective         | Evidence indicates that it performs as intended                |
+| Outcome Realised  | The intended business or operational change is evidenced       |
 
 These states should not be collapsed into a single assertion that the architecture “delivered value”.
 
@@ -794,17 +793,17 @@ Where an Operational Readiness Review (ORR) is required, assess the capability a
 
 Potential areas include:
 
-| Area          | Typical Considerations                                  |
-| ------------- | ------------------------------------------------------- |
-| Ownership     | Service owner, support responsibility, escalation       |
-| Observability | Monitoring, logging, metrics, alerting                  |
-| Resilience    | Availability, recovery, failure handling               |
-| Security      | Access, controls, monitoring, vulnerabilities          |
-| Data          | Ownership, quality, privacy, lifecycle                  |
-| Support       | Processes, runbooks, service management                |
-| Recovery      | Backup, restore, disaster recovery                     |
-| Performance   | Capacity, scalability, performance monitoring           |
-| Supplier      | Support model, dependencies, SLAs                       |
+| Area          | Typical Considerations                                         |
+| ------------- | -------------------------------------------------------------- |
+| Ownership     | Service owner, support responsibility, escalation              |
+| Observability | Monitoring, logging, metrics, alerting                         |
+| Resilience    | Availability, recovery, failure handling                       |
+| Security      | Access, controls, monitoring, vulnerabilities                  |
+| Data          | Ownership, quality, privacy, lifecycle                         |
+| Support       | Processes, runbooks, service management                        |
+| Recovery      | Backup, restore, disaster recovery                             |
+| Performance   | Capacity, scalability, performance monitoring                  |
+| Supplier      | Support model, dependencies, SLAs                              |
 | AI            | Evaluation, monitoring, safety, human oversight where relevant |
 
 The assessment should identify:
@@ -823,12 +822,12 @@ An ORR should not be represented as a formal production sign-off unless the arch
 
 A successful handover should transfer four forms of capability:
 
-| Capability | Meaning                                                                 |
-| ---------- | ---------------------------------------------------------------------- |
-| Knowledge  | The organisation understands the architecture and the rationale behind it |
-| Ownership  | Responsibilities and decision rights are assigned                       |
-| Operation   | Teams can operate and support the resulting capability where applicable |
-| Evolution  | The organisation can make future decisions and evolve the architecture without unnecessary external dependency |
+| Capability  | Meaning                                                                                                         |
+| ----------- | --------------------------------------------------------------------------------------------------------------- |
+| Knowledge   | The organisation understands the architecture and the rationale behind it                                       |
+| Ownership   | Responsibilities and decision rights are assigned                                                               |
+| Operation   | Teams can operate and support the resulting capability where applicable                                         |
+| Evolution   | The organisation can make future decisions and evolve the architecture without unnecessary external dependency  |
 
 This is more important than simply transferring a collection of documents.
 
@@ -875,14 +874,14 @@ The core Stage 05 capabilities are applied according to:
 
 Examples include:
 
-| Engagement Pattern                     | Typical Stage 05 Contribution                                                               |
-| -------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Focused Architecture / Decision Review | Decision closure, final recommendation, residual risks and next-step guidance             |
-| Architecture Health Check              | Findings closure, prioritised improvement actions and ownership                            |
-| Target Architecture Blueprint          | Knowledge transfer, architectural ownership and implementation guidance where applicable   |
-| Architecture Assessment & Roadmap      | Transition ownership, roadmap governance and measurement framework                          |
+| Engagement Pattern                     | Typical Stage 05 Contribution                                                                |
+| -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| Focused Architecture / Decision Review | Decision closure, final recommendation, residual risks and next-step guidance                |
+| Architecture Health Check              | Findings closure, prioritised improvement actions and ownership                              |
+| Target Architecture Blueprint          | Knowledge transfer, architectural ownership and implementation guidance where applicable     |
+| Architecture Assessment & Roadmap      | Transition ownership, roadmap governance and measurement framework                           |
 | Enterprise Transformation              | Value assessment, operational readiness, organisational enablement and governance transition |
-| Delivery Steering                      | Operational transition, outcome validation and ongoing architecture ownership              |
+| Delivery Steering                      | Operational transition, outcome validation and ongoing architecture ownership                |
 
 A short advisory engagement may conclude with a decision-ready artefact and clear ownership without requiring a formal handover process.
 

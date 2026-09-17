@@ -1,5 +1,4 @@
 ---
-title: Agentic System Architect Co-Pilot Prompt
 description: Structured system prompt and schema guide for AI coding agents executing SOP analysis.
 tags:
   - agent-prompt
@@ -126,4 +125,3 @@ graph TD
 ---
 
 *© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
-

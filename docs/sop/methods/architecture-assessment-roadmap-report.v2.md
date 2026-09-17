@@ -1,11 +1,9 @@
-![MOSTELLI](../brand/mostelli.jpeg)
-**Enterprise Architecture & AI Transformation**
-
----
-
 # Illustrative Architecture Assessment & Transformation Roadmap
->
-> **Illustrative portfolio sample**
+
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Alexandre Franco Enterprise Architecture Portfolio.
+
+## Illustrative portfolio sample
 >
 > This document demonstrates how an Enterprise Architect might assess a fragmented architecture, identify architectural root causes, establish target direction, and translate the findings into a practical transformation roadmap.
 >

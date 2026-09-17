@@ -15,8 +15,8 @@
 
 **Purpose**: Baseline verification before altering navigation or authoring new documents.
 
-- [ ] T001 Verify baseline site build passes via `mkdocs build --strict`
-- [ ] T002 Verify baseline terminology governance via `python scripts/validate_governance.py`
+- [X] T001 Verify baseline site build passes via `mkdocs build --strict`
+- [X] T002 Verify baseline terminology governance via `python scripts/validate_governance.py`
 
 ---
 
@@ -24,7 +24,7 @@
 
 **Purpose**: Align naming and conceptual foundation across Core EA Practice.
 
-- [ ] T003 Align Stage 03 title, headings, and metadata to "Governance & Decision Enablement" in `docs/sop/03-governance-framework.md`
+- [X] T003 Align Stage 03 title, headings, and metadata to "Governance & Decision Enablement" in `docs/sop/03-governance-framework.md`
 
 ---
 
@@ -34,9 +34,9 @@
 
 **Independent Test**: Run `mkdocs serve` and confirm the navigation expands cleanly with all 5 stages under Core EA Practice, 4 methods under Engagement Methods, 2 reports under Illustrative Evidence, and 2 pages under AI Augmented Architecture with zero broken links.
 
-- [ ] T004 [US1] Update navigation tree in `mkdocs.yml` to reflect Core EA Practice, Engagement Methods, Illustrative Evidence, and AI Augmented Architecture per contracts/nav-hierarchy-contract.md
-- [ ] T005 [US1] Update Section 22 relationship diagram and taxonomy description to reflect the three tiers in `docs/sop/index.md`
-- [ ] T006 [US1] Validate User Story 1 navigation integrity via `mkdocs build --strict`
+- [X] T004 [US1] Update navigation tree in `mkdocs.yml` to reflect Core EA Practice, Engagement Methods, Illustrative Evidence, and AI Augmented Architecture per contracts/nav-hierarchy-contract.md
+- [X] T005 [US1] Update Section 22 relationship diagram and taxonomy description to reflect the three tiers in `docs/sop/index.md`
+- [X] T006 [US1] Validate User Story 1 navigation integrity via `mkdocs build --strict`
 
 **Checkpoint**: At this point, the three-tier taxonomy is live in site navigation and the SOP landing page.
 
@@ -48,8 +48,8 @@
 
 **Independent Test**: Open `docs/sop/methods/architecture-health-check.md` directly and via navigation, verifying complete sections (Purpose, Core EA SOP Capability Mapping, 4 Health Dimensions, Assessment Phases, Diagnostic Outputs).
 
-- [ ] T007 [US2] Author foundational Architecture Health Check method document in `docs/sop/methods/architecture-health-check.md`
-- [ ] T008 [US2] Validate that internal anchors, stage references, and Mermaid diagrams render correctly in `docs/sop/methods/architecture-health-check.md`
+- [X] T007 [US2] Author foundational Architecture Health Check method document in `docs/sop/methods/architecture-health-check.md`
+- [X] T008 [US2] Validate that internal anchors, stage references, and Mermaid diagrams render correctly in `docs/sop/methods/architecture-health-check.md`
 
 **Checkpoint**: All 4 Engagement Methods are fully defined, discoverable, and cross-referenced.
 
@@ -61,8 +61,8 @@
 
 **Independent Test**: Navigate to both reports (Decision Review report and Assessment & Transformation Roadmap report) and confirm image headers, tables, and scenario notes render without broken paths.
 
-- [ ] T009 [P] [US3] Verify image paths and illustrative banner formatting in `docs/sop/methods/architecture-decision-review-report.v2.md`
-- [ ] T010 [P] [US3] Verify image paths and illustrative banner formatting in `docs/sop/methods/architecture-assessment-roadmap-report.v2.md`
+- [X] T009 [P] [US3] Verify image paths and illustrative banner formatting in `docs/sop/methods/architecture-decision-review-report.v2.md`
+- [X] T010 [P] [US3] Verify image paths and illustrative banner formatting in `docs/sop/methods/architecture-assessment-roadmap-report.v2.md`
 
 **Checkpoint**: Both illustrative sample reports render cleanly under Illustrative Evidence.
 
@@ -72,10 +72,10 @@
 
 **Purpose**: Final end-to-end validation, linting, and regression checks.
 
-- [ ] T011 Run terminology validation check in `scripts/validate_governance.py`
-- [ ] T012 Run test suite via `pytest tests/`
-- [ ] T013 Run strict compilation via `mkdocs build --strict`
-- [ ] T014 Execute manual visual checks per `specs/005-sop-structure-reorg/quickstart.md`
+- [X] T011 Run terminology validation check in `scripts/validate_governance.py`
+- [X] T012 Run test suite via `pytest tests/`
+- [X] T013 Run strict compilation via `mkdocs build --strict`
+- [X] T014 Execute manual visual checks per `specs/005-sop-structure-reorg/quickstart.md`
 
 ---
 

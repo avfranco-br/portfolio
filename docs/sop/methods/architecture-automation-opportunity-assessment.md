@@ -12,6 +12,9 @@ tags:
 
 # Architecture Automation Opportunity Assessment
 
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Alexandre Franco Enterprise Architecture Portfolio.
+
 ## **Enterprise Architecture & AI Transformation**
 
 > A reusable architecture-led method for identifying, assessing and prioritising opportunities to eliminate, simplify, integrate or automate business workflows.

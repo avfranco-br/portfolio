@@ -1,5 +1,4 @@
 ---
-title: "Stage 01: Discover & Align"
 description: Strategy framing, problem and decision definition, engagement context, evidence establishment, scope, and context-appropriate discovery.
 tags:
   - architecture
@@ -35,7 +34,7 @@ graph LR
 
 ⸻
 
-Core Principles
+## Core Principles
 
 1. Start with the problem, outcome, or decision. Do not begin with a technology or architecture solution unless the engagement itself is specifically about evaluating one.
 2. Understand context before drawing conclusions. Architectural judgement is contextual and depends on business, organisational, technical, commercial, regulatory, and operational realities.
@@ -49,9 +48,9 @@ Core Principles
 
 ⸻
 
-Core Workflow
+## Core Workflow
 
-Step 1 — Establish the Business Intent and Trigger
+### Step 1 — Establish the Business Intent and Trigger
 
 Understand why the engagement exists and what has caused the need for architectural involvement.
 
@@ -92,7 +91,7 @@ Where relevant, distinguish:
 * What those capabilities need to be able to do
 * What business change may therefore be required
 
-Step 2 — Frame the Problem, Question, or Decision
+### Step 2 — Frame the Problem, Question, or Decision
 
 Translate the initial request into a precise architectural question that can be investigated.
 
@@ -118,7 +117,7 @@ The resulting statement should make clear:
 * Who needs the answer
 * What decision or action may follow
 
-Step 3 — Classify the Engagement
+### Step 3 — Classify the Engagement
 
 Select the most appropriate engagement method and scope for the work.
 
@@ -135,7 +134,7 @@ The classification is a working hypothesis and may be revised if discovery demon
 
 Engagement classification should be distinguished from engagement archetype or commercial packaging. These represent different dimensions of the work and should not be conflated.
 
-Step 4 — Establish the Context and Scope Boundary
+### Step 4 — Establish the Context and Scope Boundary
 
 Define the boundary within which architectural judgement will be exercised.
 
@@ -171,7 +170,7 @@ For decision-focused work, explicitly identify the decision boundary:
 
 For broader transformation or architecture engagements, establish the appropriate organisational, business, technology, and temporal boundaries.
 
-Step 5 — Establish the Evidence Base
+### Step 5 — Establish the Evidence Base
 
 Identify and organise the evidence available to support the engagement.
 
@@ -204,7 +203,7 @@ Classify material information as:
 
 Maintain an appropriate evidence register or equivalent working record where the engagement warrants one.
 
-Step 6 — Apply the Evidence Sufficiency Gate
+### Step 6 — Apply the Evidence Sufficiency Gate
 
 Determine whether the available evidence is sufficient for the intended architectural work.
 
@@ -227,7 +226,7 @@ Prioritise information according to whether its absence could materially change:
 
 A missing item is therefore not automatically a reason to stop the engagement.
 
-Step 7 — Determine the Required Discovery Depth
+### Step 7 — Determine the Required Discovery Depth
 
 Select the minimum appropriate discovery activities required to establish a reliable basis for the engagement.
 
@@ -258,7 +257,7 @@ The architect should avoid both:
 * Under-discovery: reaching conclusions without sufficient understanding of the relevant context.
 * Over-discovery: producing analysis that does not contribute materially to the client’s question or outcome.
 
-Step 8 — Establish Current State Where Required
+### Step 8 — Establish Current State Where Required
 
 Where the engagement requires understanding the existing architecture, establish a sufficiently grounded Current State.
 
@@ -291,7 +290,7 @@ A Current State assessment is not an objective in itself; it is evidence for sub
 
 Where an existing architecture repository, catalogue, model, or source of truth is available, use it as appropriate and validate its relevance and currency rather than assuming that documented architecture represents operational reality.
 
-Step 9 — Establish Desired State / Intent Where Required
+### Step 9 — Establish Desired State / Intent Where Required
 
 Where the engagement requires defining or validating future direction, establish the Desired State / Intent.
 
@@ -313,7 +312,7 @@ Desired State should express the direction and outcomes that architecture must e
 
 It should not prematurely prescribe technology unless technology selection is itself part of the required architectural work.
 
-Step 10 — Perform Capability and Gap Analysis Where Required
+### Step 10 — Perform Capability and Gap Analysis Where Required
 
 Where Current State and Desired State are both established, identify the material gaps between them.
 
@@ -351,7 +350,7 @@ Prioritise gaps according to:
 
 Do not equate completeness with value. The objective is to identify the gaps that materially influence the architectural direction or decisions.
 
-Step 11 — Select and Apply Assessment Lenses
+### Step 11 — Select and Apply Assessment Lenses
 
 Select the architectural concerns and analytical lenses appropriate to the engagement.
 
@@ -374,7 +373,7 @@ Possible lenses include:
 
 Assessment lenses should be selected based on the question being answered, rather than applying a mandatory checklist to every engagement.
 
-Step 12 — Validate the Established Context and Direction
+### Step 12 — Validate the Established Context and Direction
 
 Before moving into substantive architectural work, confirm that the established understanding is sufficiently aligned with the relevant stakeholders.
 
@@ -403,7 +402,7 @@ For strategic or transformational engagements, broader executive, business, and 
 
 ⸻
 
-10-Domain Architecture Requirements Framework
+## 10-Domain Architecture Requirements Framework
 
 The 10-Domain Architecture Requirements Framework is a reusable assessment and evidence-elicitation asset.
 
@@ -412,7 +411,7 @@ It provides a structured set of questions that can be used to elicit evidence, e
 It should be applied selectively according to the engagement question, scope, and evidence needs, rather than treated as a mandatory diagnostic for every engagement.
 
 ```mermaid
-flowchart TB
+flowchart LR
   A["Domain Diagnostic & Gap Analysis"]
   A --> B["User Personas & Access"]
   A --> C["Data Sources & Integration"]
@@ -445,7 +444,7 @@ Additional or alternative assessment lenses should be introduced when the engage
 
 ⸻
 
-Engagement-Specific Tailoring
+## 11. Engagement-Specific Tailoring
 
 The core workflow above defines the general architectural practice. It should remain stable across engagements.
 
@@ -490,7 +489,7 @@ Detailed Engagement Profiles may ultimately be maintained as appendices or as se
 
 ⸻
 
-Outputs of Stage 01
+## 12.Outputs of Stage 01
 
 The outputs of Discover & Align depend on the engagement.
 
@@ -520,7 +519,7 @@ Not every engagement requires every output.
 
 ⸻
 
-Governance & Quality Gates
+## 13.Governance & Quality Gates
 
 [!IMPORTANT]
 Context Gate: Do not begin substantive architectural analysis until the problem, decision, desired outcome, and relevant context are sufficiently understood for the intended work.
@@ -551,7 +550,7 @@ Stage progression is conditional. Stage 01 does not imply that every engagement 
 
 ⸻
 
-Cross-Stage Architectural Traceability
+## 14. Cross-Stage Architectural Traceability
 
 Where architectural work progresses beyond Stage 01, maintain traceability between:
 

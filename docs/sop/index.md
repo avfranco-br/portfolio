@@ -1,5 +1,4 @@
 ---
-title: Enterprise Architecture Standard Operating Procedure
 description: A problem-first, engagement-adaptive Enterprise Architecture operating model connecting business intent, capabilities, architecture, delivery, value realisation, and organisational evolution.
 tags:
   - architecture
@@ -88,17 +87,17 @@ flowchart LR
 
 ## The Five Practice Stages
 
-### The SOP is organised into five connected stages.
+### The SOP is organised into five connected stages
 
 The stages represent capabilities of architectural practice rather than mandatory project phases. An engagement may use all five stages, a subset of stages, or selected activities from several stages depending on the problem being addressed.
 
-| Stage                                  | Focus                                                        | Core Question                                                                                                                               | Typical Outputs                                                                                                  |
-| -------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 01. Discover & Align⁠￼                 | Business context, strategic intent, capabilities, evidence and scope | What are we trying to achieve or decide, why does it matter, what context are we working within, what do we know, and what architectural work is actually required? | Business Intent, Strategic Priorities, Relevant Capability Context, Current State, Desired State Intent, Scope and Evidence Baseline |
-| 02. Target Architecture & Strategy⁠￼   | Architectural direction, options, trade-offs and target architecture | Given the established context and required capability evolution, what architectural direction should we take and what must the architecture enable? | Architectural Requirements, Options Analysis, Architectural Direction, Target Architecture, Transition Implications, Architectural Decisions |
-| 03. Governance & Decision Enablement   | Architectural decisions, guardrails, assurance and controlled evolution | How do we make, govern and evolve architectural decisions while enabling delivery rather than creating unnecessary friction? | Decision Records, Governance Principles, Guardrails, Assurance Approach, Exceptions and Escalation Paths |
-| 04. Delivery Enablement & Execution Steering⁠￼ | Translating architecture into delivery and operational capability | How do we turn architectural direction into meaningful delivery increments while maintaining alignment with capability and outcome? | Delivery Guidance, Transition Strategy, Architecture Assurance, Capability Readiness, Delivery Decisions, Adaptation Actions |
-| 05. Value Realisation & Organisational Handover⁠￼ | Outcomes, operational readiness, ownership and future evolution | What value has been realised or established for future measurement, is the resulting capability ready to operate, and can the organisation sustain and evolve it? | Outcome Evidence, Capability Realisation Assessment, Operational Readiness, Knowledge Transfer, Ownership, Future Evolution Triggers |
+| Stage                                             | Focus                                                                  | Core Question                                                                                                                                                       | Typical Outputs                                                                                                                              |
+| ------------------------------------------------ | ----------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
+| 01. Discover & Align⁠￼                            | Business context, strategic intent, capabilities, evidence and scope    | What are we trying to achieve or decide, why does it matter, what context are we working within, what do we know, and what architectural work is actually required? | Business Intent, Strategic Priorities, Relevant Capability Context, Current State, Desired State Intent, Scope and Evidence Baseline         |
+| 02. Target Architecture & Strategy⁠￼              | Architectural direction, options, trade-offs and target architecture    | Given the established context and required capability evolution, what architectural direction should we take and what must the architecture enable?                 | Architectural Requirements, Options Analysis, Architectural Direction, Target Architecture, Transition Implications, Architectural Decisions |
+| 03. Governance & Decision Enablement             | Architectural decisions, guardrails, assurance and controlled evolution | How do we make, govern and evolve architectural decisions while enabling delivery rather than creating unnecessary friction?                                        | Decision Records, Governance Principles, Guardrails, Assurance Approach, Exceptions and Escalation Paths                                     |
+| 04. Delivery Enablement & Execution Steering⁠￼    | Translating architecture into delivery and operational capability       | How do we turn architectural direction into meaningful delivery increments while maintaining alignment with capability and outcome?                                 | Delivery Guidance, Transition Strategy, Architecture Assurance, Capability Readiness, Delivery Decisions, Adaptation Actions                 |
+| 05. Value Realisation & Organisational Handover⁠￼ | Outcomes, operational readiness, ownership and future evolution         | What value has been realised or established for future measurement, is the resulting capability ready to operate, and can the organisation sustain and evolve it?   | Outcome Evidence, Capability Realisation Assessment, Operational Readiness, Knowledge Transfer, Ownership, Future Evolution Triggers         |
 
 Note: Stage 03 is deliberately positioned as a governance and decision-enablement capability. Specific decision-review methods may be used within the wider SOP without turning the SOP into a collection of individual governance artefacts.
 
@@ -392,12 +391,12 @@ Specific engagement methods instantiate that practice for particular client ques
 
 Examples include:
 
-| Method                                      | Core Question                                                                                                                         |
-| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------ |
-| Architecture Decision Review               | Given the decision we need to make, the context in which it sits, and the evidence available, is this the right architectural direction? |
-| Architecture Health Check                  | How healthy is the existing architecture, where are the material weaknesses, and what should be addressed?                           |
-| Architecture Assessment & Roadmap           | Where are we, where should we go, what needs to change, and how should the transition be sequenced?                               |
-| Architecture Automation Opportunity Assessment | Where can process, information and architectural change eliminate, simplify, integrate or automate work to improve business and architectural outcomes? |
+| Method                                         | Core Question                                                                                                                                            |
+| ---------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Architecture Decision Review                   | Given the decision we need to make, the context in which it sits, and the evidence available, is this the right architectural direction?                 |
+| Architecture Health Check                      | How healthy is the existing architecture, where are the material weaknesses, and what should be addressed?                                               |
+| Architecture Assessment & Roadmap              | Where are we, where should we go, what needs to change, and how should the transition be sequenced?                                                      |
+| Architecture Automation Opportunity Assessment | Where can process, information and architectural change eliminate, simplify, integrate or automate work to improve business and architectural outcomes?  |
 
 These methods are deliberately separate.
 
