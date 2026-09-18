@@ -1,0 +1,27 @@
+/* ==========================================================================
+   Mermaid Diagram Responsive Container & Legibility Rules
+   ========================================================================== */
+
+/* Enable smooth horizontal scrolling on narrow viewports without clipping */
+.mermaid {
+  overflow-x: auto;
+  overflow-y: hidden;
+  text-align: center;
+  margin: 1.5rem 0;
+  padding: 0.5rem 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Maintain crisp SVG presentation */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+}
+
+/* On mobile/tablet screens, preserve minimum readable scale and enable horizontal scroll */
+@media screen and (max-width: 768px) {
+  .mermaid svg {
+    min-width: 480px;
+  }
+}

@@ -98,6 +98,9 @@ plugins:
 extra_javascript:
   - js/cloudflare-insights.js
 
+extra_css:
+  - css/mermaid.css
+
 nav:
   - Home: index.md
   - About: about.md

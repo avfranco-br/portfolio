@@ -13,8 +13,8 @@ version: "1.1"
 
 # Enterprise Architecture Standard Operating Procedure
 
-> [!NOTE]
-> **Classification:** `PUBLIC — Enterprise Architecture Practice Methodology`
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Practice Methodology.
 
 ## Overview
 
@@ -24,23 +24,23 @@ The SOP is **engagement-adaptive**. It does not prescribe a fixed level of analy
 The methodology is designed to connect business strategy to architectural change and ultimately to realised organisational capability and business outcomes.
 
 ```mermaid
-flowchart LR
-    S["Business Strategy<br/>Intent & Outcomes"]
-    C["Relevant Business<br/>Capabilities"]
-    R["Required Capability<br/>Evolution"]
-    A["Architectural<br/>Direction"]
-    D["Delivery &<br/>Implementation"]
-    O["Operational<br/>Capability"]
-    V["Value &<br/>Outcomes"]
-    E["Future Evolution"]
-    S --> C
-    C --> R
-    R --> A
+flowchart TD
+    subgraph Strategy["Strategic & Architectural Direction"]
+        direction LR
+        S["Business Strategy<br/>Intent & Outcomes"] --> C["Relevant Business<br/>Capabilities"]
+        C --> R["Required Capability<br/>Evolution"]
+        R --> A["Architectural<br/>Direction"]
+    end
+
+    subgraph Realisation["Delivery & Value Realisation"]
+        direction LR
+        D["Delivery &<br/>Implementation"] --> O["Operational<br/>Capability"]
+        O --> V["Value &<br/>Outcomes"]
+        V --> E["Future Evolution"]
+    end
+
     A --> D
-    D --> O
-    O --> V
-    V --> E
-    E -.-> A
+    E -. "continuous loop" .-> A
 ```
 
 The central architectural principle
@@ -54,33 +54,36 @@ What is the organisation trying to achieve, what capabilities must change, what 
 This creates a continuous chain:
 
 ```mermaid
-flowchart LR
-    I["Strategic Intent / Outcome"]
-    C["Relevant Business Capability"]
-    CE["Required Capability Evolution"]
-    P["Business / Operational Implications"]
-    AR["Architectural Requirements"]
-    AD["Architectural Direction"]
-    DI["Delivery Increment"]
-    IE["Implementation Evidence"]
-    CR["Capability Realisation"]
-    OA["Operational Adoption"]
-    OE["Outcome Evidence"]
-    V["Value Assessment"]
-    F["Future Evolution"]
-    I --> C
-    C --> CE
+flowchart TD
+    subgraph Tier1["1. Business Intent & Capability Context"]
+        direction LR
+        I["Strategic Intent /<br/>Outcome"] --> C["Relevant Business<br/>Capability"]
+        C --> CE["Required Capability<br/>Evolution"]
+    end
+
+    subgraph Tier2["2. Architectural Requirements & Direction"]
+        direction LR
+        P["Business / Operational<br/>Implications"] --> AR["Architectural<br/>Requirements"]
+        AR --> AD["Architectural<br/>Direction"]
+    end
+
+    subgraph Tier3["3. Delivery & Implementation Evidence"]
+        direction LR
+        DI["Delivery<br/>Increment"] --> IE["Implementation<br/>Evidence"]
+        IE --> CR["Capability<br/>Realisation"]
+    end
+
+    subgraph Tier4["4. Operational Value & Future Evolution"]
+        direction LR
+        OA["Operational<br/>Adoption"] --> OE["Outcome<br/>Evidence"]
+        OE --> V["Value<br/>Assessment"]
+        V --> F["Future<br/>Evolution"]
+    end
+
     CE --> P
-    P --> AR
-    AR --> AD
     AD --> DI
-    DI --> IE
-    IE --> CR
     CR --> OA
-    OA --> OE
-    OE --> V
-    V --> F
-    F -.-> CE
+    F -. "continuous learning" .-> CE
 ```
 
 ⸻
@@ -447,35 +450,37 @@ This boundary protects both the quality of the architectural judgement and the p
 The methodology maintains traceability across the architectural lifecycle.
 
 ```mermaid
-flowchart LR
-    S["Strategic Intent"]
-    C["Relevant Capability"]
-    CE["Capability Evolution"]
-    P["Business / Process Implications"]
-    AR["Architectural Requirement"]
-    AC["Architectural Concern"]
-    E["Evidence / Analysis"]
-    O["Options / Trade-offs"]
-    J["Architectural Judgement"]
-    T["Target Architecture / Direction"]
-    D["Decision"]
-    I["Implementation"]
-    V["Outcome Evidence"]
-    F["Future Evolution"]
-    S --> C
-    C --> CE
-    CE --> P
+flowchart TD
+    subgraph S1["1. Strategic & Capability Context"]
+        direction LR
+        S["Strategic<br/>Intent"] --> C["Relevant<br/>Capability"]
+        C --> CE["Capability<br/>Evolution"]
+        CE --> P["Business / Process<br/>Implications"]
+    end
+
+    subgraph S2["2. Architectural Analysis & Evidence"]
+        direction LR
+        AR["Architectural<br/>Requirement"] --> AC["Architectural<br/>Concern"]
+        AC --> E["Evidence /<br/>Analysis"]
+        E --> O["Options &<br/>Trade-offs"]
+    end
+
+    subgraph S3["3. Direction & Governed Decision"]
+        direction LR
+        J["Architectural<br/>Judgement"] --> T["Target Architecture<br/>/ Direction"]
+        T --> D["Architecture<br/>Decision"]
+    end
+
+    subgraph S4["4. Execution & Outcome Traceability"]
+        direction LR
+        I["Delivery<br/>Implementation"] --> V["Outcome<br/>Evidence"]
+        V --> F["Future<br/>Evolution"]
+    end
+
     P --> AR
-    AR --> AC
-    AC --> E
-    E --> O
     O --> J
-    J --> T
-    T --> D
     D --> I
-    I --> V
-    V --> F
-    F -.-> C
+    F -. "continuous feedback loop" .-> C
 ```
 
 Architecture Confidence
@@ -507,22 +512,22 @@ AI is treated as an enabling capability within architectural practice, rather th
 The architect may use AI to accelerate appropriate parts of the workflow while retaining accountability for architectural judgement.
 
 ```mermaid
-flowchart LR
-    E["Client Evidence"]
-    I["Ingestion & Extraction"]
-    O["Evidence Organisation"]
-    A["AI-Assisted Analysis"]
-    H["Architect Review"]
-    J["Architectural Judgement"]
-    D["Decision / Direction"]
-    Q["Quality Assurance"]
-    E --> I
-    I --> O
-    O --> A
+flowchart TD
+    subgraph AI_Synthesis["AI Evidence Ingestion & Synthesis"]
+        direction LR
+        E["Client Evidence"] --> I["Ingestion & Extraction"]
+        I --> O["Evidence Organisation"]
+        O --> A["AI-Assisted Analysis"]
+    end
+
+    subgraph Architect_Gov["Architect Review & Governed Decision"]
+        direction LR
+        H["Architect Review"] --> J["Architectural Judgement"]
+        J --> D["Decision / Direction"]
+        D --> Q["Quality Assurance"]
+    end
+
     A --> H
-    H --> J
-    J --> D
-    D --> Q
 ```
 
 Suitable AI-assisted activities
@@ -665,27 +670,25 @@ These assets support consistency and efficiency without becoming mandatory compo
 The complete practice can be represented as a continuous loop:
 
 ```mermaid
-flowchart TD
-    S["Understand Strategy & Intent"]
-    C["Understand Relevant Capabilities"]
-    E["Establish Context & Evidence"]
-    A["Assess & Diagnose"]
-    T["Establish Architectural Direction"]
-    D["Make & Govern Decisions"]
-    I["Enable Delivery"]
-    O["Realise Operational Capability"]
-    V["Assess Outcomes & Value"]
-    L["Learn & Evolve"]
-    S --> C
-    C --> E
-    E --> A
-    A --> T
-    T --> D
-    D --> I
-    I --> O
-    O --> V
-    V --> L
-    L --> S
+flowchart LR
+    subgraph Phase1["1. Discover, Diagnose & Direct"]
+        direction TB
+        S["Understand Strategy<br/>& Intent"] --> C["Understand Relevant<br/>Capabilities"]
+        C --> E["Establish Context<br/>& Evidence"]
+        E --> A["Assess & Diagnose"]
+        A --> T["Establish Architectural<br/>Direction"]
+    end
+
+    subgraph Phase2["2. Govern, Deliver & Evolve"]
+        direction TB
+        D["Make & Govern<br/>Decisions"] --> I["Enable Delivery"]
+        I --> O["Realise Operational<br/>Capability"]
+        O --> V["Assess Outcomes<br/>& Value"]
+        V --> L["Learn & Evolve"]
+    end
+
+    T -->|"Transition to Delivery"| D
+    L -->|"Continuous Learning Loop"| S
 ```
 
 This loop reflects the fundamental role of Enterprise Architecture:

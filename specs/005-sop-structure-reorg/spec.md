@@ -17,6 +17,10 @@
 - Q: In `mkdocs.yml`, should Stage 03 under "Core EA Practice" be labelled "Governance & Decision Enablement" or retain "03. Governance & Decision Framework"? → A: Option A: Label it "Governance & Decision Enablement" in navigation and align the page header in `docs/sop/03-governance-framework.md` to match.
 - Q: Should the physical filenames under `docs/sop/methods/` remain as they are, or should illustrative reports be moved to `docs/sop/evidence/`? → A: Option A: Keep physical file paths as-is under `docs/sop/methods/` and structure them cleanly via `mkdocs.yml` navigation and the index page to prevent broken external links or cross-narrative regressions.
 
+### Session 2026-09-18
+
+- Q: How should the long linear Mermaid flows (e.g., in `docs/sop/index.md`) be restructured for legibility? → A: Option A: Restructure into multi-row folded flows or grouped stage subgraphs with wrapped text, combined with lightweight responsive container styling.
+
 ## User Scenarios & Testing *(mandatory)*
 
 ### User Story 1 - Structured Practice Exploration (Priority: P1)
@@ -64,10 +68,26 @@ As a hiring manager or prospective advisory client, I want to examine sample del
 
 ---
 
+### User Story 4 - Legible & Responsive Mermaid Architecture Diagrams (Priority: P1)
+
+As a visitor exploring the Architecture SOP and methodology pages on any screen or viewport, I want Mermaid diagrams to display with crisp, legible typography and well-proportioned boxes without being scaled down to microscopic sizes, so that I can immediately read, understand, and trace the architectural flows.
+
+**Why this priority**: Solves a direct visual defect where wide horizontal diagrams scale down excessively, hindering comprehension of the core methodology.
+
+**Independent Test**: Can be tested by viewing `docs/sop/index.md` (Overview and Section 15) at 100% zoom on desktop and mobile viewports, verifying all node labels and text remain easily readable without zooming or text truncation.
+
+**Acceptance Scenarios**:
+
+1. **Given** a visitor viewing the Architecture SOP Overview page, **When** they look at the Strategy-to-Value lifecycle diagram and Section 15 Evidence Traceability diagram, **Then** the diagrams are structured as folded multi-row or grouped subgraph flows where typography is easily readable at 100% zoom.
+2. **Given** a visitor viewing diagrams on mobile or narrow viewports, **When** a diagram exceeds the viewport width, **Then** the diagram container provides smooth horizontal scroll without shrinking node text below readable size.
+
+---
+
 ### Edge Cases
 
 - **Broken cross-references**: When existing pages or narratives link to `sop/methods/*.md` or `sop/03-governance-framework.md`, internal markdown links must remain valid or be cleanly updated.
 - **Auxiliary pages positioning**: Existing auxiliary SOP documents (`sop/ai-augmented-architecture.md` and `sop/agent-architect-prompt.md`) must be appropriately positioned (e.g. within Core EA Practice or an AI Enablement subsection) without disrupting the 3 requested primary tiers.
+- **Diagram theme contrast in dark/light mode**: Refactored subgraphs and custom styling must respect MkDocs Material slate and default color palettes without unreadable text contrast.
 
 ## Requirements *(mandatory)*
 
@@ -101,12 +121,15 @@ As a hiring manager or prospective advisory client, I want to examine sample del
 - **FR-004**: Auxiliary AI pages MUST be housed under the dedicated "AI Augmented Architecture" sub-section directly adjacent to the primary tiers.
 - **FR-005**: All relative markdown links and image paths between SOP documents, methods, and evidence reports MUST resolve cleanly without 404 errors.
 - **FR-006**: Stage 03 documentation (`docs/sop/03-governance-framework.md`) title and headings MUST align to "Governance & Decision Enablement" matching the navigation label and `docs/sop/index.md`.
+- **FR-007**: Wide horizontal Mermaid diagrams in `docs/sop/index.md` (Overview Strategy-to-Value chain, Section 15 Traceability chain, and Section 21 Architecture Loop) MUST be restructured into multi-row folded flows or logical subgraphs to prevent excessive scaling down and maintain legible text.
+- **FR-008**: System MUST include a lightweight responsive CSS rule (e.g. via `docs/css/mermaid.css` registered in `mkdocs.yml` `extra_css`) ensuring Mermaid SVG containers maintain horizontal scrollability on narrow viewports without shrinking node text below readable body size.
 
 ### Key Entities
 
 - **Core EA Practice Stage**: Foundational lifecycle stage (01 to 05) defining an enterprise architectural capability, its questions, inputs, and outputs.
 - **Engagement Method**: A repeatable, bounded advisory engagement method selecting capabilities from the Core EA Practice for a specific client intervention.
 - **Illustrative Evidence**: A concrete, sanitized sample report or deliverable illustrating the outputs of an Engagement Method.
+- **Mermaid Architectural Flow**: Markdown-fenced diagram representing lifecycle, capability, or governance transitions.
 
 ## Success Criteria *(mandatory)*
 
@@ -116,6 +139,7 @@ As a hiring manager or prospective advisory client, I want to examine sample del
 - **SC-002**: `mkdocs build --strict` executes with 0 warnings and 0 errors.
 - **SC-003**: `python scripts/validate_governance.py` passes all terminology and structural checks.
 - **SC-004**: All 4 engagement methods and 2 illustrative evidence reports render with functional internal anchors, links, and diagrams.
+- **SC-005**: All Mermaid diagrams in `docs/sop/index.md` render node labels with clear, readable typography (equivalent to 12–14px body text) at 100% browser zoom without text truncation or microscopic scaling.
 
 ## Assumptions
 

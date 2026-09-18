@@ -68,14 +68,28 @@
 
 ---
 
-## Phase 6: Polish, Governance & Verification
+---
+
+## Phase 6: User Story 4 - Legible Architecture Flow Diagrams (Priority: P2)
+
+**Goal**: Refactor wide horizontal Mermaid diagrams in `docs/sop/index.md` into folded multi-tier flows or subgraphs and introduce responsive CSS rules to prevent microscopic typography and text truncation.
+
+**Independent Test**: Build site via `mkdocs build --strict`, preview `docs/sop/index.md`, and verify node text across all diagrams is clearly readable (equivalent to standard body text) without clipping or unreadable scaling.
+
+- [X] T011 [US4] Create `docs/css/mermaid.css` with responsive `.mermaid` container rules and register in `mkdocs.yml` under `extra_css`
+- [X] T012 [US4] Refactor Strategy-to-Value overview chain (lines 26-44 & 56-84), Traceability chain (Section 15), and Practice Loop (Section 21) in `docs/sop/index.md` into multi-row folded flows/subgraphs
+- [X] T013 [US4] Verify all refactored Mermaid diagrams render valid syntax and legible typography via `mkdocs build --strict`
+
+---
+
+## Phase 7: Polish, Governance & Verification
 
 **Purpose**: Final end-to-end validation, linting, and regression checks.
 
-- [X] T011 Run terminology validation check in `scripts/validate_governance.py`
-- [X] T012 Run test suite via `pytest tests/`
-- [X] T013 Run strict compilation via `mkdocs build --strict`
-- [X] T014 Execute manual visual checks per `specs/005-sop-structure-reorg/quickstart.md`
+- [X] T014 Run terminology validation check in `scripts/validate_governance.py`
+- [X] T015 Run test suite via `pytest tests/`
+- [X] T016 Run strict compilation via `mkdocs build --strict`
+- [X] T017 Execute manual visual checks per `specs/005-sop-structure-reorg/quickstart.md`
 
 ---
 
@@ -88,14 +102,16 @@ flowchart TD
     US2["Phase 4: Architecture Health Check (T007-T008)"]
     US1["Phase 3: Nav & Overview Restructure (T004-T006)"]
     US3["Phase 5: Illustrative Evidence Verification (T009-T010)"]
-    Polish["Phase 6: Polish & Governance (T011-T014)"]
+    US4["Phase 6: Diagram Legibility Refactoring (T011-T013)"]
+    Polish["Phase 7: Polish & Governance (T014-T017)"]
 
     Setup --> Foundational
     Foundational --> US2
     US2 --> US1
     Foundational --> US3
-    US1 --> Polish
-    US3 --> Polish
+    US1 --> US4
+    US3 --> US4
+    US4 --> Polish
 ```
 
 *Note*: Authoring `architecture-health-check.md` (US2) before finalizing `mkdocs.yml` navigation (US1) ensures that `mkdocs build --strict` immediately finds the target file when compiling navigation.

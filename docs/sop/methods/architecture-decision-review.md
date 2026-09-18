@@ -13,8 +13,8 @@ version: "1.1"
 
 # Architecture Decision Review
 
-> [!NOTE]
-> **Classification:** `PUBLIC — Enterprise Architecture Practice Methodology`
+> [!IMPORTANT]
+> **Classification Level**: `RESTRICTED / HIGHLY CONFIDENTIAL` — Enterprise Architecture Practice Methodology.
 
 ## Purpose
 
