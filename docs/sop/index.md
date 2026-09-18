@@ -194,20 +194,21 @@ Where evidence is incomplete, uncertainty should be made explicit rather than co
 A useful traceability pattern is:
 
 ```mermaid
-flowchart LR
-    F["Finding"]
-    E["Evidence"]
-    I["Impact"]
-    R["Risk / Consequence"]
-    O["Options"]
-    J["Architectural Judgement"]
-    C["Confidence"]
-    E --> F
-    F --> I
-    I --> R
+flowchart TD
+    subgraph Evidence_Risk["1. Evidence & Risk Impact"]
+        direction LR
+        E["Evidence"] --> F["Finding"]
+        F --> I["Impact"]
+        I --> R["Risk /<br/>Consequence"]
+    end
+
+    subgraph Judgement_Conf["2. Options & Confidence"]
+        direction LR
+        O["Options"] --> J["Architectural<br/>Judgement"]
+        J --> C["Confidence"]
+    end
+
     R --> O
-    O --> J
-    J --> C
 ```
 
 ⸻
@@ -735,15 +736,20 @@ A successful architectural engagement should therefore leave a clear chain betwe
 Why the change matters → what capability must change → what the architecture must enable → what is delivered → what becomes operational → what outcome is realised → how the organisation will continue to evolve.
 
 ```mermaid
-flowchart LR
-    WHY["Why"]
-    CAP["Capability"]
-    ARCH["Architecture"]
-    DEL["Delivery"]
-    OP["Operational<br/>Capability"]
-    OUT["Outcome"]
-    EV["Evolution"]
-    WHY --> CAP --> ARCH --> DEL --> OP --> OUT --> EV
+flowchart TD
+    subgraph Intent_Direction["1. Why, Capability & Architecture"]
+        direction LR
+        WHY["Why<br/>Intent & Need"] --> CAP["Relevant<br/>Capability"]
+        CAP --> ARCH["Architectural<br/>Direction"]
+    end
+
+    subgraph Deliv_Real["2. Delivery, Operation & Outcome"]
+        direction LR
+        DEL["Delivery<br/>Execution"] --> OP["Operational<br/>Capability"]
+        OP --> OUT["Realised<br/>Outcome"] --> EV["Future<br/>Evolution"]
+    end
+
+    ARCH --> DEL
     EV -. "continuous learning" .-> WHY
 ```
 

@@ -158,26 +158,28 @@ The assessment does not treat the existence of documentation as evidence of arch
 The assessment follows a problem-led, evidence-driven approach.
 
 ```mermaid
-flowchart LR
-    Business["Business Situation & Strategic Intent"]
-    Evidence["Evidence & Context"]
-    Current["Current-State Investigation"]
-    Diagnosis["Architectural Diagnosis"]
-    Findings["Findings & Root Causes"]
-    Direction["Target Architectural Direction"]
-    Options["Transformation Options"]
-    Transition["Transition Architectures"]
-    Roadmap["Dependency-Aware Roadmap"]
-    Governance["Governance & Execution Assurance"]
-    Business --> Evidence
-    Evidence --> Current
-    Current --> Diagnosis
+flowchart TD
+    subgraph Tier1["1. Context & Diagnosis"]
+        direction LR
+        Business["Business Situation & Intent"] --> Evidence["Evidence & Context"]
+        Evidence --> Current["Current-State Investigation"]
+        Current --> Diagnosis["Architectural Diagnosis"]
+    end
+
+    subgraph Tier2["2. Findings & Target"]
+        direction LR
+        Findings["Findings & Root Causes"] --> Direction["Target Direction"]
+        Direction --> Options["Transformation Options"]
+    end
+
+    subgraph Tier3["3. Transition & Governance"]
+        direction LR
+        Transition["Transition Architectures"] --> Roadmap["Dependency-Aware Roadmap"]
+        Roadmap --> Governance["Governance & Assurance"]
+    end
+
     Diagnosis --> Findings
-    Findings --> Direction
-    Direction --> Options
     Options --> Transition
-    Transition --> Roadmap
-    Roadmap --> Governance
 ```
 
 The investigation is deliberately hypothesis-driven.
@@ -233,18 +235,20 @@ The capability context is used to understand:
 Architectural traceability
 
 ```mermaid
-flowchart LR
-    Strategy["Business Strategy / Intent"]
-    Priorities["Strategic Priorities"]
-    Capability["Relevant Business Capability"]
-    Evolution["Required Capability Evolution"]
-    Architecture["Architectural Implications"]
-    Outcomes["Expected Business Outcome"]
-    Strategy --> Priorities
-    Priorities --> Capability
+flowchart TD
+    subgraph Tier1["Strategy & Capability"]
+        direction LR
+        Strategy["Business Strategy / Intent"] --> Priorities["Strategic Priorities"]
+        Priorities --> Capability["Relevant Business Capability"]
+    end
+
+    subgraph Tier2["Architecture & Outcomes"]
+        direction LR
+        Evolution["Required Capability Evolution"] --> Architecture["Architectural Implications"]
+        Architecture --> Outcomes["Expected Business Outcome"]
+    end
+
     Capability --> Evolution
-    Evolution --> Architecture
-    Architecture --> Outcomes
 ```
 
 This relationship provides the basis for assessing whether an architectural change is actually addressing a business requirement rather than simply improving technology.
@@ -299,7 +303,7 @@ A single business activity frequently requires information from several applicat
 For example:
 
 ```mermaid
-flowchart LR
+flowchart TD
     Request["Customer Request"]
     Customer["Customer Platform"]
     CRM["Acquired CRM"]
@@ -876,34 +880,36 @@ The assessment can be traced from business need through to transformation respon
 The overall traceability is:
 
 ```mermaid
-flowchart LR
-    Intent["Strategic Intent / Outcome"]
-    Capability["Relevant Business Capability"]
-    Evolution["Required Capability Evolution"]
-    Evidence["Evidence"]
-    Observation["Observation"]
-    Assessment["Assessment"]
-    Finding["Finding"]
-    RootCause["Pattern / Root Cause"]
-    Impact["Business Impact / Risk"]
-    Gap["Architectural Gap"]
-    Change["Required Change"]
-    Priority["Priority"]
-    Roadmap["Roadmap Item"]
-    Outcome["Expected Outcome"]
-    Intent --> Capability
-    Capability --> Evolution
+flowchart TD
+    subgraph Tier1["1. Strategy & Context"]
+        direction LR
+        Intent["Strategic Intent / Outcome"] --> Capability["Relevant Business Capability"]
+        Capability --> Evolution["Required Capability Evolution"]
+    end
+
+    subgraph Tier2["2. Evidence & Diagnosis"]
+        direction LR
+        Evidence["Evidence"] --> Observation["Observation"]
+        Observation --> Assessment["Assessment"]
+        Assessment --> Finding["Finding"]
+    end
+
+    subgraph Tier3["3. Root Cause & Gap"]
+        direction LR
+        RootCause["Pattern / Root Cause"] --> Impact["Business Impact / Risk"]
+        Impact --> Gap["Architectural Gap"]
+        Gap --> Change["Required Change"]
+    end
+
+    subgraph Tier4["4. Priority & Outcome"]
+        direction LR
+        Priority["Priority"] --> Roadmap["Roadmap Item"]
+        Roadmap --> Outcome["Expected Outcome"]
+    end
+
     Evolution --> Evidence
-    Evidence --> Observation
-    Observation --> Assessment
-    Assessment --> Finding
     Finding --> RootCause
-    RootCause --> Impact
-    Impact --> Gap
-    Gap --> Change
     Change --> Priority
-    Priority --> Roadmap
-    Roadmap --> Outcome
 ```
 
 This traceability prevents the roadmap from becoming a disconnected list of technology initiatives.
@@ -971,18 +977,20 @@ Once major structural issues are addressed:
 The transformation sequence is:
 
 ```mermaid
-flowchart LR
-    Control["Establish Control"]
-    Stabilise["Stabilise"]
-    Boundaries["Establish Boundaries"]
-    Transform["Transform"]
-    Simplify["Simplify"]
-    Optimise["Optimise"]
-    Control --> Stabilise
-    Stabilise --> Boundaries
+flowchart TD
+    subgraph Tier1["Foundation & Realisation"]
+        direction LR
+        Control["Establish Control"] --> Stabilise["Stabilise"]
+        Stabilise --> Boundaries["Establish Boundaries"]
+    end
+
+    subgraph Tier2["Execution & Evolution"]
+        direction LR
+        Transform["Transform"] --> Simplify["Simplify"]
+        Simplify --> Optimise["Optimise"]
+    end
+
     Boundaries --> Transform
-    Transform --> Simplify
-    Simplify --> Optimise
 ```
 
 The sequence is not intended to imply that each phase must complete entirely before the next begins.
@@ -1102,18 +1110,20 @@ The sequence is not simply a chronological list of projects.
 It represents an architectural progression.
 
 ```mermaid
-flowchart LR
-    H1["Horizon 1<br/>Establish Control"]
-    H2["Horizon 2<br/>Stabilise"]
-    H3["Horizon 3<br/>Establish Boundaries"]
-    H4["Horizon 4<br/>Transform"]
-    H5["Horizon 5<br/>Simplify"]
-    H6["Horizon 6<br/>Optimise"]
-    H1 --> H2
-    H2 --> H3
+flowchart TD
+    subgraph Tier1["Near-Term Foundations"]
+        direction LR
+        H1["Horizon 1<br/>Establish Control"] --> H2["Horizon 2<br/>Stabilise"]
+        H2 --> H3["Horizon 3<br/>Establish Boundaries"]
+    end
+
+    subgraph Tier2["Medium to Long-Term Evolution"]
+        direction LR
+        H4["Horizon 4<br/>Transform"] --> H5["Horizon 5<br/>Simplify"]
+        H5 --> H6["Horizon 6<br/>Optimise"]
+    end
+
     H3 --> H4
-    H4 --> H5
-    H5 --> H6
 ```
 
 The horizons describe architectural intent rather than fixed calendar periods.
@@ -1303,24 +1313,27 @@ Example outcomes
 The principal architectural dependencies are:
 
 ```mermaid
-flowchart LR
-    Capability["Capability Ownership"]
-    Information["Information Ownership"]
-    Integration["Integration Ownership"]
-    Boundaries["Explicit Boundaries"]
-    Transformation["Selective Transformation"]
-    Legacy["Legacy Responsibility Reduced"]
-    Application["Application Retirement"]
-    IntegrationRetirement["Integration Retirement"]
-    Simplification["Target Simplification"]
-    Capability --> Boundaries
-    Information --> Boundaries
-    Integration --> Boundaries
+flowchart TD
+    subgraph Tier1["Ownership & Boundaries"]
+        direction LR
+        Capability["Capability Ownership"] --> Boundaries["Explicit Boundaries"]
+        Information["Information Ownership"] --> Boundaries
+        Integration["Integration Ownership"] --> Boundaries
+    end
+
+    subgraph Tier2["Transformation & Legacy"]
+        direction LR
+        Transformation["Selective Transformation"] --> Legacy["Legacy Responsibility Reduced"]
+    end
+
+    subgraph Tier3["Retirement & Simplification"]
+        direction LR
+        Application["Application Retirement"] --> IntegrationRetirement["Integration Retirement"]
+        IntegrationRetirement --> Simplification["Target Simplification"]
+    end
+
     Boundaries --> Transformation
-    Transformation --> Legacy
     Legacy --> Application
-    Application --> IntegrationRetirement
-    IntegrationRetirement --> Simplification
 ```
 
 Several dependencies are particularly important.
@@ -1521,16 +1534,19 @@ Business and Programme responsibilities
 The transformation should therefore operate as a collaboration between:
 
 ```mermaid
-flowchart LR
-    Business["Business Leadership"]
-    EA["Enterprise Architecture"]
-    Programme["Programme / Product Leadership"]
-    Solution["Solution & Delivery Architecture"]
-    Engineering["Engineering / Operations"]
-    Business <--> EA
-    EA <--> Programme
+flowchart TD
+    subgraph Tier1["Strategic & Leadership"]
+        direction LR
+        Business["Business Leadership"] <--> EA["Enterprise Architecture"]
+        EA <--> Programme["Programme / Product Leadership"]
+    end
+
+    subgraph Tier2["Delivery & Engineering"]
+        direction LR
+        Solution["Solution & Delivery Architecture"] <--> Engineering["Engineering / Operations"]
+    end
+
     Programme <--> Solution
-    Solution <--> Engineering
 ```
 
 ⸻
@@ -1544,18 +1560,20 @@ Implementation creates new evidence.
 That evidence should feed back into architectural assessment and decision-making.
 
 ```mermaid
-flowchart LR
-    Direction["Architectural Direction"]
-    Delivery["Implementation / Delivery"]
-    Evidence["Delivery Evidence"]
-    Assessment["Architectural & Capability Assessment"]
-    Adaptation["Adaptation"]
-    Updated["Updated Direction"]
-    Direction --> Delivery
-    Delivery --> Evidence
+flowchart TD
+    subgraph Tier1["Direction & Delivery"]
+        direction LR
+        Direction["Architectural Direction"] --> Delivery["Implementation / Delivery"]
+        Delivery --> Evidence["Delivery Evidence"]
+    end
+
+    subgraph Tier2["Assessment & Adaptation"]
+        direction LR
+        Assessment["Architectural & Capability Assessment"] --> Adaptation["Adaptation"]
+        Adaptation --> Updated["Updated Direction"]
+    end
+
     Evidence --> Assessment
-    Assessment --> Adaptation
-    Adaptation --> Updated
     Updated --> Delivery
     Updated --> Direction
 ```
@@ -1649,34 +1667,36 @@ This sample demonstrates an architecture assessment approach that moves from bus
 The reasoning chain is:
 
 ```mermaid
-flowchart LR
-    Business["Business Situation"]
-    Evidence["Evidence"]
-    Current["Current-State Investigation"]
-    Observation["Observation"]
-    Assessment["Architectural Assessment"]
-    Finding["Finding"]
-    RootCause["Root Cause / Pattern"]
-    Impact["Business Impact"]
-    Direction["Target Architectural Direction"]
-    Options["Transformation Options"]
-    Judgement["Architectural Judgement"]
-    Transition["Transition Architectures"]
-    Roadmap["Dependency-Aware Roadmap"]
-    Governance["Governance & Execution"]
-    Business --> Evidence
-    Evidence --> Current
-    Current --> Observation
+flowchart TD
+    subgraph Tier1["1. Context & Observation"]
+        direction LR
+        Business["Business Situation"] --> Evidence["Evidence"]
+        Evidence --> Current["Current-State Investigation"]
+        Current --> Observation["Observation"]
+    end
+
+    subgraph Tier2["2. Diagnosis & Impact"]
+        direction LR
+        Assessment["Architectural Assessment"] --> Finding["Finding"]
+        Finding --> RootCause["Root Cause / Pattern"]
+        RootCause --> Impact["Business Impact"]
+    end
+
+    subgraph Tier3["3. Direction & Options"]
+        direction LR
+        Direction["Target Architectural Direction"] --> Options["Transformation Options"]
+        Options --> Judgement["Architectural Judgement"]
+    end
+
+    subgraph Tier4["4. Transition & Governance"]
+        direction LR
+        Transition["Transition Architectures"] --> Roadmap["Dependency-Aware Roadmap"]
+        Roadmap --> Governance["Governance & Execution"]
+    end
+
     Observation --> Assessment
-    Assessment --> Finding
-    Finding --> RootCause
-    RootCause --> Impact
     Impact --> Direction
-    Direction --> Options
-    Options --> Judgement
     Judgement --> Transition
-    Transition --> Roadmap
-    Roadmap --> Governance
 ```
 
 The key architectural judgement is that the organisation does not primarily have a legacy technology problem.

@@ -644,32 +644,30 @@ This illustrative review demonstrates how an Architecture Decision Review moves 
 The reasoning is deliberately traceable:
 
 ```mermaid
-flowchart LR
-    Strategy["Business Situation / Strategic Context"]
-    Capability["Relevant Business Capability"]
-    Evolution["Required Capability Evolution"]
-    Decision["Decision & Scope"]
-    Drivers["Drivers & Constraints"]
-    Requirements["Functional Requirements + NFRs"]
-    Concerns["Architectural Concerns"]
-    Options["Credible Options"]
-    Tradeoffs["Options + Trade-offs"]
-    Evidence["Evidence & Findings"]
-    Judgement["Architectural Judgement"]
-    Recommendation["Recommendation + Conditions"]
-    Next["Next Steps / Evidence Gaps"]
-    Strategy --> Capability
-    Capability --> Evolution
+flowchart TD
+    subgraph Tier1["1. Strategic & Capability Context"]
+        direction LR
+        Strategy["Business Situation / Strategic Context"] --> Capability["Relevant Business Capability"] --> Evolution["Required Capability Evolution"]
+    end
+
+    subgraph Tier2["2. Decision & Requirements"]
+        direction LR
+        Decision["Decision & Scope"] --> Drivers["Drivers & Constraints"] --> Requirements["Functional Requirements + NFRs"]
+    end
+
+    subgraph Tier3["3. Architecture & Trade-offs"]
+        direction LR
+        Concerns["Architectural Concerns"] --> Options["Credible Options"] --> Tradeoffs["Options + Trade-offs"]
+    end
+
+    subgraph Tier4["4. Judgement & Recommendations"]
+        direction LR
+        Evidence["Evidence & Findings"] --> Judgement["Architectural Judgement"] --> Recommendation["Recommendation + Conditions"] --> Next["Next Steps / Evidence Gaps"]
+    end
+
     Evolution --> Decision
-    Decision --> Drivers
-    Drivers --> Requirements
     Requirements --> Concerns
-    Concerns --> Options
-    Options --> Tradeoffs
     Tradeoffs --> Evidence
-    Evidence --> Judgement
-    Judgement --> Recommendation
-    Recommendation --> Next
 ```
 
 The review is therefore not simply a technology recommendation. Its purpose is to establish sufficient architectural evidence, reasoning and judgement for the client to make a decision with appropriate confidence.

@@ -37,19 +37,35 @@ This stage answers:
 The stage closes the architectural lifecycle by connecting implementation evidence back to the original business intent.
 
 ```mermaid
-flowchart LR
-    A["Implemented / Established Architecture"] --> B["Capability Realisation"]
-    A --> C["Operational Readiness"]
-    A --> D["Ownership & Organisational Capability"]
-    B --> E["Outcome Evidence"]
-    C --> E
-    D --> E
-    E --> F["Value & Outcome Assessment"]
-    F --> G["Knowledge & Artefact Transfer"]
-    G --> H["Organisational Enablement"]
-    H --> I["Validated Handover"]
-    I --> J["Continuous Improvement & Future Decisions"]
-    J --> K["Architectural Reassessment Where Required"]
+flowchart TD
+    subgraph Execution["1. Implementation & Assessment Dimensions"]
+        direction LR
+        A["Implemented / Established<br/>Architecture"] --> B["Capability<br/>Realisation"]
+        A --> C["Operational<br/>Readiness"]
+        A --> D["Ownership & Organisational<br/>Capability"]
+    end
+
+    subgraph Assessment["2. Evidence & Value Assessment"]
+        direction LR
+        B --> E["Outcome Evidence"]
+        C --> E
+        D --> E
+        E --> F["Value & Outcome<br/>Assessment"]
+    end
+
+    subgraph Handover["3. Knowledge Transfer & Enablement"]
+        direction LR
+        G["Knowledge & Artefact<br/>Transfer"] --> H["Organisational<br/>Enablement"]
+        H --> I["Validated Handover"]
+    end
+
+    subgraph Evolution["4. Continuous Improvement"]
+        direction LR
+        J["Continuous Improvement<br/>& Decisions"] --> K["Architectural<br/>Reassessment"]
+    end
+
+    F --> G
+    I --> J
 ```
 
 ⸻
@@ -103,12 +119,20 @@ Distinguish between:
 For example:
 
 ```mermaid
-flowchart LR
-    A["Architecture Implemented"] --> B["Capability Available"]
-    B --> C["Operational / Process Change"]
-    C --> D["Outcome"]
-    D --> E["Business Value"]
-    E --> F["Strategic Contribution"]
+flowchart TD
+    subgraph Delivery_Cap["1. Implementation & Capability"]
+        direction LR
+        A["Architecture<br/>Implemented"] --> B["Capability<br/>Available"]
+        B --> C["Operational /<br/>Process Change"]
+    end
+
+    subgraph Outcome_Value["2. Outcome & Strategic Contribution"]
+        direction LR
+        D["Observed<br/>Outcome"] --> E["Realised<br/>Business Value"]
+        E --> F["Strategic<br/>Contribution"]
+    end
+
+    C --> D
 ```
 
 The architect should avoid claiming realised value where only implementation evidence exists.
@@ -764,13 +788,20 @@ This prevents expected value from being represented as realised value.
 Where capability change is a material part of the engagement, assess the progression:
 
 ```mermaid
-flowchart LR
-    A["Required Capability Evolution"] --> B["Architecture Enables Change"]
-    B --> C["Delivery Implements Change"]
-    C --> D["Capability Becomes Available"]
-    D --> E["Capability Is Adopted"]
-    E --> F["Capability Performs"]
-    F --> G["Business / Operational Outcome"]
+flowchart TD
+    subgraph Enablement["1. Enablement & Implementation"]
+        direction LR
+        A["Required Capability<br/>Evolution"] --> B["Architecture Enables<br/>Change"]
+        B --> C["Delivery Implements<br/>Change"]
+    end
+
+    subgraph Realisation["2. Adoption & Outcome"]
+        direction LR
+        D["Capability Becomes<br/>Available"] --> E["Capability Is<br/>Adopted"]
+        E --> F["Capability<br/>Performs"] --> G["Business / Operational<br/>Outcome"]
+    end
+
+    C --> D
 ```
 
 The architect should distinguish between:
@@ -1068,16 +1099,25 @@ from earlier stages.
 It closes the feedback loop by comparing what was intended with what was achieved and by transferring the resulting knowledge and responsibility into the organisation.
 
 ```mermaid
-flowchart LR
-    S1["Stage 01<br/>Discover & Align"] --> S2["Stage 02<br/>Target Architecture & Strategy"]
-    S2 --> S3["Stage 03<br/>Architecture Governance / Decision Enablement"]
-    S3 --> S4["Stage 04<br/>Delivery Enablement & Execution Steering"]
-    S4 --> S5["Stage 05<br/>Value Realisation & Organizational Handover"]
-    S5 --> F1["Outcome / Capability Evidence"]
-    F1 --> S1
-    F1 --> S2
-    F1 --> S3
-    F1 --> S4
+flowchart TD
+    subgraph Stages["Core EA Lifecycle"]
+        direction LR
+        S1["Stage 01<br/>Discover & Align"] --> S2["Stage 02<br/>Target Architecture & Strategy"]
+        S2 --> S3["Stage 03<br/>Governance & Decision Enablement"]
+        S3 --> S4["Stage 04<br/>Delivery Enablement"]
+        S4 --> S5["Stage 05<br/>Value Realisation & Handover"]
+    end
+
+    subgraph Feedback["Outcome Feedback"]
+        direction LR
+        F1["Outcome / Capability Evidence"]
+    end
+
+    S5 --> F1
+    F1 -.-> S1
+    F1 -.-> S2
+    F1 -.-> S3
+    F1 -.-> S4
 ```
 
 Where value or operational evidence identifies a material divergence from the original architecture or intent, the appropriate earlier stage should be revisited.
@@ -1117,18 +1157,33 @@ Evidence and Traceability
 Where applicable, maintain traceability through the following chain:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"] --> B["Relevant Business Capability"]
-    B --> C["Required Capability Evolution"]
-    C --> D["Architectural Direction"]
-    D --> E["Delivery Increment"]
-    E --> F["Implementation Evidence"]
-    F --> G["Capability Realisation"]
-    G --> H["Operational Adoption"]
-    H --> I["Outcome Evidence"]
-    I --> J["Value Assessment"]
-    J --> K["Organisational Ownership"]
-    K --> L["Future Evolution"]
+flowchart TD
+    subgraph Intent_Direction["1. Intent & Direction"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant Business<br/>Capability"]
+        B --> C["Required Capability<br/>Evolution"] --> D["Architectural<br/>Direction"]
+    end
+
+    subgraph Delivery_Evidence["2. Delivery & Evidence"]
+        direction LR
+        E["Delivery<br/>Increment"] --> F["Implementation<br/>Evidence"]
+        F --> G["Capability<br/>Realisation"]
+    end
+
+    subgraph Adoption_Value["3. Adoption & Value"]
+        direction LR
+        H["Operational<br/>Adoption"] --> I["Outcome<br/>Evidence"]
+        I --> J["Value<br/>Assessment"]
+    end
+
+    subgraph Ownership_Evolution["4. Ownership & Evolution"]
+        direction LR
+        K["Organisational<br/>Ownership"] --> L["Future<br/>Evolution"]
+    end
+
+    D --> E
+    G --> H
+    J --> K
 ```
 
 The strength of the conclusion should reflect the strength of the evidence available at each point in the chain.

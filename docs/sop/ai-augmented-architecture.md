@@ -76,11 +76,11 @@ Traditional architecture deliverables—such as reference blueprints, capability
 The **Continuous Architecture System (CAS)** shifts architectural governance from reactive post-implementation reviews to continuous, automated verification operating directly in the delivery pipeline.
 
 ```mermaid
-graph LR
-    DevChange["Developer / Agent Commit"] --> PreventLoop["Prevent Loop (Pre-Commit / PR Linter)"]
-    PreventLoop -->|Pass| BuildPipe["Build & Test Pipeline"]
-    PreventLoop -->|Violation Detected| CorrectLoop["Correct Loop (Actionable Guidance / Auto-Fix)"]
-    CorrectLoop --> DevChange
+flowchart TD
+    DevChange["Developer / Agent Commit"] --> PreventLoop["Prevent Loop<br/>(Pre-Commit / PR Linter)"]
+    PreventLoop -->|"Violation Detected"| CorrectLoop["Correct Loop<br/>(Actionable Guidance / Auto-Fix)"]
+    CorrectLoop -->|"Remediated Commit"| DevChange
+    PreventLoop -->|"Pass"| BuildPipe["Build & Test Pipeline"]
     BuildPipe --> AuditLog["Git-Aware Delta Log"]
 ```
 

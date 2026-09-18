@@ -60,24 +60,27 @@ Others may require:
 The stage should maintain traceability from architectural intent through execution:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Business Capability"]
-    C["Required Capability Evolution"]
-    D["Architectural Direction"]
-    E["Transition & Delivery Strategy"]
-    F["Delivery Increments"]
-    G["Implemented Capability"]
-    H["Operational Adoption"]
-    I["Realised Outcome"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Intent["1. Strategic & Capability Intent"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant Business<br/>Capability"]
+        B --> C["Required Capability<br/>Evolution"]
+    end
+
+    subgraph Strategy["2. Architectural & Delivery Strategy"]
+        direction LR
+        D["Architectural<br/>Direction"] --> E["Transition & Delivery<br/>Strategy"]
+        E --> F["Delivery<br/>Increments"]
+    end
+
+    subgraph Realisation["3. Implementation & Realisation"]
+        direction LR
+        G["Implemented<br/>Capability"] --> H["Operational<br/>Adoption"]
+        H --> I["Realised<br/>Outcome"]
+    end
+
     C --> D
-    D --> E
-    E --> F
     F --> G
-    G --> H
-    H --> I
 ```
 
 This does not imply that every engagement requires every element to be formally documented.
@@ -103,19 +106,21 @@ Delivery may reveal:
 The architect should therefore maintain a controlled feedback loop between architecture and execution.
 
 ```mermaid
-flowchart LR
-    A["Architectural Direction"]
-    B["Implementation"]
-    C["Delivery Evidence"]
-    D["Architectural / Capability Assessment"]
-    E["Adaptation"]
-    F["Updated Direction"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Execution["1. Architecture & Implementation"]
+        direction LR
+        A["Architectural<br/>Direction"] --> B["Implementation<br/>Delivery"]
+        B --> C["Delivery<br/>Evidence"]
+    end
+
+    subgraph Adaptation["2. Assessment & Adaptation"]
+        direction LR
+        D["Architectural /<br/>Capability Assessment"] --> E["Adaptation"]
+        E --> F["Updated Direction"]
+    end
+
     C --> D
-    D --> E
-    E --> F
-    F --> B
+    F -. "feedback loop" .-> B
 ```
 
 The objective is not to prevent change.
@@ -230,16 +235,19 @@ A roadmap should not simply be a chronological list of projects.
 Where capability evolution is material, sequencing should consider what must be established first for the intended capability to become viable.
 
 ```mermaid
-flowchart LR
-    A["Capability Need"]
-    B["Enabling Capability / Dependency"]
-    C["Architecture Enablement"]
-    D["Delivery Increment"]
-    E["Capability Realisation"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Need["1. Capability & Architecture Need"]
+        direction LR
+        A["Capability Need"] --> B["Enabling Capability<br/>/ Dependency"]
+        B --> C["Architecture<br/>Enablement"]
+    end
+
+    subgraph Realisation["2. Delivery & Realisation"]
+        direction LR
+        D["Delivery<br/>Increment"] --> E["Capability<br/>Realisation"]
+    end
+
     C --> D
-    D --> E
 ```
 
 ⸻
@@ -391,28 +399,29 @@ Core Workflow
 The Stage 04 workflow is an execution-oriented loop rather than a mandatory linear sequence.
 
 ```mermaid
-flowchart LR
-    A["Confirm Architectural Direction"]
-    B["Assess Implementation Context & Readiness"]
-    C["Establish Transition Strategy"]
-    D["Identify Delivery Increments & Dependencies"]
-    E["Establish Execution Path"]
-    F["Enable Delivery"]
-    G["Assure Architecture"]
-    H["Monitor Evidence & Change"]
-    I["Validate Capability & Operational Readiness"]
-    J["Adapt / Continue / Handover"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Plan_Strategy["1. Direction & Transition Strategy"]
+        direction LR
+        A["Confirm Architectural<br/>Direction"] --> B["Assess Implementation<br/>Context & Readiness"]
+        B --> C["Establish Transition<br/>Strategy"]
+    end
+
+    subgraph Enable_Assure["2. Delivery Enablement & Assurance"]
+        direction LR
+        D["Identify Increments<br/>& Dependencies"] --> E["Establish Execution<br/>Path"]
+        E --> F["Enable Delivery"] --> G["Assure Architecture"]
+    end
+
+    subgraph Adapt_Handover["3. Monitoring & Handover"]
+        direction LR
+        H["Monitor Evidence<br/>& Change"] --> I["Validate Capability &<br/>Operational Readiness"]
+        I --> J["Adapt / Continue<br/>/ Handover"]
+    end
+
     C --> D
-    D --> E
-    E --> F
-    F --> G
     G --> H
-    H --> I
-    I --> J
-    J -->|"Continue delivery"| F
-    J -->|"Material architectural change"| A
+    J -. "continue delivery" .-> F
+    J -. "material change" .-> A
 ```
 
 The workflow may be entered, revisited or concluded according to:
@@ -750,20 +759,13 @@ Material architectural changes should be recorded and governed through the mecha
 The architect should distinguish between:
 
 ```mermaid
-flowchart LR
-    A["Delivery Change"]
-    B{"Material Architectural Impact?"}
-    C["Implementation Decision"]
-    D["Architectural Exception"]
-    E["New Architectural Decision"]
-    F["Target Architecture Reassessment"]
-    G["Capability / Scope Reassessment"]
-    A --> B
-    B -->|"No"| C
-    B -->|"Local deviation"| D
-    B -->|"Architectural consequence"| E
-    B -->|"Material target-state impact"| F
-    B -->|"Material capability or scope impact"| G
+flowchart TD
+    A["Delivery Change"] --> B{"Material Architectural<br/>Impact?"}
+    B -->|"No"| C["Implementation Decision"]
+    B -->|"Local deviation"| D["Architectural Exception"]
+    B -->|"Architectural consequence"| E["New Architectural Decision"]
+    B -->|"Material target-state impact"| F["Target Architecture<br/>Reassessment"]
+    B -->|"Material capability/scope impact"| G["Capability / Scope<br/>Reassessment"]
 ```
 
 Output:
@@ -879,20 +881,19 @@ Confirm:
 The validation chain should be:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent"]
-    B["Capability"]
-    C["Architectural Direction"]
-    D["Delivery"]
-    E["Implemented Capability"]
-    F["Operational Adoption"]
-    G["Intended Outcome"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Intent_Direction["1. Intent & Direction"]
+        direction LR
+        A["Strategic Intent"] --> B["Capability"] --> C["Architectural Direction"]
+    end
+
+    subgraph Delivery_Outcome["2. Delivery & Realised Outcome"]
+        direction LR
+        D["Delivery"] --> E["Implemented Capability"]
+        E --> F["Operational Adoption"] --> G["Intended Outcome"]
+    end
+
     C --> D
-    D --> E
-    E --> F
-    F --> G
 ```
 
 Where outcomes or capability requirements have materially changed, revisit the relevant earlier stage rather than continuing to execute an obsolete architecture.
@@ -928,14 +929,18 @@ A roadmap may include:
 The roadmap should preserve the relationship between delivery activity and the capability or outcome it is intended to establish.
 
 ```mermaid
-flowchart LR
-    A["Strategic Priority"]
-    B["Capability Change"]
-    C["Architectural Change"]
-    D["Delivery Increment"]
-    E["Operational Adoption"]
-    F["Outcome"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Strat_Arch["1. Strategy & Architecture"]
+        direction LR
+        A["Strategic Priority"] --> B["Capability Change"] --> C["Architectural Change"]
+    end
+
+    subgraph Deliv_Value["2. Delivery, Adoption & Outcome"]
+        direction LR
+        D["Delivery Increment"] --> E["Operational Adoption"] --> F["Outcome"]
+    end
+
+    C --> D
 ```
 
 Roadmap horizons may be expressed as:
@@ -1317,18 +1322,22 @@ It translates those into practical implementation and provides feedback as deliv
 The relationship can be expressed as:
 
 ```mermaid
-flowchart LR
-    A["Stage 01<br/>Discover & Align"]
-    B["Stage 02<br/>Target Architecture & Strategy"]
-    C["Stage 03<br/>Governance & Decision Framework"]
-    D["Stage 04<br/>Delivery Enablement & Execution Steering"]
-    E["Stage 05<br/>Value Realisation & Organisational Handover"]
-    A --> B
+flowchart TD
+    subgraph Upstream["Upstream Architectural Direction & Governance"]
+        direction LR
+        A["Stage 01<br/>Discover & Align"] --> B["Stage 02<br/>Target Architecture & Strategy"]
+        C["Stage 03<br/>Governance & Decision Enablement"]
+    end
+
+    subgraph Downstream["Execution & Handover"]
+        direction LR
+        D["Stage 04<br/>Delivery Enablement & Execution Steering"] --> E["Stage 05<br/>Value Realisation & Organisational Handover"]
+    end
+
     B --> D
     C --> D
-    D --> E
-    D -->|"Architectural evidence / change"| B
-    D -->|"Governance / decision needs"| C
+    D -. "evidence / change" .-> B
+    D -. "governance needs" .-> C
 ```
 
 Stage 04 therefore operates as a bridge between architecture and execution, rather than as a one-way handoff.
@@ -1336,7 +1345,7 @@ Stage 04 therefore operates as a bridge between architecture and execution, rath
 Material architectural changes identified during delivery should feed back into:
 
 * Stage 02 — Target Architecture & Strategy, where architectural direction requires reassessment;
-* Stage 03 — Governance & Decision Framework, where new decision rights, controls, exceptions, or governance mechanisms are required.
+* Stage 03 — Governance & Decision Enablement, where new decision rights, controls, exceptions, or governance mechanisms are required.
 
 Stage 04 provides important inputs to:
 
@@ -1345,16 +1354,20 @@ Stage 04 provides important inputs to:
 The intended lifecycle is therefore:
 
 ```mermaid
-flowchart LR
-    A["Intent"]
-    B["Capability"]
-    C["Architecture"]
-    D["Delivery"]
-    E["Operational Capability"]
-    F["Outcome"]
-    A --> B --> C --> D --> E --> F
-    E -.->|"Evidence / learning"| C
-    F -.->|"Value / outcome evidence"| A
+flowchart TD
+    subgraph Strat_Arch["1. Strategy & Architecture"]
+        direction LR
+        A["Intent"] --> B["Capability"] --> C["Architecture"]
+    end
+
+    subgraph Deliv_Real["2. Delivery & Value Realisation"]
+        direction LR
+        D["Delivery"] --> E["Operational Capability"] --> F["Outcome"]
+    end
+
+    C --> D
+    E -. "evidence / learning" .-> C
+    F -. "value / outcome evidence" .-> A
 ```
 
 The feedback arrows are deliberate.
@@ -1530,26 +1543,27 @@ Material delivery decisions should remain traceable to architectural intent.
 Where relevant:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Capability"]
-    C["Required Capability Evolution"]
-    D["Target Architecture"]
-    E["Delivery Increment"]
-    F["Implementation Evidence"]
-    G["Architectural Assessment"]
-    H["Decision / Adaptation"]
-    I["Implemented Capability"]
-    J["Operational Adoption"]
-    A --> B
-    B --> C
-    C --> D
+flowchart TD
+    subgraph Strat_Target["1. Strategy & Target Architecture"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant<br/>Capability"]
+        B --> C["Required Capability<br/>Evolution"] --> D["Target<br/>Architecture"]
+    end
+
+    subgraph Deliv_Assure["2. Delivery & Evidence Assurance"]
+        direction LR
+        E["Delivery<br/>Increment"] --> F["Implementation<br/>Evidence"]
+        F --> G["Architectural<br/>Assessment"]
+    end
+
+    subgraph Realise_Adopt["3. Decision & Realised Adoption"]
+        direction LR
+        H["Decision /<br/>Adaptation"] --> I["Implemented<br/>Capability"]
+        I --> J["Operational<br/>Adoption"]
+    end
+
     D --> E
-    E --> F
-    F --> G
     G --> H
-    H --> I
-    I --> J
 ```
 
 Material changes should record:
@@ -1609,14 +1623,18 @@ Stage 04 exists to turn architectural direction into credible, executable and go
 It connects:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent"]
-    B["Capability"]
-    C["Architecture"]
-    D["Delivery"]
-    E["Operational Capability"]
-    F["Outcome"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Direction_Def["1. Intent & Direction"]
+        direction LR
+        A["Strategic Intent"] --> B["Capability"] --> C["Architecture"]
+    end
+
+    subgraph Realisation_Def["2. Delivery & Outcome"]
+        direction LR
+        D["Delivery"] --> E["Operational Capability"] --> F["Outcome"]
+    end
+
+    C --> D
 ```
 
 The architect:

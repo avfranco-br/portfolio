@@ -58,12 +58,20 @@ flowchart TD
 The health check assesses an organisation across four balanced dimensions:
 
 ```mermaid
-flowchart LR
+flowchart TD
     subgraph Dimensions["Diagnostic Evaluation Framework"]
-        D1["1. Strategic & Business Alignment<br/>Does the architecture support current business goals?"]
-        D2["2. Structural Integrity & Technical Debt<br/>Is the architecture modular, maintainable, and robust?"]
-        D3["3. Governance & Decision Effectiveness<br/>Are decisions explicit, timely, and adhered to?"]
-        D4["4. Delivery Friction & Operational Feasibility<br/>Can teams ship reliably without systemic bottlenecks?"]
+        direction TB
+        subgraph Row1["Alignment & Integrity"]
+            direction LR
+            D1["1. Strategic Alignment<br/>Does architecture support business goals?"]
+            D2["2. Structural Integrity<br/>Is architecture modular and robust?"]
+        end
+        subgraph Row2["Governance & Delivery"]
+            direction LR
+            D3["3. Governance Effectiveness<br/>Are decisions explicit and adhered to?"]
+            D4["4. Delivery & Operability<br/>Can teams ship without bottlenecks?"]
+        end
+        Row1 --- Row2
     end
 ```
 

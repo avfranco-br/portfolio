@@ -30,19 +30,29 @@ The method answers:
 The method connects:
 
 ```mermaid
-flowchart LR
-    A["Business Situation & Strategic Intent"]
-    B["Evidence & Context"]
-    C["Current-State Investigation"]
-    D["Architectural Diagnosis"]
-    E["Findings, Root Causes & Materiality"]
-    F["Target Direction & Architectural Runway"]
-    G["Transformation Options & Priorities"]
-    H["Transition Architectures & Dependencies"]
-    I["Multi-Horizon Roadmap"]
-    J["Collaborative Validation"]
-    K["Governance & Execution Assurance"]
-    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K
+flowchart TD
+    subgraph Tier1["1. Context & Diagnosis"]
+        direction LR
+        A["Business Situation & Strategic Intent"] --> B["Evidence & Context"]
+        B --> C["Current-State Investigation"]
+        C --> D["Architectural Diagnosis"]
+    end
+
+    subgraph Tier2["2. Findings & Options"]
+        direction LR
+        E["Findings, Root Causes & Materiality"] --> F["Target Direction & Runway"]
+        F --> G["Transformation Options & Priorities"]
+        G --> H["Transition Architectures & Dependencies"]
+    end
+
+    subgraph Tier3["3. Roadmap & Assurance"]
+        direction LR
+        I["Multi-Horizon Roadmap"] --> J["Collaborative Validation"]
+        J --> K["Governance & Execution Assurance"]
+    end
+
+    D --> E
+    H --> I
 ```
 
 The method is deliberately adaptable.
@@ -66,18 +76,20 @@ The Core EA SOP defines the professional architectural capabilities.
 This method combines those capabilities into a repeatable approach for broader assessment and transformation planning.
 
 ```mermaid
-flowchart LR
-    A["Core EA SOP"]
-    B["Stage 01 — Discover & Align<br/>Intent, context, scope, evidence and assessment depth"]
-    C["Stage 02 — Target Architecture & Strategy<br/>Architectural direction, target state and options"]
-    D["Stage 03 — Governance & Decision Enablement<br/>Decision rights, governance and control implications"]
-    E["Stage 04 — Delivery Enablement & Execution Steering<br/>Execution and architectural assurance"]
-    F["Stage 05 — Value Realisation & Organisational Handover<br/>Ownership, outcomes and continued evolution"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Tier1["Foundation & Target Strategy"]
+        direction LR
+        A["Core EA SOP"] --> B["Stage 01 — Discover & Align<br/>Intent, context, scope & evidence"]
+        B --> C["Stage 02 — Target Architecture & Strategy<br/>Target direction, options & runway"]
+    end
+
+    subgraph Tier2["Governance & Delivery Realisation"]
+        direction LR
+        D["Stage 03 — Governance & Decision Enablement<br/>Decision rights, governance & controls"] --> E["Stage 04 — Delivery Enablement<br/>Execution & architectural assurance"]
+        E --> F["Stage 05 — Value Realisation<br/>Ownership & continuous evolution"]
+    end
+
     C --> D
-    D --> E
-    E --> F
 ```
 
 Unlike a bounded Architecture Decision Review, this method may require substantive work across several or all of these capabilities.
@@ -214,14 +226,20 @@ The assessment should progressively connect the business problem to the architec
 The architect should seek to understand, where relevant:
 
 ```mermaid
-flowchart LR
-    A["Business Capability"]
-    B["Business Process / Workflow"]
-    C["Application / Service"]
-    D["Integration / Interface"]
-    E["Data"]
-    F["Infrastructure / Platform"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Tier1["Business & Application"]
+        direction LR
+        A["Business Capability"] --> B["Business Process / Workflow"]
+        B --> C["Application / Service"]
+    end
+
+    subgraph Tier2["Integration & Platform"]
+        direction LR
+        D["Integration / Interface"] --> E["Data"]
+        E --> F["Infrastructure / Platform"]
+    end
+
+    C --> D
 ```
 
 The purpose is not to model every layer exhaustively.
@@ -239,14 +257,20 @@ As evidence is gathered, the architect should form hypotheses about potential ca
 A typical diagnostic loop is:
 
 ```mermaid
-flowchart LR
-    A["Observed Problem"]
-    B["Architectural Context"]
-    C["Investigation Hypothesis"]
-    D["Targeted Evidence"]
-    E["Causal Understanding"]
-    F["Architectural Finding"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Tier1["Hypothesis Formation"]
+        direction LR
+        A["Observed Problem"] --> B["Architectural Context"]
+        B --> C["Investigation Hypothesis"]
+    end
+
+    subgraph Tier2["Evidence & Synthesis"]
+        direction LR
+        D["Targeted Evidence"] --> E["Causal Understanding"]
+        E --> F["Architectural Finding"]
+    end
+
+    C --> D
     F -.-> C
 ```
 
@@ -338,13 +362,19 @@ Architecture should not be developed in isolation.
 The working loop is:
 
 ```mermaid
-flowchart LR
-    A["Understand"]
-    B["Frame Architecture"]
-    C["Validate"]
-    D["Iterate"]
-    E["Deliver"]
-    A --> B --> C --> D --> E
+flowchart TD
+    subgraph Tier1["Framing & Validation"]
+        direction LR
+        A["Understand"] --> B["Frame Architecture"]
+        B --> C["Validate"]
+    end
+
+    subgraph Tier2["Iteration & Delivery"]
+        direction LR
+        D["Iterate"] --> E["Deliver"]
+    end
+
+    C --> D
     D -.-> A
 ```
 
@@ -370,16 +400,22 @@ A useful assessment should move beyond a list of observations.
 Findings should progressively connect:
 
 ```mermaid
-flowchart LR
-    A["Business Situation"]
-    B["Observation"]
-    C["Evidence"]
-    D["Architectural Assessment"]
-    E["Root Cause / Pattern"]
-    F["Business Impact"]
-    G["Risk / Consequence"]
-    H["Required Change"]
-    A --> B --> C --> D --> E --> F --> G --> H
+flowchart TD
+    subgraph Tier1["Observation & Assessment"]
+        direction LR
+        A["Business Situation"] --> B["Observation"]
+        B --> C["Evidence"]
+        C --> D["Architectural Assessment"]
+    end
+
+    subgraph Tier2["Root Cause & Impact"]
+        direction LR
+        E["Root Cause / Pattern"] --> F["Business Impact"]
+        F --> G["Risk / Consequence"]
+        G --> H["Required Change"]
+    end
+
+    D --> E
 ```
 
 Multiple observations should be consolidated where they represent the same underlying architectural issue.
@@ -403,14 +439,20 @@ Findings should be organised so that leadership and delivery teams can understan
 A useful synthesis structure is:
 
 ```mermaid
-flowchart LR
-    A["Business Capability"]
-    B["Architectural Theme"]
-    C["Findings / Patterns"]
-    D["Common Root Cause"]
-    E["Business Impact"]
-    F["Required Change"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Tier1["Capability & Theme"]
+        direction LR
+        A["Business Capability"] --> B["Architectural Theme"]
+        B --> C["Findings / Patterns"]
+    end
+
+    subgraph Tier2["Cause, Impact & Change"]
+        direction LR
+        D["Common Root Cause"] --> E["Business Impact"]
+        E --> F["Required Change"]
+    end
+
+    C --> D
 ```
 
 This prevents the assessment from becoming a flat register of technical problems.
@@ -507,14 +549,20 @@ A roadmap is not merely a list of projects.
 A useful structure is:
 
 ```mermaid
-flowchart LR
-    A["Strategic Outcome"]
-    B["Capability / Architectural Change"]
-    C["Initiative / Work Package"]
-    D["Dependency / Prerequisite"]
-    E["Sequence"]
-    F["Expected Outcome"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Tier1["Outcome to Change"]
+        direction LR
+        A["Strategic Outcome"] --> B["Capability / Architectural Change"]
+        B --> C["Initiative / Work Package"]
+    end
+
+    subgraph Tier2["Dependency to Result"]
+        direction LR
+        D["Dependency / Prerequisite"] --> E["Sequence"]
+        E --> F["Expected Outcome"]
+    end
+
+    C --> D
 ```
 
 ⸻
@@ -852,32 +900,37 @@ These are examples rather than mandatory packages.
 ## 5. Core Workflow
 
 ```mermaid
-flowchart LR
-    A["0. Establish Business Situation & Assessment Intent"]
-    B["1. Define Assessment Scope & Boundary"]
-    C["2. Establish Evidence Base"]
-    D["3. Determine Assessment Depth"]
-    E["4. Investigate Current Situation & Architecture"]
-    F["5. Form and Test Architectural Hypotheses"]
-    G["6. Establish Findings, Root Causes & Materiality"]
-    H["7. Establish Target Direction & Architectural Runway"]
-    I["8. Identify Architectural Options & Opportunities"]
-    J["9. Prioritise Capabilities & Required Changes"]
-    K["10. Define Transition Architectures & Dependencies"]
-    L["11. Construct Multi-Horizon Roadmap"]
-    M["12. Validate Roadmap & Feasibility"]
-    N["13. Refine, Confirm Confidence & Establish Governance"]
-    O["14. Produce Decision-ready Assessment & Roadmap"]
-    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L --> M --> N --> O
-    E -.-> F
-    F -.-> G
-    G -.-> H
-    H -.-> I
-    I -.-> J
-    J -.-> K
-    K -.-> L
-    L -.-> M
-    M -.-> N
+flowchart TD
+    subgraph Tier1["1. Scoping & Evidence"]
+        direction LR
+        A["0. Business Situation & Intent"] --> B["1. Scope & Boundary"]
+        B --> C["2. Evidence Base"]
+        C --> D["3. Assessment Depth"]
+    end
+
+    subgraph Tier2["2. Investigation & Findings"]
+        direction LR
+        E["4. Investigate Current State"] --> F["5. Test Hypotheses"]
+        F --> G["6. Findings & Root Causes"]
+        G --> H["7. Target Direction & Runway"]
+    end
+
+    subgraph Tier3["3. Options & Sequencing"]
+        direction LR
+        I["8. Architectural Options"] --> J["9. Prioritise Changes"]
+        J --> K["10. Transition Architectures"]
+        K --> L["11. Multi-Horizon Roadmap"]
+    end
+
+    subgraph Tier4["4. Validation & Assurance"]
+        direction LR
+        M["12. Validate Feasibility"] --> N["13. Governance & Confidence"]
+        N --> O["14. Decision-ready Output"]
+    end
+
+    D --> E
+    H --> I
+    L --> M
     N -.-> E
 ```
 
@@ -886,18 +939,20 @@ The workflow is iterative.
 In particular:
 
 ```mermaid
-flowchart LR
-    A["Current Understanding"]
-    B["Architectural Investigation"]
-    C["Target Direction"]
-    D["Prioritisation"]
-    E["Roadmap"]
-    F["Stakeholder Validation"]
-    A <--> B
-    B <--> C
+flowchart TD
+    subgraph Tier1["Investigation & Strategy"]
+        direction LR
+        A["Current Understanding"] <--> B["Architectural Investigation"]
+        B <--> C["Target Direction"]
+    end
+
+    subgraph Tier2["Execution & Validation"]
+        direction LR
+        D["Prioritisation"] <--> E["Roadmap"]
+        E <--> F["Stakeholder Validation"]
+    end
+
     C <--> D
-    D <--> E
-    E <--> F
     F <--> A
 ```
 
@@ -936,13 +991,19 @@ Establish:
 Where relevant, establish the relationship between:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Strategic Priority"]
-    C["Relevant Business Capability"]
-    D["Required Capability Evolution"]
-    E["Architectural Implication"]
-    A --> B --> C --> D --> E
+flowchart TD
+    subgraph Tier1["Intent & Capability"]
+        direction LR
+        A["Strategic Intent / Outcome"] --> B["Strategic Priority"]
+        B --> C["Relevant Business Capability"]
+    end
+
+    subgraph Tier2["Evolution & Impact"]
+        direction LR
+        D["Required Capability Evolution"] --> E["Architectural Implication"]
+    end
+
+    C --> D
 ```
 
 This relationship should be established only to the degree supported by the engagement and available evidence.
@@ -1147,14 +1208,20 @@ Understand how the business problem or opportunity relates to the current archit
 The architect should progressively connect relevant layers:
 
 ```mermaid
-flowchart LR
-    A["Business Capability"]
-    B["Business Process / Workflow"]
-    C["Application / Service"]
-    D["Integration / Interface"]
-    E["Data"]
-    F["Infrastructure / Platform"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Tier1["Business & Application"]
+        direction LR
+        A["Business Capability"] --> B["Business Process / Workflow"]
+        B --> C["Application / Service"]
+    end
+
+    subgraph Tier2["Integration & Platform"]
+        direction LR
+        D["Integration / Interface"] --> E["Data"]
+        E --> F["Infrastructure / Platform"]
+    end
+
+    C --> D
 ```
 
 The depth of investigation should follow the assessment question.
@@ -1192,14 +1259,20 @@ Identify plausible architectural causes and determine whether available evidence
 A typical investigation loop is:
 
 ```mermaid
-flowchart LR
-    A["Problem"]
-    B["Observation"]
-    C["Hypothesis"]
-    D["Targeted Investigation"]
-    E["Evidence"]
-    F["Validated / Rejected / Refined Hypothesis"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Tier1["Hypothesis Formation"]
+        direction LR
+        A["Problem"] --> B["Observation"]
+        B --> C["Hypothesis"]
+    end
+
+    subgraph Tier2["Investigation & Validation"]
+        direction LR
+        D["Targeted Investigation"] --> E["Evidence"]
+        E --> F["Validated / Refined Hypothesis"]
+    end
+
+    C --> D
     F -.-> C
 ```
 
@@ -1252,15 +1325,21 @@ Turn diagnostic observations into a coherent architectural assessment.
 A useful structure is:
 
 ```mermaid
-flowchart LR
-    A["Observation"]
-    B["Evidence"]
-    C["Architectural Assessment"]
-    D["Pattern / Root Cause"]
-    E["Business Impact"]
-    F["Risk / Consequence"]
-    G["Required Change"]
-    A --> B --> C --> D --> E --> F --> G
+flowchart TD
+    subgraph Tier1["Observation & Diagnosis"]
+        direction LR
+        A["Observation"] --> B["Evidence"]
+        B --> C["Architectural Assessment"]
+        C --> D["Pattern / Root Cause"]
+    end
+
+    subgraph Tier2["Impact & Transformation"]
+        direction LR
+        E["Business Impact"] --> F["Risk / Consequence"]
+        F --> G["Required Change"]
+    end
+
+    D --> E
 ```
 
 The architect should distinguish between:
@@ -1655,17 +1734,27 @@ A roadmap should show:
 A useful roadmap structure is:
 
 ```mermaid
-flowchart LR
-    A["Business Strategic Outcome"]
-    B["Transformation Theme"]
-    C["Business Capability"]
-    D["Architectural Change"]
-    E["Initiative / Work Package"]
-    F["Dependencies / Prerequisites"]
-    G["Transition Architecture"]
-    H["Sequence / Horizon"]
-    I["Expected Outcome"]
-    A --> B --> C --> D --> E --> F --> G --> H --> I
+flowchart TD
+    subgraph Tier1["Strategic Alignment"]
+        direction LR
+        A["Business Strategic Outcome"] --> B["Transformation Theme"]
+        B --> C["Business Capability"]
+    end
+
+    subgraph Tier2["Architecture & Work Package"]
+        direction LR
+        D["Architectural Change"] --> E["Initiative / Work Package"]
+        E --> F["Dependencies / Prerequisites"]
+    end
+
+    subgraph Tier3["Roadmap Execution"]
+        direction LR
+        G["Transition Architecture"] --> H["Sequence / Horizon"]
+        H --> I["Expected Outcome"]
+    end
+
+    C --> D
+    F --> G
 ```
 
 ⸻
@@ -2097,15 +2186,21 @@ The assessment architect may provide higher-level architectural assurance, chall
 The distinction should remain explicit.
 
 ```mermaid
-flowchart LR
-    A["Architecture Assessment & Roadmap"]
-    B["Strategic Direction"]
-    C["Architecture Governance"]
-    D["Architecture Assurance"]
-    E["Delivery Teams"]
-    F["Solution Architecture"]
-    G["Implementation"]
-    A --> B --> C --> D --> E --> F --> G
+flowchart TD
+    subgraph Tier1["Assessment & Governance"]
+        direction LR
+        A["Architecture Assessment & Roadmap"] --> B["Strategic Direction"]
+        B --> C["Architecture Governance"]
+        C --> D["Architecture Assurance"]
+    end
+
+    subgraph Tier2["Delivery & Execution"]
+        direction LR
+        E["Delivery Teams"] --> F["Solution Architecture"]
+        F --> G["Implementation"]
+    end
+
+    D --> E
 ```
 
 Architecture Assessment & Roadmap establishes direction and transformation priorities.
@@ -2198,23 +2293,36 @@ AI is an augmentation mechanism, not a substitute for architectural judgement.
 Material assessment conclusions should maintain a traceability chain:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Business Capability"]
-    C["Required Capability Evolution"]
-    D["Evidence"]
-    E["Observation"]
-    F["Assessment"]
-    G["Finding"]
-    H["Pattern / Root Cause"]
-    I["Business Impact / Risk"]
-    J["Gap"]
-    K["Required Change"]
-    L["Priority"]
-    M["Roadmap Item"]
-    N["Expected Outcome"]
-    A --> B --> C
-    C --> D --> E --> F --> G --> H --> I --> J --> K --> L --> M --> N
+flowchart TD
+    subgraph Tier1["1. Strategy & Context"]
+        direction LR
+        A["Strategic Intent / Outcome"] --> B["Relevant Business Capability"]
+        B --> C["Required Capability Evolution"]
+    end
+
+    subgraph Tier2["2. Evidence & Diagnosis"]
+        direction LR
+        D["Evidence"] --> E["Observation"]
+        E --> F["Assessment"]
+        F --> G["Finding"]
+    end
+
+    subgraph Tier3["3. Impact & Gap"]
+        direction LR
+        H["Pattern / Root Cause"] --> I["Business Impact / Risk"]
+        I --> J["Gap"]
+        J --> K["Required Change"]
+    end
+
+    subgraph Tier4["4. Roadmap & Value"]
+        direction LR
+        L["Priority"] --> M["Roadmap Item"]
+        M --> N["Expected Outcome"]
+    end
+
+    C --> D
+    G --> H
+    K --> L
 ```
 
 This creates a defensible relationship between strategic intent, source evidence and transformation recommendations.
@@ -2624,18 +2732,36 @@ Architecture Assessment & Roadmap may span several capabilities of the Core EA S
 The relationship is:
 
 ```mermaid
-flowchart LR
-    A["Stage 01 — Discover & Align"]
-    A1["Business Situation<br/>Intent<br/>Scope<br/>Evidence<br/>Investigation Context"]
-    B["Stage 02 — Target Architecture & Strategy"]
-    B1["Target Direction<br/>Architectural Runway<br/>Options<br/>Transition Direction"]
-    C["Stage 03 — Governance & Decision Enablement"]
-    C1["Decision Rights<br/>Governance<br/>Approvals<br/>Guardrails"]
-    D["Stage 04 — Delivery Enablement & Execution Steering"]
-    D1["Roadmap Execution<br/>Architecture Assurance<br/>Project Gates<br/>Architecture Forums"]
-    E["Stage 05 — Value Realisation & Organisational Handover"]
-    E1["Outcomes<br/>Ownership<br/>Value<br/>Continuous Evolution"]
-    A --> A1 --> B --> B1 --> C --> C1 --> D --> D1 --> E --> E1
+flowchart TD
+    subgraph S1["Stage 01 — Discover & Align"]
+        direction LR
+        A["Stage 01 — Discover & Align"] --> A1["Business Situation<br/>Intent, Scope, Evidence & Context"]
+    end
+
+    subgraph S2["Stage 02 — Target Architecture & Strategy"]
+        direction LR
+        B["Stage 02 — Target Architecture & Strategy"] --> B1["Target Direction<br/>Runway, Options & Transition"]
+    end
+
+    subgraph S3["Stage 03 — Governance & Decision Enablement"]
+        direction LR
+        C["Stage 03 — Governance & Decision Enablement"] --> C1["Decision Rights<br/>Governance, Approvals & Guardrails"]
+    end
+
+    subgraph S4["Stage 04 — Delivery Enablement & Execution Steering"]
+        direction LR
+        D["Stage 04 — Delivery Enablement"] --> D1["Roadmap Execution<br/>Assurance, Project Gates & Forums"]
+    end
+
+    subgraph S5["Stage 05 — Value Realisation & Organisational Handover"]
+        direction LR
+        E["Stage 05 — Value Realisation"] --> E1["Outcomes<br/>Ownership, Value & Evolution"]
+    end
+
+    A1 --> B
+    B1 --> C
+    C1 --> D
+    D1 --> E
 ```
 
 The lifecycle is not necessarily linear.
@@ -2643,13 +2769,19 @@ The lifecycle is not necessarily linear.
 The working model remains:
 
 ```mermaid
-flowchart LR
-    A["Understand"]
-    B["Frame Architecture"]
-    C["Validate"]
-    D["Iterate"]
-    E["Deliver"]
-    A --> B --> C --> D --> E
+flowchart TD
+    subgraph Tier1["Framing & Validation"]
+        direction LR
+        A["Understand"] --> B["Frame Architecture"]
+        B --> C["Validate"]
+    end
+
+    subgraph Tier2["Iteration & Delivery"]
+        direction LR
+        D["Iterate"] --> E["Deliver"]
+    end
+
+    C --> D
     D -.-> A
 ```
 
@@ -2708,20 +2840,34 @@ Architecture Assessment & Roadmap provides a problem-led path from business situ
 The core reasoning chain is:
 
 ```mermaid
-flowchart LR
-    A["Business Situation & Strategic Intent"]
-    B["Relevant Business Capability"]
-    C["Required Capability Evolution"]
-    D["Evidence & Current State"]
-    E["Architectural Diagnosis"]
-    F["Findings & Root Causes"]
-    G["Target Direction"]
-    H["Architectural Change"]
-    I["Priorities & Dependencies"]
-    J["Transition Architectures"]
-    K["Transformation Roadmap"]
-    L["Validated Direction & Governance"]
-    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L
+flowchart TD
+    subgraph Tier1["1. Context & Evidence"]
+        direction LR
+        A["Business Situation & Strategic Intent"] --> B["Relevant Business Capability"]
+        B --> C["Required Capability Evolution"]
+    end
+
+    subgraph Tier2["2. Diagnosis & Direction"]
+        direction LR
+        D["Evidence & Current State"] --> E["Architectural Diagnosis"]
+        E --> F["Findings & Root Causes"]
+    end
+
+    subgraph Tier3["3. Architecture & Change"]
+        direction LR
+        G["Target Direction"] --> H["Architectural Change"]
+        H --> I["Priorities & Dependencies"]
+    end
+
+    subgraph Tier4["4. Roadmap & Assurance"]
+        direction LR
+        J["Transition Architectures"] --> K["Transformation Roadmap"]
+        K --> L["Validated Direction & Governance"]
+    end
+
+    C --> D
+    F --> G
+    I --> J
 ```
 
 The method deliberately avoids treating architecture assessment as an inventory exercise.

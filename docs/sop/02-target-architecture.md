@@ -29,18 +29,20 @@ Where relevant, architectural reasoning should make explicit how the required ev
 A useful reasoning chain is:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Business Capability"]
-    C["Required Capability Evolution"]
-    D["Business / Process Implications"]
-    E["Architectural Requirements"]
-    F["Architectural Direction"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Context["1. Business Intent & Capability Context"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant Business<br/>Capability"]
+        B --> C["Required Capability<br/>Evolution"]
+    end
+
+    subgraph Direction["2. Architectural Implications & Direction"]
+        direction LR
+        D["Business / Process<br/>Implications"] --> E["Architectural<br/>Requirements"]
+        E --> F["Architectural<br/>Direction"]
+    end
+
     C --> D
-    D --> E
-    E --> F
 ```
 
 This does not imply that every engagement requires a formal capability model or capability assessment. The relevant level of capability analysis should be proportionate to the architectural question.
@@ -54,17 +56,24 @@ Architecture is developed through a controlled iterative reasoning loop rather t
 The working pattern is:
 
 ```mermaid
-flowchart LR
-    FRAME["FRAME<br/>Drivers<br/>Concerns<br/>Principles<br/>Boundaries"]
-    EXPLORE["EXPLORE<br/>Direction<br/>Options<br/>Trade-offs<br/>Implications"]
-    ELABORATE["ELABORATE<br/>Target Architecture<br/>Models<br/>Technology choices<br/>Boundaries"]
-    VALIDATE["VALIDATE<br/>Evidence<br/>Requirements<br/>Stakeholders<br/>Operations<br/>Risks"]
-    REFINE["REFINE<br/>Architectural direction"]
-    FRAME --> EXPLORE
+flowchart TD
+    subgraph Formulate["1. Formulate & Explore"]
+        direction LR
+        FRAME["FRAME<br/>• Drivers & Concerns<br/>• Principles & Boundaries"]
+        EXPLORE["EXPLORE<br/>• Direction & Options<br/>• Trade-offs & Implications"]
+        FRAME --> EXPLORE
+    end
+
+    subgraph Define_Validate["2. Elaborate & Validate"]
+        direction LR
+        ELABORATE["ELABORATE<br/>• Target Architecture<br/>• Models & Boundaries"]
+        VALIDATE["VALIDATE<br/>• Evidence & Requirements<br/>• Stakeholders & Risks"]
+        REFINE["REFINE<br/>• Architectural Direction"]
+        ELABORATE --> VALIDATE --> REFINE
+    end
+
     EXPLORE --> ELABORATE
-    ELABORATE --> VALIDATE
-    VALIDATE --> REFINE
-    REFINE -->|"Return to the relevant point"| FRAME
+    REFINE -. "iterative feedback" .-> FRAME
 ```
 
 The loop may be entered at different points depending on the engagement.
@@ -84,14 +93,20 @@ Architectural decisions begin with the business outcome, problem, decision, capa
 Where capability evolution is relevant, architectural reasoning should make the relationship between business intent and architecture explicit:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Business Capability"]
-    C["Required Capability Change"]
-    D["Business / Operational Implications"]
-    E["Architectural Requirements"]
-    F["Architectural Direction"]
-    A --> B --> C --> D --> E --> F
+flowchart TD
+    subgraph Intent["1. Strategic Intent & Capability"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant Business<br/>Capability"]
+        B --> C["Required Capability<br/>Change"]
+    end
+
+    subgraph Architecture["2. Requirements & Direction"]
+        direction LR
+        D["Business / Operational<br/>Implications"] --> E["Architectural<br/>Requirements"]
+        E --> F["Architectural<br/>Direction"]
+    end
+
+    C --> D
 ```
 
 Technology is evaluated as a means of satisfying those needs, not as the starting point.
@@ -332,18 +347,20 @@ The architect should consider not only what the architecture should look like, b
 Where capability evolution is material, the reasoning should connect:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent"]
-    B["Relevant Capability"]
-    C["Required Capability Evolution"]
-    D["Business / Process Change"]
-    E["Architectural Requirement"]
-    F["Architectural Direction"]
-    A --> B
-    B --> C
+flowchart TD
+    subgraph Intent["1. Strategic Intent & Capability"]
+        direction LR
+        A["Strategic Intent"] --> B["Relevant Capability"]
+        B --> C["Required Capability<br/>Evolution"]
+    end
+
+    subgraph Architecture["2. Architecture & Change"]
+        direction LR
+        D["Business / Process<br/>Change"] --> E["Architectural<br/>Requirement"]
+        E --> F["Architectural<br/>Direction"]
+    end
+
     C --> D
-    D --> E
-    E --> F
 ```
 
 Target architecture should not be treated as a fully formed design that is produced independently of investigation.
@@ -362,16 +379,19 @@ As architectural thinking develops, it may:
 The architect should maintain a deliberate feedback loop between:
 
 ```mermaid
-flowchart LR
-    E["Evidence"]
-    U["Architectural Understanding"]
-    O["Options"]
-    T["Target Direction"]
-    S["Stakeholder Validation"]
-    E <--> U
+flowchart TD
+    subgraph Context_Evidence["1. Evidence & Understanding"]
+        direction LR
+        E["Evidence"] <--> U["Architectural<br/>Understanding"]
+    end
+
+    subgraph Solution_Space["2. Options, Target & Validation"]
+        direction LR
+        O["Options"] <--> T["Target Direction"]
+        T <--> S["Stakeholder Validation"]
+    end
+
     U <--> O
-    O <--> T
-    T <--> S
     S <--> U
 ```
 
@@ -388,28 +408,29 @@ Material architectural conclusions should remain traceable to their underlying c
 Where relevant, the traceability chain should make the relationship between business capability evolution and architecture explicit:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Business Capability"]
-    C["Required Capability Evolution"]
-    D["Business / Process Implications"]
-    E["Architectural Requirement"]
-    F["Architectural Concern"]
-    G["Evidence / Analysis"]
-    H["Options / Trade-offs"]
-    I["Architectural Judgement"]
-    J["Target Architecture / Direction"]
-    K["Decision"]
-    A --> B
-    B --> C
-    C --> D
+flowchart TD
+    subgraph S1["1. Strategic & Capability Context"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant Business<br/>Capability"]
+        B --> C["Required Capability<br/>Evolution"]
+        C --> D["Business / Process<br/>Implications"]
+    end
+
+    subgraph S2["2. Requirements & Evidence"]
+        direction LR
+        E["Architectural<br/>Requirement"] --> F["Architectural<br/>Concern"]
+        F --> G["Evidence /<br/>Analysis"]
+    end
+
+    subgraph S3["3. Options, Judgement & Direction"]
+        direction LR
+        H["Options &<br/>Trade-offs"] --> I["Architectural<br/>Judgement"]
+        I --> J["Target Architecture<br/>/ Direction"]
+        J --> K["Architecture<br/>Decision"]
+    end
+
     D --> E
-    E --> F
-    F --> G
     G --> H
-    H --> I
-    I --> J
-    J --> K
 ```
 
 Not every architectural engagement requires every element of the chain.
@@ -461,17 +482,19 @@ The architect remains accountable for:
 Architecture is developed through the following reasoning loop:
 
 ```mermaid
-flowchart LR
-    FRAME["FRAME"]
-    EXPLORE["EXPLORE"]
-    ELABORATE["ELABORATE"]
-    VALIDATE["VALIDATE"]
-    REFINE["REFINE"]
-    FRAME --> EXPLORE
+flowchart TD
+    subgraph Phase1["1. Frame & Explore"]
+        direction LR
+        FRAME["FRAME"] --> EXPLORE["EXPLORE"]
+    end
+
+    subgraph Phase2["2. Elaborate, Validate & Refine"]
+        direction LR
+        ELABORATE["ELABORATE"] --> VALIDATE["VALIDATE"] --> REFINE["REFINE"]
+    end
+
     EXPLORE --> ELABORATE
-    ELABORATE --> VALIDATE
-    VALIDATE --> REFINE
-    REFINE -->|"Return to relevant activity"| FRAME
+    REFINE -. "return to relevant activity" .-> FRAME
 ```
 
 The activities below describe the principal work performed within that loop.
@@ -1080,14 +1103,19 @@ Examples include:
 Where this occurs, return to the relevant point in the loop.
 
 ```mermaid
-flowchart LR
-    A["Validate"]
-    B["Material issue identified"]
-    C["Determine relevant earlier activity"]
-    D["Return to that point"]
-    E["Explore / Elaborate / Validate again"]
-    A --> B --> C --> D --> E
-    E -->|"Continue architectural loop"| A
+flowchart TD
+    subgraph Diagnostic["1. Detection & Identification"]
+        direction LR
+        A["Validate"] --> B["Material issue<br/>identified"]
+    end
+
+    subgraph Remediation["2. Scoped Return & Re-evaluation"]
+        direction LR
+        C["Determine relevant<br/>earlier activity"] --> D["Return to that<br/>point"] --> E["Explore / Elaborate /<br/>Validate again"]
+    end
+
+    B --> C
+    E -. "continue architectural loop" .-> A
 ```
 
 The loop should not be restarted indiscriminately.
@@ -1502,31 +1530,24 @@ Stage 02 establishes:
 The relationship can be expressed as:
 
 ```mermaid
-flowchart LR
-    A["Stage 01 — Discover & Align"]
-    B["Business Intent"]
-    C["Strategic Priorities"]
-    D["Relevant Capabilities"]
-    E["Required Capability Evolution"]
-    F["Context / Evidence / Constraints"]
-    G["Stage 02 — Target Architecture & Strategy"]
-    H["Architectural Direction"]
-    I["Options / Trade-offs"]
-    J["Target Architecture"]
-    K["Architectural Judgement"]
-    L["Decisions / Transition Implications"]
-    A --> B
-    B --> C
-    C --> D
-    D --> E
-    A --> F
-    E --> G
-    F --> G
-    G --> H
-    H --> I
-    I --> J
-    J --> K
-    K --> L
+flowchart TD
+    subgraph Stage01["Stage 01 — Discover & Align"]
+        direction LR
+        A["Business Intent"] --> B["Strategic Priorities"]
+        B --> C["Relevant Capabilities"] --> D["Required Capability<br/>Evolution"]
+        A --> F["Context / Evidence<br/>/ Constraints"]
+    end
+
+    subgraph Stage02["Stage 02 — Target Architecture & Strategy"]
+        direction LR
+        H["Architectural Direction"] --> I["Options / Trade-offs"]
+        I --> J["Target Architecture"]
+        J --> K["Architectural Judgement"]
+        K --> L["Decisions / Transition<br/>Implications"]
+    end
+
+    D --> H
+    F --> H
 ```
 
 The boundary is not a hard hand-off.
@@ -1536,15 +1557,21 @@ Stage 02 may identify that additional evidence is required.
 Where this occurs, the architect should obtain the necessary evidence and return to the relevant architectural reasoning activity.
 
 ```mermaid
-flowchart LR
-    A["Stage 01<br/>Establish sufficient context"]
-    B["Stage 02<br/>Architectural reasoning"]
-    C["New architectural question"]
-    D["Additional evidence required"]
-    E["Evidence / stakeholder investigation"]
-    F["Return to architectural reasoning"]
-    A --> B --> C --> D --> E --> F
-    F --> B
+flowchart TD
+    subgraph Context_Investigation["1. Context & Architectural Inquiry"]
+        direction LR
+        A["Stage 01<br/>Establish sufficient context"] --> B["Stage 02<br/>Architectural reasoning"]
+        B --> C["New architectural<br/>question"]
+    end
+
+    subgraph Evidence_Return["2. Evidence Elicitation & Return"]
+        direction LR
+        D["Additional evidence<br/>required"] --> E["Evidence / stakeholder<br/>investigation"]
+        E --> F["Return to architectural<br/>reasoning"]
+    end
+
+    C --> D
+    F -.-> B
 ```
 
 Stage 02 should not, however, silently expand into unrestricted discovery.
@@ -1873,28 +1900,29 @@ Material architectural conclusions should maintain a traceability chain.
 Where capability evolution is material, the chain should connect strategic intent through capability change and architectural consequence:
 
 ```mermaid
-flowchart LR
-    A["Strategic Intent / Outcome"]
-    B["Relevant Business Capability"]
-    C["Required Capability Evolution"]
-    D["Business / Process Implications"]
-    E["Architectural Requirement"]
-    F["Architectural Concern"]
-    G["Evidence / Analysis"]
-    H["Options / Trade-offs"]
-    I["Architectural Judgement"]
-    J["Target Direction"]
-    K["Decision / Recommendation"]
-    A --> B
-    B --> C
-    C --> D
+flowchart TD
+    subgraph S1["1. Strategic & Capability Context"]
+        direction LR
+        A["Strategic Intent /<br/>Outcome"] --> B["Relevant Business<br/>Capability"]
+        B --> C["Required Capability<br/>Evolution"]
+        C --> D["Business / Process<br/>Implications"]
+    end
+
+    subgraph S2["2. Architectural Analysis & Evidence"]
+        direction LR
+        E["Architectural<br/>Requirement"] --> F["Architectural<br/>Concern"]
+        F --> G["Evidence /<br/>Analysis"]
+    end
+
+    subgraph S3["3. Direction & Recommendation"]
+        direction LR
+        H["Options /<br/>Trade-offs"] --> I["Architectural<br/>Judgement"]
+        I --> J["Target<br/>Direction"]
+        J --> K["Decision /<br/>Recommendation"]
+    end
+
     D --> E
-    E --> F
-    F --> G
     G --> H
-    H --> I
-    I --> J
-    J --> K
 ```
 
 Where material uncertainty remains, record:
@@ -2070,17 +2098,19 @@ Stage 02 exists to turn established context into architectural direction and, wh
 It does so through a controlled reasoning loop:
 
 ```mermaid
-flowchart LR
-    FRAME["FRAME"]
-    EXPLORE["EXPLORE"]
-    ELABORATE["ELABORATE"]
-    VALIDATE["VALIDATE"]
-    REFINE["REFINE"]
-    FRAME --> EXPLORE
+flowchart TD
+    subgraph Phase1["1. Frame & Explore"]
+        direction LR
+        FRAME["FRAME"] --> EXPLORE["EXPLORE"]
+    end
+
+    subgraph Phase2["2. Elaborate, Validate & Refine"]
+        direction LR
+        ELABORATE["ELABORATE"] --> VALIDATE["VALIDATE"] --> REFINE["REFINE"]
+    end
+
     EXPLORE --> ELABORATE
-    ELABORATE --> VALIDATE
-    VALIDATE --> REFINE
-    REFINE -->|"Return to relevant activity"| FRAME
+    REFINE -. "return to relevant activity" .-> FRAME
 ```
 
 The architect:

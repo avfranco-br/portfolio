@@ -23,13 +23,21 @@ The purpose is to answer:
 > **What are we trying to achieve or decide, why does it matter, which strategic priorities and business capabilities are relevant, what context are we working within, what do we know, what remains uncertain, what is in scope, and what architectural work is actually required?**
 
 ```mermaid
-graph LR
-    A["Problem / Decision & Business Intent"] --> B["Strategic Priorities & Relevant Capabilities"]
-    B --> C["Engagement Context & Classification"]
-    C --> D["Scope & Boundary"]
-    D --> E["Evidence Establishment & Sufficiency"]
-    E --> F["Assessment Design & Discovery"]
-    F --> G["Validated Context & Agreed Direction"]
+flowchart TD
+    subgraph S1["1. Context & Scoping"]
+        direction LR
+        A["Problem / Decision &<br/>Business Intent"] --> B["Strategic Priorities &<br/>Relevant Capabilities"]
+        B --> C["Engagement Context<br/>& Classification"]
+        C --> D["Scope & Boundary"]
+    end
+
+    subgraph S2["2. Discovery & Direction"]
+        direction LR
+        E["Evidence Establishment<br/>& Sufficiency"] --> F["Assessment Design<br/>& Discovery"]
+        F --> G["Validated Context &<br/>Agreed Direction"]
+    end
+
+    D --> E
 ```
 
 ⸻
@@ -555,16 +563,28 @@ Stage progression is conditional. Stage 01 does not imply that every engagement 
 Where architectural work progresses beyond Stage 01, maintain traceability between:
 
 ```mermaid
-flowchart LR
-  A["Business Strategy / Intent"] --> B["Strategic Priorities"]
-  B --> C["Relevant Capabilities"]
-  C --> D["Context & Evidence"]
-  D --> E["Findings / Root Causes"]
-  E --> F["Impacts / Risks"]
-  F --> G["Options"]
-  G --> H["Decisions / Recommendations"]
-  H --> I["Required Change"]
-  I --> J["Outcomes"]
+flowchart TD
+    subgraph T1["1. Strategy & Capability Context"]
+        direction LR
+        A["Business Strategy<br/>/ Intent"] --> B["Strategic<br/>Priorities"]
+        B --> C["Relevant<br/>Capabilities"]
+    end
+
+    subgraph T2["2. Evidence & Diagnostics"]
+        direction LR
+        D["Context &<br/>Evidence"] --> E["Findings /<br/>Root Causes"]
+        E --> F["Impacts /<br/>Risks"]
+    end
+
+    subgraph T3["3. Direction, Change & Realisation"]
+        direction LR
+        G["Options<br/>Analysis"] --> H["Decisions /<br/>Recommendations"]
+        H --> I["Required<br/>Change"]
+        I --> J["Realised<br/>Outcomes"]
+    end
+
+    C --> D
+    F --> G
 ```
 
 Where material to the engagement, maintain the relationship between capability change, business journey/process change, architectural change, and the intended outcome.

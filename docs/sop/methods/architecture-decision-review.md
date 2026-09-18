@@ -309,24 +309,27 @@ The architect remains accountable for:
 Material recommendations should be traceable through the reasoning chain:
 
 ```mermaid
-flowchart LR
-    F["Finding"]
-    E["Evidence"]
-    I["Impact"]
-    R["Risk / Consequence"]
-    O["Options"]
-    T["Trade-offs"]
-    J["Architectural Judgement"]
-    RE["Recommendation"]
-    C["Confidence"]
-    E --> F
-    F --> I
-    I --> R
+flowchart TD
+    subgraph Evidence_Risk["1. Evidence & Finding"]
+        direction LR
+        E["Evidence"] --> F["Finding"]
+        F --> I["Impact"]
+        I --> R["Risk /<br/>Consequence"]
+    end
+
+    subgraph Exploration["2. Options & Trade-offs"]
+        direction LR
+        O["Options"] --> T["Trade-offs"]
+    end
+
+    subgraph Conclusion["3. Judgement & Recommendation"]
+        direction LR
+        J["Architectural<br/>Judgement"] --> RE["Recommendation"]
+        RE --> C["Confidence"]
+    end
+
     R --> O
-    O --> T
     T --> J
-    J --> RE
-    RE --> C
 ```
 
 This does not require every observation to appear in the final deliverable.
@@ -427,28 +430,31 @@ flowchart LR
 ## 5. Workflow
 
 ```mermaid
-flowchart LR
-    S0["0. Decision & Context"]
-    S1["1. Evidence Assimilation"]
-    S2["2. Evidence Sufficiency Gate"]
-    S3["3. Assessment Design"]
-    S4["4. Architecture Analysis"]
-    S5["5. Options & Trade-offs"]
-    S6["6. Architectural Judgement"]
-    S7["7. Decision-ready Deliverable"]
-    S8["8. Quality Assurance"]
-    S0 --> S1
-    S1 --> S2
+flowchart TD
+    subgraph Context_Evidence["1. Context & Evidence Gates"]
+        direction LR
+        S0["0. Decision & Context"] --> S1["1. Evidence Assimilation"]
+        S1 --> S2["2. Evidence Sufficiency Gate"]
+    end
+
+    subgraph Analysis_Options["2. Assessment & Analysis"]
+        direction LR
+        S3["3. Assessment Design"] --> S4["4. Architecture Analysis"]
+        S4 --> S5["5. Options & Trade-offs"]
+    end
+
+    subgraph Judgement_QA["3. Judgement, Deliverable & QA"]
+        direction LR
+        S6["6. Architectural Judgement"] --> S7["7. Decision-ready Deliverable"]
+        S7 --> S8["8. Quality Assurance"]
+    end
+
     S2 --> S3
-    S3 --> S4
-    S4 --> S5
     S5 --> S6
-    S6 --> S7
-    S7 --> S8
-    S2 -. "Additional evidence" .-> S1
-    S4 -. "New evidence / concern" .-> S2
-    S5 -. "New analysis required" .-> S4
-    S8 -. "Material issue identified" .-> S4
+    S2 -. "additional evidence" .-> S1
+    S4 -. "new evidence / concern" .-> S2
+    S5 -. "new analysis required" .-> S4
+    S8 -. "material issue" .-> S4
 ```
 
 The workflow is iterative where necessary.
@@ -999,28 +1005,29 @@ Where appropriate, AI may form part of the architect’s internal delivery syste
 A typical workflow may include:
 
 ```mermaid
-flowchart LR
-    E["Client Evidence"]
-    I["Document Ingestion"]
-    X["Extraction & Classification"]
-    C["Cross-document Comparison"]
-    O["Evidence Organisation"]
-    F["Candidate Findings"]
-    R["Architect Review"]
-    T["Options & Trade-offs"]
-    J["Architectural Judgement"]
-    D["Decision-ready Deliverable"]
-    Q["QA"]
-    E --> I
-    I --> X
-    X --> C
+flowchart TD
+    subgraph Tier1["1. Ingestion & Extraction"]
+        direction LR
+        E["Client Evidence"] --> I["Document Ingestion"]
+        I --> X["Extraction & Classification"]
+        X --> C["Cross-document Comparison"]
+    end
+
+    subgraph Tier2["2. Organisation & Review"]
+        direction LR
+        O["Evidence Organisation"] --> F["Candidate Findings"]
+        F --> R["Architect Review"]
+        R --> T["Options & Trade-offs"]
+    end
+
+    subgraph Tier3["3. Judgement & Assurance"]
+        direction LR
+        J["Architectural Judgement"] --> D["Decision-ready Deliverable"]
+        D --> Q["QA"]
+    end
+
     C --> O
-    O --> F
-    F --> R
-    R --> T
     T --> J
-    J --> D
-    D --> Q
 ```
 
 AI-generated outputs must remain subject to architectural review.
@@ -1255,24 +1262,24 @@ The Architecture Decision Review provides a disciplined way to move from a defin
 Its core logic is:
 
 ```mermaid
-flowchart LR
-    D["Decision"]
-    C["Context"]
-    E["Evidence"]
-    A["Architecture Analysis"]
-    O["Options"]
-    T["Trade-offs"]
-    J["Architectural Judgement"]
-    R["Recommendation"]
-    N["Next Step"]
-    D --> C
-    C --> E
+flowchart TD
+    subgraph Tier1["1. Decision & Context"]
+        direction LR
+        D["Decision"] --> C["Context"] --> E["Evidence"]
+    end
+
+    subgraph Tier2["2. Analysis & Options"]
+        direction LR
+        A["Architecture Analysis"] --> O["Options"] --> T["Trade-offs"]
+    end
+
+    subgraph Tier3["3. Judgement & Outcome"]
+        direction LR
+        J["Architectural Judgement"] --> R["Recommendation"] --> N["Next Step"]
+    end
+
     E --> A
-    A --> O
-    O --> T
     T --> J
-    J --> R
-    R --> N
 ```
 
 The method is deliberately bounded, evidence-led and context-driven.
