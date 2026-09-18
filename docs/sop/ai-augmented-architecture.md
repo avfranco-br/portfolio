@@ -1,5 +1,4 @@
 ---
-title: AI Augmented Architecture Workflows & Governance
 description: Transforming enterprise architecture ways of working using generative AI, agentic workforces, CAS prevent-and-correct processes, and evidence-based pattern mining.
 tags:
   - architecture
@@ -77,11 +76,11 @@ Traditional architecture deliverables—such as reference blueprints, capability
 The **Continuous Architecture System (CAS)** shifts architectural governance from reactive post-implementation reviews to continuous, automated verification operating directly in the delivery pipeline.
 
 ```mermaid
-graph LR
-    DevChange["Developer / Agent Commit"] --> PreventLoop["Prevent Loop (Pre-Commit / PR Linter)"]
-    PreventLoop -->|Pass| BuildPipe["Build & Test Pipeline"]
-    PreventLoop -->|Violation Detected| CorrectLoop["Correct Loop (Actionable Guidance / Auto-Fix)"]
-    CorrectLoop --> DevChange
+flowchart TD
+    DevChange["Developer / Agent Commit"] --> PreventLoop["Prevent Loop<br/>(Pre-Commit / PR Linter)"]
+    PreventLoop -->|"Violation Detected"| CorrectLoop["Correct Loop<br/>(Actionable Guidance / Auto-Fix)"]
+    CorrectLoop -->|"Remediated Commit"| DevChange
+    PreventLoop -->|"Pass"| BuildPipe["Build & Test Pipeline"]
     BuildPipe --> AuditLog["Git-Aware Delta Log"]
 ```
 
@@ -136,4 +135,3 @@ As organizations adopt AI coding agents (such as Antigravity, Gemini, or Claude)
 ---
 
 *© 2026 Alexandre Franco. Ideas-to-Life. All rights reserved. Proprietary methodology and agentic architecture specification.*
-
