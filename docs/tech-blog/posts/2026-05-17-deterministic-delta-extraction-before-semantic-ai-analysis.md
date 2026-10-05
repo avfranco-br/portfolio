@@ -9,7 +9,7 @@ author: "Alexandre Franco"
 slug: "deterministic-delta-extraction-before-semantic-ai-analysis"
 target: tech-blog
 content_type: "technical-problem-solution"
-status: review
+status: approved
 ---
 
 # Deterministic Delta Extraction Before Semantic AI Analysis

@@ -10,7 +10,7 @@ tags:
 author: "Alexandre Franco"
 slug: "decoupling-git-diff-parsing-architecture-evaluation"
 target: tech-blog
-status: review
+status: approved
 content_type: process-breakdown
 claim_calibration:
   status: approved

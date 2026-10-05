@@ -84,7 +84,8 @@ markdown_extensions:
 plugins:
   - search
   - roamlinks
-  - social
+  - social:
+      cards: !ENV [CI, false]
   - tags
   - blog:
       blog_dir: tech-blog

@@ -10,7 +10,7 @@ tags:
 author: "Alexandre Franco"
 slug: "preventing-generative-over-claiming-with-claim-linting"
 target: tech-blog
-status: review
+status: approved
 content_type: technical-problem-solution
 ---
 
